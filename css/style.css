@@ -1,0 +1,770 @@
+@charset "utf-8";
+/* 基本設定 */
+html{
+    font-size: 62.5%;/*10px*/
+    font-family: oshidashi-m-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+}
+body{
+    z-index: 1;
+    background-image: url(../img/back.png);
+    background-size: auto;
+    width: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+p{
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --clr-neon: rgb(30, 93, 252);
+    --clr-pneon: rgb(241, 106, 253);
+    --clr-oneon:rgb(252, 172, 123);
+    --clr-bg: rgb(0, 66, 232);
+}
+
+@media screen and (max-width:959px){
+    body{
+        background-position: 55%;
+    }
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+/*メニュー*/
+.selectmenu{
+    /* position: fixed; */
+    left: -100%;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.menu{
+    position: fixed;
+    z-index: 9999999;
+    width: 150px;
+    height: 75px;
+    background: #333;
+    border-radius: 10px;
+    margin: 10px;
+    top: 0;
+    left: 0;
+}
+.c_m{
+    position: relative;
+}
+.menu b:nth-child(1){
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    top: 25px;
+    left: 12px;   
+}
+.menu b:nth-child(2){
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    top: 25px;
+    right: 13px;   
+}
+
+.menu input{
+    appearance: none;
+}
+.menu span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background: #212121;
+    border: 6px solid #333;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu span ion-icon{
+    color: rgba(255,255,255,1);
+    font-size: 3em;
+    transition: 0.5s;
+    filter: drop-shadow(0 0 5px #fff)drop-shadow(0 0 10px #fff)drop-shadow(0 0 15px #fff);
+}
+.menuback{
+    /* display: none; */
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    max-width: 100vw;
+    height: 130vh;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuback p{
+    color: white;
+}
+.rump{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.rump img{
+    position: absolute;
+}
+.rump img:nth-child(1){
+    top: -750px;
+    width: 200px;
+}
+.rump img:nth-child(2){
+    padding-right: 15px;
+    top: 220px;
+    width: 750px;
+    opacity: 0;
+}
+.menu_list{
+    position: absolute;
+    color: #00a1ff;
+    font-size: 7rem;
+    top: 250px;
+    margin-top: 40px;
+    margin-right: 40px;
+    opacity: 0;  
+    z-index: 999999;
+}
+.menu_list li{
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999999;
+}
+.menu_list li:nth-child(1) a{
+    color: #f0f0f0a0;
+}
+.menu_list li:nth-child(2) a{
+    color: #00a2ffdb;
+}
+.menu_list li:nth-child(3) a{
+    color: #a1a400db;
+}
+.menu_list li:nth-child(4) a{
+    color: #a10200db;
+}
+.menu_list li a:hover{
+    opacity: 0.6;
+    transition: .5s;
+}
+
+/*メイン*/
+.main{
+    margin-right: 3%;
+    height: 100vh;
+    z-index: -111111;
+}
+.main img{
+    width: 70%;
+    animation: flash 2s ease 1s;
+}
+@media screen and (max-width:959px){
+    .main img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .main img{
+        width: 95%;
+    }
+}
+@keyframes flash {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+/*ABOUT*/
+.titleimg{
+    width: 100%;
+    height: 230px;
+    background-image: url(../img/about.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.about{
+    width: 100vw;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about img{
+    width: 99%;
+}
+.bg{
+    margin: 10%;
+    /* padding: 0 5%; */
+    min-width: 955px;
+    background-color: rgba(0, 0, 0, 0.536);
+    border: 2px solid rgb(0, 0, 0);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+}
+.myprofile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+.me{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4.5rem;
+}
+.me img{
+    width: 150px;
+    border-radius: 50%;
+    border: rgb(0, 255, 208) 3px solid;
+    box-shadow: 0 0 0.6em 0 rgb(0, 255, 208),inset 0 0 0.6em 0 rgb(0, 255, 208);
+    padding: 1%;
+}
+.name{
+    text-align: center;
+    font-size: 3.0rem;
+}
+.JPname{
+    z-index: 999;
+}
+.firstName{
+    color: rgba(0, 255, 208, 0.348);
+}
+.ENname{
+    margin-top: -23%;
+    color: rgba(255, 255, 255, 0.355);
+}
+.info{
+    font-size: 1.4rem;
+    padding-bottom: 15%;
+}
+.logo-twitter{
+    color: #00a1ff;
+    filter: drop-shadow(0 0 5px rgb(87, 120, 251));
+}
+.logo-instagram{
+    color: #ff00aa;
+    filter: drop-shadow(0 0 5px rgb(131, 0, 178));
+}
+.icons .logo-instagram{
+    padding: 0 10%;
+}
+.icons a{
+    cursor: pointer;
+}
+.mail-outline{
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px rgb(159, 159, 159));
+}
+@media screen and (max-width:959px){
+    .bg{
+        margin: 10% 0;
+    }
+    .titleimg{
+        background-size: 150% auto;
+        max-width: 100vw;
+    }
+    .titlecontact{
+        width: 150%;
+    }
+}
+@media screen and (max-width:450px){
+    .bg{
+        border-radius: 30px;
+    }
+    .titleimg{
+        background-size: 200% auto;
+        max-width: 100vw;
+    }
+}
+
+/*プロフィール文*/
+.meinfo{
+    position: relative;
+    width: 50%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 1);
+    /* border: rgb(0, 255, 208) 4px solid;
+    box-shadow: 0 0 0.6em 0 rgb(0, 255, 208),inset 0 0 0.6em 0 rgb(0, 255, 208); */
+}
+/*ネオン枠*/
+.neon-frame:after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    /* transform: skew(1deg,1deg); */
+    z-index: -1;
+    filter: blur(40px);
+}
+.neon-frame:before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    /* transform: skew(1deg,1deg); */
+    z-index: -2;
+}
+.meinfo:before,
+.meinfo:after{
+    background: linear-gradient(235deg,#00a1ff,#000,#00f1af);
+}
+.meinfo span{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: #00f1af;
+    text-shadow: 0 0 10px #00f1af;
+    /* background-color: rgba(0, 255, 132, 0.225); */
+}
+.spanback{
+    display: inline;
+}
+@media screen and (max-width:959px){
+.bg{
+        width: 100%;
+        min-width: 0;
+        padding-bottom: 10%;
+    }
+    .name{
+        font-size: 3rem;
+    }
+    .meinfo{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-right: 10px;
+    }
+    .meinfo span{
+        font-size: 2.2rem;
+    }   
+}
+@media screen and (max-width:600px){
+    .myprofile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .me{
+        margin: 15% 0;
+        width: 100%;
+    }
+    .meinfo{
+        margin-bottom: 20%;
+        margin-right: 0;
+        width: 90%;
+    }
+    .about a{
+        margin-bottom: 30%;
+    }
+}
+/*viewmoreボタン*/
+.neon-button{
+    margin: 5% auto;
+    margin-bottom: 15%;
+    font-size: 3.5rem;
+    color:var(--clr-neon);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: var(--clr-neon) 4px solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+
+    text-shadow:
+    0 0 0.1em rgb(47, 113, 246);
+
+    box-shadow: 0 0 0.6em 0 var(--clr-neon),inset 0 0 0.6em 0 var(--clr-neon);
+    position: relative;
+
+    transition: background-color 100ms linear;
+}
+.instabutton{
+    color: var(--clr-pneon);
+    border: var(--clr-pneon) 4px solid;
+    text-shadow:0 0 0.1em rgb(239, 47, 246);
+    box-shadow: 0 0 0.6em 0 var(--clr-pneon),inset 0 0 0.6em 0 var(--clr-pneon);
+}
+.portbutton{
+    color: var(--clr-oneon);
+    border: var(--clr-oneon) 4px solid;
+    text-shadow:0 0 0.1em rgb(246, 176, 47);
+    box-shadow: 0 0 0.6em 0 var(--clr-oneon),inset 0 0 0.6em 0 var(--clr-oneon);
+}
+.neon-button::before{
+    content: "";
+    position: absolute;
+    background:var(--clr-neon);
+    top: 120%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1,0.35);
+    filter: blur(0.8em);
+    opacity: 0.7;
+}
+.instabutton::before{
+    background: var(--clr-pneon);
+}
+.portbutton::before{
+    background: var(--clr-oneon);
+}
+.neon-button:hover,
+.neon-button:focus{
+    background:var(--clr-neon);
+    color: var(--clr-bg);
+    text-shadow: none;
+}
+.instabutton:hover,
+.instabutton:focus{
+    background: var(--clr-pneon);
+    color: black;
+}
+.portbutton:hover,
+.portbutton:focus{
+    background: var(--clr-oneon);
+    color: black;
+}
+.neon-button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+.instabutton::after{
+    box-shadow: 0 0 2em 0.5em var(--clr-pneon);
+}
+.portbutton::after{
+    box-shadow: 0 0 2em 0.5em var(--clr-oneon);
+}
+.neon-button:hover::after{
+    opacity: 1;
+}
+
+/*works*/
+.works{
+    flex-direction: column;
+}
+.works .bg{
+    padding-bottom: 7%;
+}
+.titleworks{
+    margin-top: 200px;
+    background-image: url(../img/works.png);
+}
+.w_all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10% 0 30% 0;
+    width: 100%;
+}
+.w_instagram{
+    position: relative;
+    padding: 2% 0;
+    background-color: #000;
+    width: 45%;
+    max-width: 400px;
+    margin: 1%;
+    border: rgb(255, 255, 255) 3px solid;
+    box-shadow: 0 0 1em 0 rgb(255, 0, 187),inset 0 0 1em 0 rgb(255, 0, 187);
+}
+.w_portfolio{
+    position: relative;
+    padding: 2% 0;
+    background-color: #000;
+    width: 45%;
+    max-width: 400px;
+    margin: 1%;
+    border: rgb(255, 255, 255) 3px solid;
+    box-shadow: 0 0 1em 0 rgb(248, 147, 59),inset 0 0 1em 0 rgb(248, 147, 59);
+}
+/* .w_instagram:after{
+    background:linear-gradient(215deg,red,blue);
+    top: -2px;
+} */
+.flexpea{
+    display: flex;
+    flex-direction: column;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.arrow{
+    position: absolute;
+    opacity: 0;
+    transform: translate(0,-100px);
+    transition: all 1s;
+}
+.arrow.active{
+    opacity: 1;
+    transform: translate(0,0);
+    animation-name: arrowtime;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+@keyframes arrowtime {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.instabutton{
+    position: absolute;
+    top: 600px;
+}
+.portbutton{
+    position: absolute;
+    top:600px;
+}
+@media screen and (max-width:959px){
+    .w_all{
+        margin: 10% 0;
+}
+}
+
+@media screen and (max-width:750px){
+    .bg{
+        padding: 0;
+    }
+    .w_all{
+        flex-direction: column;
+        align-items: center;
+    }
+    .w_instagram,.w_portfolio{
+        width: 90%;
+        margin: 10% 0 80% 0;
+    }
+    .w_portfolio{
+        margin-bottom: 50%;
+}
+}
+/*contact*/
+.contact{
+    flex-direction: column;
+}
+.titlecontact{
+    margin-top: 200px;
+    background-image: url(../img/contact.png);
+}
+.contactbg{
+    justify-content: center;
+}
+.contactbg p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.sns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    margin: 10% 0;
+}
+.twitter,.instagram{
+    margin: 0 5%;
+}
+.twitter p,.instagram p{
+    min-width: 180px;
+}
+.twitter::after{
+    margin-right: 10%;
+    background-color: #00a1ff;
+}
+.instagram::after{
+    background-color: #ff0aff;
+}
+.mail::after{
+    background-color: #fff;
+}
+.sns_icon::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    transform: scale(0,1);
+    transition: all .5s;
+}
+.sns_icon:hover::after{
+    transform: scale(1,1);
+}
+.sns_icon::after:hover{
+    transition: 0.5s;
+    padding-bottom: 5px;
+}
+.sns_icon{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.sns_icon p{
+    display: inline;
+    margin: 10px 0;
+    font-size: 3.5rem;
+    vertical-align: middle;
+    text-align: center;
+    transition: 0.5s;
+}
+.contactbg{
+    padding: 3% 0 7% 0;
+}
+.contactbg p{
+    align-self: flex-start;
+    margin-left: 5%;
+}
+#ip{
+    animation-name: ip;
+    animation-duration: .5s;
+    transition: 0.5s;
+}
+@keyframes ip{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+}
+
+@media screen and (max-width:959px) {
+    .sns_icon::after{
+        transform: scale(1,1);
+    }   
+}
+.twitter ion-icon,.instagram ion-icon{
+    width: 60px;
+    font-size: 6rem;
+}.mail ion-icon{
+    font-size: 7rem;
+}
+
+@media screen and (max-width:600px){
+    .mail p,.instagram p{
+        margin-top: 20px;
+    }
+    .sns{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .sns .sns_icon{
+        margin-bottom: 20%;
+    }
+    .sns_icon p{
+        font-size: 3rem;
+    }
+    .mail{
+        margin-bottom: 10%;
+    }
+
+    .twitter ion-icon,.instagram ion-icon{
+        font-size: 6rem;
+        width: 100px;
+    }
+    .instagram p{
+        margin-bottom: 15px;
+    }
+}
+
+@keyframes icondance{
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
