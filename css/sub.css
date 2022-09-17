@@ -3,35 +3,48 @@
     margin-top: 15%;
 }
 .bg{
-    height: 200vh;
+    /* height: 200vh; */
 }
 /*名前*/
-.Jname{
+.nname{
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
+.Jname{
+    /* position: absolute; */
     z-index: 999;
-    left: -400px;
-    top: 150px;
+    padding-top: 200px;
+    padding-left: 100px;
+    height: 800px;
+    /* left: 50px;
+    top: 250px; */
 }
 .ryu{
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.ryu p{
+.Jname .ryu p{
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl; 
+    color: #e897fb;
     font-size: 5rem;
     text-shadow: 0 0 10px #d000ff;
+    letter-spacing: 1rem;
 }
-.uma p{
+.Jname .uma p{
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     font-size: 4rem;
     text-shadow: 0 0 10px #ffab00;
+    color: #f7d797;
+    letter-spacing: 1rem;
 }
 .Jname p{
     color: white;
@@ -42,25 +55,65 @@
     -ms-writing-mode: tb-rl;
 }
 .uma{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 250px;
-    left: 90px;
+    top: -370px;
+    left: 60px;
 }
 .Ename{
-    position: relative;
     font-family: gitan-latin,sans-serif;
-font-weight: 700;
-font-style: italic;
+    font-weight: 700;
+    font-style: italic;
+    /* top: -10px;
+    right: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .Ename p:nth-child(1){  
-    font-size: 10rem;
+    font-size: 14rem;
+    z-index: 20;
+    text-shadow: 0 0 10px #d000ff;
+}
+.Ename p:nth-child(1) span{
+    color: #d000ff;
 }
 .Ename p:nth-child(2){
     position: absolute;
-    font-size: 7rem;
-    top: 120px;
+    font-size: 11rem;
+    top: 150px;
+    opacity: 0.8;
+    z-index: 1;
+    text-shadow: 0 0 10px #ffab00;
+}
+.Ename p:nth-child(2) span{
+    color: #ffab00;
+}
+.myimg{
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgb(192, 192, 192);
+    overflow: hidden;
+}
+@media screen and (max-width:959px){
+    .nname{
+        flex-direction: column;
+    }
+    .Jname{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width:450px){
+.Ename p:nth-child(1){
+    font-size: 9rem;  
+}
+.Ename p:nth-child(2){
+    font-size: 6rem;
+    top: 110px;  
+}
+.myimg{
+    width: 100%;
+}
 }
