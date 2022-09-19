@@ -104,7 +104,7 @@ $(window).on("scroll",function(){
 
         console.log(windowHeight);
 
-        if (scroll > position - windowHeight+500){
+        if (scroll > position - windowHeight+300){
         $(".ryuimg").addClass('blurfirst');
           $(".ryu p").addClass('linearfirst');
           $(".uma img").addClass("blursecond");
@@ -112,6 +112,26 @@ $(window).on("scroll",function(){
         }
     });
 });
+var winWidth = $(window).width();
+
+if(winWidth >= 450){
+    $(window).on("scroll",function(){
+
+        var position = $(".syumiimg").offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        if (scroll > position - windowHeight+300){
+            $(".syumiimg div:first-child").addClass("sideIn_L");
+            $(".syumiimg div:nth-child(2)").addClass("middleIn");
+            $(".syumiimg div:nth-child(3)").addClass("sideIn_R");
+            $(".syumi p").addClass("tasyumi");
+        }
+    })
+}else{
+    $(".syumiimg div").css({"opacity":1});
+    $(".syumi p").addClass("tasyumi");
+}
 
 
 

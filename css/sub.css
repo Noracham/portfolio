@@ -232,7 +232,7 @@
 /*メッセージ*/
 .message{
     font-family: "ヒラギノ角ゴシック";
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 20% 5% 0;
     display: flex;
     flex-direction: column;
@@ -244,10 +244,10 @@
 .webdesigner{
     display: inline-block;
     background-color: red;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 600;
     margin: 0 auto;
-    line-height: 11rem
+    line-height: 9rem
 }
 @media screen and (max-width:959px){
     .webdesigner{
@@ -405,4 +405,146 @@
         width: 21rem;
     }
     
+}
+/*syumi*/
+.syumi{
+    width: 100%;
+}
+.syumiimg{
+    display: flex;
+    flex-direction: row;
+}
+.syumiimg div{
+    opacity: 0;
+    width: 50%;
+}
+.syumiimg div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.syumiimg div:first-child{
+    margin-right: -5%; 
+}
+.syumiimg div:first-child img{
+    /* transform: skew(0,10deg);    */
+    height: 90%;
+}
+.syumiimg div:nth-child(2){
+    z-index: 2;
+    margin-top: 5%;
+    width: 50%;
+}
+.syumiimg div:last-child{
+    /* transform:skew(0,-10deg); */
+    margin-left: -5%;
+}
+.syumiimg div:last-child img{
+    height: 90%;
+}
+.syumi p{
+    font-size: 7rem;
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+}
+/*両端２枚はアニメーション登場でskew変化*/
+.sideIn_L{
+    animation-name: In_L;
+    animation-duration: 2s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.sideIn_R{
+    animation-name: In_R;
+    animation-duration: 2s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.middleIn{
+    animation-name: midIn;
+    animation-duration: .5s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+.tasyumi{
+    animation-name: linearAnime;
+    animation-delay: 3s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes In_L{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0);
+    }100%{
+        transform: skewY(15deg);
+        opacity: 0.7;
+    }
+}
+@keyframes In_R {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0);
+    }100%{
+        transform: skewY(-15deg);
+        opacity: 0.7;
+    }
+}
+@keyframes midIn{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .syumiimg{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .syumiimg div{
+        width: 300px;
+        height: 225px;
+        margin: 0;
+    }
+    .syumiimg div img{
+        width: 100%;
+        height: 100%;
+    }
+    .syumiimg div:nth-child(1){
+        margin-right: 20px;
+    }
+    .syumiimg div:nth-child(1) img{
+        object-fit: fill;
+        width: 300px;
+        height: 225px;
+    }
+    .syumiimg div:nth-child(2){
+        margin-bottom: 20px;
+        margin-right: 50px;
+        }
+    .syumiimg div:nth-child(2) img{
+        width: 300px;
+        height: 225px;
+    }
+.syumi p{
+    font-size: 4.5rem;
+}
 }
