@@ -30,6 +30,9 @@
     justify-content: center;
     align-items: flex-start;
 }
+.ryuimg{
+    opacity: 0;
+}
 .Jname .ryu p{
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl; 
@@ -37,6 +40,7 @@
     font-size: 5rem;
     text-shadow: 0 0 10px #d000ff;
     letter-spacing: 1rem;
+    opacity: 0;
 }
 .Jname .uma p{
     writing-mode: vertical-rl;
@@ -45,6 +49,7 @@
     text-shadow: 0 0 10px #ffab00;
     color: #f7d797;
     letter-spacing: 1rem;
+    opacity: 0;
 }
 .Jname p{
     color: white;
@@ -63,6 +68,9 @@
     top: -370px;
     left: 60px;
 }
+.uma img{
+    opacity: 0;
+}
 .Ename{
     font-family: gitan-latin,sans-serif;
     font-weight: 700;
@@ -72,6 +80,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* animation-name: LtoR;
+    animation-duration: 1s;
+    transition: .5s; */
+    opacity: 0;
 }
 .Ename p:nth-child(1){  
     font-size: 14rem;
@@ -85,7 +97,6 @@
     position: absolute;
     font-size: 11rem;
     top: 150px;
-    opacity: 0.8;
     z-index: 1;
     text-shadow: 0 0 10px #ffab00;
 }
@@ -96,6 +107,69 @@
     border-radius: 10%;
     box-shadow: 0 0 10px rgb(192, 192, 192);
     overflow: hidden;
+}
+.LtoR{
+    animation-name: LtoR;
+    animation-duration: 1s;
+    transition: .5s;    
+    animation-fill-mode: forwards;
+}
+.blurfirst{
+    animation-name: blur;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.blursecond{
+    animation-name: blur;
+    animation-duration: 1s;
+    transition: .5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+.linearfirst{
+    animation-name: linearAnime;
+    transition: .5s;
+    transition-timing-function: linear;
+    animation-duration: .5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.linearsecond{
+    animation-name: linearAnime;
+    transition: .5s;
+    transition-timing-function: linear;
+    animation-duration: .5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes LtoR {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+        filter: blur(10px);
+
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+@keyframes blur{
+    from {
+      filter: blur(10px);
+      opacity: 0;
+    }
+    to {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+@keyframes linearAnime{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }
 @media screen and (max-width:959px){
     .nname{
@@ -171,6 +245,7 @@
     display: inline-block;
     background-color: red;
     font-size: 10rem;
+    font-weight: 600;
     margin: 0 auto;
     line-height: 11rem
 }
@@ -187,6 +262,147 @@
     .webdesigner{
         font-size: 4.5rem;
         line-height:5rem;
+    }
+
+}
+/*from*/
+.from{
+    margin: 250px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.takayamaimg{
+    width: 45%;
+    text-align: center;
+}
+.from img{
+    max-width: 380px;
+    margin-right: 5%;
+}
+.takayama_M{
+    font-family: "ヒラギノ角ゴシック";
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-left: 5%;
+}
+.takayama_M p:first-child{
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 0;
+}
+.takayama_M p:first-child span{
+    color: red;
+}
+.takayama_M p:nth-child(2){
+    font-size: 8rem;
+    font-weight: 600;
+    margin: 10px 0 75px 0;
+}
+.takayama_M p:nth-child(2) span{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.pr{
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: red;
+    padding-right: -100px;
+    margin: 10px 0;
+}
+.pr1{
+    width: 15rem;
+}
+.pr2{
+    width: 18rem;
+}
+.pr3{
+    width: 21rem;
+}
+@media screen and (max-width:840px) {
+    .from{
+        width: 100%;
+        margin: 250px 1%;
+    }
+    .takayamaimg{
+        width: 40%;
+    }
+    .from img{
+        width: 100%;
+    }
+    .takayama_M p:first-child{
+        font-size: 4rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    .takayama_M p:first-child span{
+        color: red;
+    }
+    .takayama_M p:nth-child(2){
+        font-size: 6rem;
+        font-weight: 600;
+        margin: 10px 0 75px 0;
+    }
+    .takayama_M p:nth-child(2) span{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .pr{
+        font-size: 2.5rem;
+    }
+    .pr1{
+        width: 12.5rem;
+    }
+    .pr2{
+        width: 15rem;
+    }
+    .pr3{
+        width: 17.5rem;
+    } 
+}
+@media screen and (max-width:450px){
+    .from{
+        flex-direction: column;
+    }
+    .takayamaimg{
+        width: 70%;
+        margin: 0;
+        margin-bottom: 75px;
+    }
+    .takayama_M{
+        width: 90%;
+    }
+    .takayama_M p:first-child{
+        font-size: 5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    .takayama_M p:first-child span{
+        color: red;
+    }
+    .takayama_M p:nth-child(2){
+        font-size: 8rem;
+        font-weight: 600;
+        margin: 10px 0 75px 0;
+    }
+    .takayama_M p:nth-child(2) span{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .pr{
+        font-size: 3rem;
+    }
+    .pr1{
+        width: 15rem;
+    }
+    .pr2{
+        width: 18rem;
+    }
+    .pr3{
+        width: 21rem;
     }
     
 }

@@ -79,5 +79,41 @@ $(function(){
         // $(".twitter p").prop("id","");
     }
 );
+/*ABOUT*/
+$(window).on("scroll",function(){
+    $('.Ename').each(function(){
+
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        console.log(windowHeight);
+
+        if (scroll > position - windowHeight + 500){
+          $(".Ename").addClass('LtoR');
+        }
+    });
+});
+
+$(window).on("scroll",function(){
+    $('.Jname').each(function(){
+
+        var position = $(".Jname").offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        console.log(windowHeight);
+
+        if (scroll > position - windowHeight+500){
+        $(".ryuimg").addClass('blurfirst');
+          $(".ryu p").addClass('linearfirst');
+          $(".uma img").addClass("blursecond");
+          $(".uma p").addClass("linearsecond");
+        }
+    });
+});
+
+
+
 
 })
