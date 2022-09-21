@@ -186,7 +186,9 @@ a{
 }
 .main img{
     width: 70%;
-    animation: flash 2s ease 1s;
+    animation: flash 2s ease 1s forwards;
+    filter: brightness(30%);
+
 }
 @media screen and (max-width:959px){
     .main img{
@@ -201,31 +203,31 @@ a{
 }
 @keyframes flash {
     0%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     20%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     30%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     35%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     40%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     45%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     70%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     85%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     100%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     
 }
@@ -259,7 +261,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 30px;
 }
 .myprofile{
     display: flex;
@@ -639,6 +641,7 @@ a{
 .contactbg p{
     color: #fff;
     font-size: 1.5rem;
+    margin: 3%;
 }
 .sns{
     display: flex;

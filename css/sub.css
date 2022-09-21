@@ -233,7 +233,7 @@
 .message{
     font-family: "ヒラギノ角ゴシック";
     font-size: 2.5rem;
-    margin: 20% 5% 0;
+    margin: 250px 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,7 +267,7 @@
 }
 /*from*/
 .from{
-    margin: 250px 5%;
+    margin: 350px 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -409,6 +409,7 @@
 /*syumi*/
 .syumi{
     width: 100%;
+    margin: 200px auto;
 }
 .syumiimg{
     display: flex;
@@ -547,4 +548,99 @@
 .syumi p{
     font-size: 4.5rem;
 }
+}
+/*SKILL*/
+.myskill{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.skill{
+    margin-top: 200px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: white 1.5px solid;
+}
+.skill h1{
+    font-family: "ヒラギノ角ゴシック";
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 120px auto;
+    filter: drop-shadow(0 0 5px white);
+}
+.skill span{
+    font-size: 6rem;
+    font-weight: 500;
+}
+.traffic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skillLv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    width: 50%;
+}
+.skillLv p{
+    font-family: "ヒラギノ角ゴシック";
+    font-size: 3rem;
+    margin: 10px auto;
+}
+.skillsmile{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: grey;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+.skillsmile img{
+    filter: brightness(50%);
+}
+.smile1{
+    animation-name: trafficchange;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+.smile2{
+    animation-name: trafficchange;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+.smile3{
+    animation-name: trafficchange;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+@media screen and (max-width:700px){
+    .traffic{
+        margin-top: 20%;
+        flex-direction: column;
+    }
+    .skillLv{
+        margin-top: 10%;
+    }
+}
+@keyframes trafficchange {
+    from{
+        filter: brightness(50%);
+    }to{
+        filter: brightness(100%);
+    }
+    
 }
