@@ -5,21 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORKS</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sub.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'uca3rxv',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
 
 </head>
 <body>
-    <div class="titleimg"></div>
+    <div class="menu">
+        <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
+        <input type="checkbox">
+        <span id="inbox"><ion-icon name="bulb-outline"></ion-icon></span>
+    </div>
+    <header class="selectmenu">
+        <div class="menuback">
+            <ul class="menu_list">
+                <li><a href="main.html">MAIN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="works.html">WORKS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <div class="rump">
+                <img class="in_rump" src="img/rump.png" alt="">
+                <img class="in_light" src="img/light.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="hidden">
+        <div class="titleimg worksimg"></div>
+        <div class="bg">
+            <div class="work">
+                <div class="workone">
+                        <a href="portfolio.html">
+                            <div><img src="img/portfoliovivi.jpg" alt=""></div>
+                            <p>「ポートフォリオ」</p>
+                        <p>WEBSITE</p>
+                    </a>
+                    </div> 
+                    <div class="workone">
+                        <a href="">
+                        <div><img src="img/works_majan.png" alt=""></div>
+                        <p>「麻雀役解説」</p>
+                        <p>WEBSITE</p>
+                    </a>
+                    </div> 
+                    <div class="workone">
+                        <a href="">
+                        <div><img src="img/works_cafe.png" alt=""></div>
+                        <p>「cafe -DEJAVU-」</p>
+                        <p>WEBSITE</p>
+                    </a>
+                </div> 
+                <div class="workone">
+                    <a href="">
+                    <div><img src="img/works_thanks.png" alt=""></div>
+                    <p>「20年の感謝」</p>
+                    <p>WEBSITE</p>
+                </a>
+                </div> 
+                <div class="workone">
+                    <a href="">
+                    <div><img src="img/w_chityukai.png" alt=""></div>
+                    <p>「志摩地中海村」</p>
+                    <p>DESIGN</p>
+                </a>
+                </div> 
+                    <div class="workone">
+                        <a href="">
+                            <div><img src="img/w_henadrick.png" alt=""></div>
+                            <p>「Henadrick」</p>
+                        <p>DESIGN</p>
+                    </a>
+                    </div> 
+                    <div class="workone">
+                        <a href="">
+                        <div><img src="img/w_monburan.png" alt=""></div>
+                        <p>「モンブラン」</p>
+                        <p>DESIGN</p>
+                    </a>
+                    </div> 
+                    <div class="workone">
+                        <a href="">
+                        <div><img src="img/w_dejavu.png" alt=""></div>
+                        <p>「cafe -DEJAVU-」</p>
+                        <p>DESIGN</p>
+                    </a>
+                    </div> 
+                    <div class="workone">
+                        <a href="">
+                        <div><img src="img/w_syunkasyutou.png" alt=""></div>
+                        <p>「春夏秋冬」</p>
+                        <p>DESIGN</p>
+                    </a>
+                    </div> 
+                    <div class="workone">
+                        <a href="">
+                        <div><img src="img/w_Nishio.png" alt=""></div>
+                        <p>「NishioRyoma」</p>
+                        <p>DESIGN</p>
+                    </a>
+                    </div> 
+
+        </div>
+        </div>
+    </div>
 
 
     <script
     src="https://code.jquery.com/jquery-3.6.1.js"
     integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="js/sub.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+    @media screen and (max-width:1200px){
+    .bg{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
 
+</style>
 </body>
 </html>

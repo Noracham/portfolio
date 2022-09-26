@@ -2,9 +2,6 @@
 .titleimg{
     margin-top: 15%;
 }
-.bg{
-    /* height: 200vh; */
-}
 /*名前*/
 .nname{
     position: relative;
@@ -115,15 +112,16 @@
     animation-fill-mode: forwards;
 }
 .blurfirst{
+    animation-delay: 1s;
     animation-name: blur;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-fill-mode: forwards;
 }
 .blursecond{
     animation-name: blur;
     animation-duration: 1s;
     transition: .5s;
-    animation-delay: 2.5s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 .linearfirst{
@@ -131,7 +129,7 @@
     transition: .5s;
     transition-timing-function: linear;
     animation-duration: .5s;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 .linearsecond{
@@ -232,8 +230,8 @@
 /*メッセージ*/
 .message{
     font-family: "ヒラギノ角ゴシック";
-    font-size: 2.5rem;
-    margin: 250px 5% 0;
+    font-size: 2rem;
+    margin: 250px 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,7 +242,7 @@
 .webdesigner{
     display: inline-block;
     background-color: red;
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 600;
     margin: 0 auto;
     line-height: 9rem
@@ -262,6 +260,9 @@
     .webdesigner{
         font-size: 4.5rem;
         line-height:5rem;
+    }
+    .message{
+        margin: 250px 5% 0;
     }
 
 }
@@ -450,6 +451,19 @@
     text-align: center;
     opacity: 0;
 }
+.syumi p:nth-of-type(2){
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 10%;
+    
+}
+@media screen and (max-width:450px){
+    /* .syumi p:nth-of-type(2){
+        width: 90%;
+    } */
+}
 /*両端２枚はアニメーション登場でskew変化*/
 .sideIn_L{
     animation-name: In_L;
@@ -599,8 +613,9 @@
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    background-color: grey;
-    border-radius: 50px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 40px;
+    border: #7c7c7c 2px solid;
     padding: 10px 30px;
 }
 .skillsmile img{
@@ -644,3 +659,85 @@
     }
     
 }
+/* WORKS*/
+.worksimg{
+    background-image: url(../img/works.png);
+}
+.work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 1000px; */
+}
+.workone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 12% 3%;
+    opacity: 0;
+}
+@keyframes upslide {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.up{
+    animation-name: upslide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.workone div{
+    /* border: rgb(179, 179, 179) 2px solid; */
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0.6em 0 #7c7c7c,inset 0 0 0.6em 0 #7c7c7c;
+    width: 375px;
+    height: 250px;
+}
+.workone img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.workone p{
+    text-align: center;
+}
+.workone a{
+    cursor: pointer;
+}
+.workone p:nth-of-type(1){
+    font-family: "ヒラギノ角ゴシック";
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 5% 0;
+}
+.workone p:nth-of-type(2){
+    font-family: "ヒラギノ角ゴシック";
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(240, 248, 255, 0.51);
+    margin: 0;
+}
+@media screen and (min-width:1200px){
+    .work{
+        max-width: 1000px;
+    }
+}
+/* @media screen and (max-width:959px){
+    .workone img{
+        width: 340px;
+        height: 255px;
+    }
+} */
+@media screen and (max-width:750px){
+    .work{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 

@@ -36,12 +36,6 @@ $(function(){
             
             console.log("close");
         }
-        // if($(".menu input").prop("checked")==false){
-        //     $(this).css("left","75px");
-        // }else if($(".menu input").prop("checked")==true){
-        //     console.log("OK");
-        //     $(this).css("left","0px");
-        // }
     })
 
     $(window).on("scroll",function(){
@@ -51,7 +45,7 @@ $(function(){
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
 
-            if (scroll > position - windowHeight + 400){
+            if (scroll > position - windowHeight + 300){
               $(".arrow").addClass('active');
             }
         });
@@ -74,7 +68,7 @@ $(function(){
     }, function () {
         // out
         $(".twitter p").text("Twitter");
-        // $(".twitter p").prop("id","");
+        $(".twitter p").prop("id","");
     }
 );
 /*ABOUT*/
@@ -111,7 +105,7 @@ var winWidth = $(window).width();
 if(winWidth >= 450){
     $(window).on("scroll",function(){
 
-        var position = $(".syumiimg").offset().top;
+        var position = $(".syumi").offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
 
@@ -121,7 +115,7 @@ if(winWidth >= 450){
             $(".syumiimg div:nth-child(3)").addClass("sideIn_R");
             $(".syumi p").addClass("tasyumi");
         }
-    })
+    });
 }else{
     $(".syumiimg div").css({"opacity":1});
     $(".syumi p").addClass("tasyumi");
@@ -141,5 +135,23 @@ $(window).on("scroll",function(){
         }
     });
 });
+var n=0;
+$(window).on("scroll",function(){
+    $('.workone').eq(n).each(function(){
+
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        console.log(position);
+
+        if (scroll > position - windowHeight + 300){
+          $(".workone").eq(n).addClass('up');
+          n++;
+          console.log(n);
+        }
+    });
+});
+
 
 })
