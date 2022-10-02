@@ -33,6 +33,7 @@ img{
 .port_title p:first-child{
     margin: 100px 0 20px 0;
     font-size: 5rem;
+    font-weight: 600;
 }
 .port_title p:nth-child(2){
     margin: 0 0 30px 0;
@@ -76,6 +77,20 @@ img{
     box-shadow: 0 0 10px rgb(202, 129, 255);
 }
 /*green*/
+.subtitle_o{
+    position: relative;
+    font-size: 4rem;
+}
+.subtitle_o::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    border-bottom: rgb(255, 196, 95) 5px solid;
+    box-shadow: 0 0 10px rgb(253, 178, 104);
+}
+/*orange*/
 .subtitle_g{
     position: relative;
     font-size: 4rem;
@@ -86,7 +101,7 @@ img{
     right: 0;
     bottom: -10px;
     width: 100%;
-    border-bottom: rgb(144, 255, 125) 5px solid;
+    border-bottom: rgb(255, 194, 102) 5px solid;
     box-shadow: 0 0 10px rgb(112, 255, 164);
 }
 
@@ -103,11 +118,17 @@ img{
 }
 
 @media screen and (max-width:600px){
+    .margin h1{
+        font-size: 3rem;
+    }
     .port_title img{
         width: 98vw;
     }
 .port_title p:first-child{
     font-size: 3rem;
+}
+.port_title p:nth-child(2){
+    font-size: 2.5rem;
 }
 .maindata{
     margin: 5% 3%;
