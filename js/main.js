@@ -152,6 +152,12 @@ $(window).on("scroll",function(){
         }
     });
 });
+/*CONTACT*/
+var copytxt = $(".mail p").text();
+console.log(copytxt);
 
-
+$(".mail").on("click",function(){
+    navigator.clipboard.writeText(  copytxt);
+    alert("メールアドレスがコピーされました");
+})
 })

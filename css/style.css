@@ -560,6 +560,19 @@ a{
     border: rgb(255, 255, 255) 3px solid;
     box-shadow: 0 0 1em 0 rgb(248, 147, 59),inset 0 0 1em 0 rgb(248, 147, 59);
 }
+.cover img{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+.cover{
+    background-color: rgb(57, 57, 57);
+    margin: 1px 0;
+    /* border-top: black 1px solid;
+    border-bottom: black 1px solid; */
+    width: 150px;
+    height: 150px;
+}
 /* .w_instagram:after{
     background:linear-gradient(215deg,red,blue);
     top: -2px;
@@ -664,6 +677,13 @@ a{
 }
 .instagram::after{
     background-color: #ff0aff;
+}
+.instagram a,.twitter a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
 }
 .mail::after{
     background-color: #fff;
