@@ -20,7 +20,7 @@ h1{
     font-size: 2rem;
     line-height: 3.5rem;
 }
-img{
+.hidden img{
     max-width: 100%;
 }
 .port_title{
@@ -87,8 +87,8 @@ img{
     right: 0;
     bottom: -10px;
     width: 100%;
-    border-bottom: rgb(255, 196, 95) 5px solid;
-    box-shadow: 0 0 10px rgb(253, 178, 104);
+    border-bottom: rgb(255, 184, 61) 5px solid;
+    box-shadow: 0 0 10px rgb(255, 207, 159);
 }
 /*orange*/
 .subtitle_g{

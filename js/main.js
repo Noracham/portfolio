@@ -156,8 +156,8 @@ $(window).on("scroll",function(){
 var copytxt = $(".mail p").text();
 console.log(copytxt);
 
-$(".mail").on("click",function(){
-    navigator.clipboard.writeText(  copytxt);
-    alert("メールアドレスがコピーされました");
-})
+// $(".mail").on("click",function(){
+//     navigator.clipboard.writeText(copytxt);
+//     alert("メールアドレスがコピーされました");
+// })
 })

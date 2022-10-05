@@ -104,9 +104,10 @@ a{
 }
 .menu span ion-icon{
     color: rgba(255,255,255,1);
-    font-size: 3em;
+    font-size: 3.5em;
     transition: 0.5s;
     filter: drop-shadow(0 0 5px #fff)drop-shadow(0 0 10px #fff)drop-shadow(0 0 15px #fff);
+    padding: 20%;
 }
 .menuback{
     /* display: none; */
@@ -137,6 +138,7 @@ a{
 .rump img:nth-child(1){
     top: -750px;
     width: 200px;
+    z-index: 999;
 }
 .rump img:nth-child(2){
     padding-right: 15px;
@@ -201,6 +203,9 @@ a{
 @media screen and (max-width:450px){
     .main img{
         width: 95%;
+    }
+    .menu_list{
+        font-size: 6rem;
     }
 }
 @keyframes flash {
