@@ -39,6 +39,77 @@ $(function(){
     })
 
     $(window).on("scroll",function(){
+        $('.titleabout').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".titleabout").addClass('flash_title');
+            }
+        });
+        $('.titleworks').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".titleworks").addClass('flash_title');
+            }
+        });
+        $('.titlecontact').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".titlecontact").addClass('flash_title');
+            }
+        });
+        $('.aboutbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".aboutbg").addClass('flash_box');
+            }
+        });
+        $('.aboutbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".aboutbg").addClass('flash_box');
+            }
+        });
+        $('.worksbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".worksbg").addClass('flash_box');
+            }
+        });
+        $('.contactbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".contactbg").addClass('flash_box');
+            }
+        });
+
         $('.arrow').each(function(){
 
             var position = $(this).offset().top;
@@ -71,55 +142,6 @@ $(function(){
         $(".twitter p").prop("id","");
     }
 );
-/*ABOUT*/
-$(window).on("scroll",function(){
-    $('.Ename').each(function(){
-
-        var position = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        if (scroll > position - windowHeight + 500){
-          $(".Ename").addClass('LtoR');
-        }
-    });
-});
-
-$(window).on("scroll",function(){
-    $('.Jname').each(function(){
-
-        var position = $(".Jname").offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        if (scroll > position - windowHeight+300){
-        $(".ryuimg").addClass('blurfirst');
-          $(".ryu p").addClass('linearfirst');
-          $(".uma img").addClass("blursecond");
-          $(".uma p").addClass("linearsecond");
-        }
-    });
-});
-var winWidth = $(window).width();
-
-if(winWidth >= 450){
-    $(window).on("scroll",function(){
-
-        var position = $(".syumi").offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        if (scroll > position - windowHeight+300){
-            $(".syumiimg div:first-child").addClass("sideIn_L");
-            $(".syumiimg div:nth-child(2)").addClass("middleIn");
-            $(".syumiimg div:nth-child(3)").addClass("sideIn_R");
-            $(".syumi p").addClass("tasyumi");
-        }
-    });
-}else{
-    $(".syumiimg div").css({"opacity":1});
-    $(".syumi p").addClass("tasyumi");
-}
 /*SKILL*/
 $(window).on("scroll",function(){
     $('.skillLv').each(function(){

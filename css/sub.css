@@ -96,6 +96,7 @@
     top: 150px;
     z-index: 1;
     text-shadow: 0 0 10px #ffab00;
+    color: #cccccc;
 }
 .Ename p:nth-child(2) span{
     color: #ffab00;
@@ -229,7 +230,7 @@
 }
 /*メッセージ*/
 .message{
-    font-family: "ヒラギノ角ゴシック";
+    font-family: ヒラギノ角ゴシック, sans-serif;
     font-size: 2rem;
     margin: 250px 10% 0;
     display: flex;
@@ -237,15 +238,19 @@
     justify-content: center;
 }
 .maintxt{
-    line-height: 6rem;
+    line-height: 4rem;
+}
+.maintxt span{
+    font-size: 3rem;
 }
 .webdesigner{
     display: inline-block;
-    background-color: red;
     font-size: 7rem;
+    text-shadow: 0 0 5px rgb(248, 111, 255);
     font-weight: 600;
     margin: 0 auto;
-    line-height: 9rem
+    line-height: 9rem;
+    color: #f3bbff;
 }
 @media screen and (max-width:959px){
     .webdesigner{
@@ -267,13 +272,24 @@
 
 }
 /*from*/
+.Ifrom{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.fromtxt{
+    font-family: ヒラギノ角ゴシック, sans-serif;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 100px 10%;
+}
 .from{
-    margin: 350px 5%;
+    margin-top: 350px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 90%;
 }
 .takayamaimg{
     width: 45%;
@@ -326,7 +342,7 @@
 @media screen and (max-width:840px) {
     .from{
         width: 100%;
-        margin: 250px 1%;
+        margin: 250px 1% 50px 1%;
     }
     .takayamaimg{
         width: 40%;
@@ -574,8 +590,8 @@
 }
 .skill{
     margin-top: 200px;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: white 1.5px solid;
 }
@@ -585,7 +601,7 @@
     font-size: 3rem;
     font-weight: 300;
     text-align: center;
-    margin: 120px auto;
+    margin: 100px auto;
     filter: drop-shadow(0 0 5px white);
 }
 .skill span{
@@ -678,6 +694,15 @@
     padding: 12% 3%;
     opacity: 0;
 }
+.workone div{
+    position: relative;
+    width: 100%;
+}
+.workone div img{
+    position: absolute;
+    object-fit: cover;
+    
+}
 @keyframes upslide {
     from{
         opacity: 0;
@@ -697,7 +722,7 @@
     background-color: rgb(0, 0, 0);
     box-shadow: 0 0 0.6em 0 #7c7c7c,inset 0 0 0.6em 0 #7c7c7c;
     width: 375px;
-    height: 250px;
+    height: 280px;
 }
 .workone img{
     width: 100%;
