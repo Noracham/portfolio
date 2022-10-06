@@ -45,6 +45,7 @@ a{
     align-items: center;
     padding: 0;
 }
+
 /*メニュー*/
 .selectmenu{
     /* position: fixed; */
@@ -262,11 +263,11 @@ a{
     animation-name: flash_box;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: .5s;
 }
 .flash_title{
     animation-name: flash_title;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 /*ABOUT*/
@@ -568,7 +569,7 @@ a{
     padding-bottom: 7%;
 }
 .snsF{
-    filter: brightness(99%);
+    filter: brightness(30%);
 }
 .titleworks{
     margin-top: 200px;
@@ -800,6 +801,9 @@ a{
 }
 
 @media screen and (max-width:600px){
+    .contactbg p{
+        font-size: 1.2rem;
+    }
     .mail p,.instagram p{
         margin-top: 20px;
     }

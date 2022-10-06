@@ -96,7 +96,7 @@ $(function(){
             var windowHeight = $(window).height();
 
             if (scroll > position - windowHeight + 300){
-              $(".worksbg").addClass('flash_box');
+              $(".snsF").addClass('flash_box');
             }
         });
         $('.contactbg').each(function(){
