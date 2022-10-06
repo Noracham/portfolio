@@ -242,12 +242,6 @@ a{
     0%{
         filter: brightness(100%);
     }
-    20%{
-        filter: brightness(30%);
-    }
-    30%{
-        filter: brightness(100%);
-    }
     40%{
         filter: brightness(30%);
     }
@@ -572,6 +566,9 @@ a{
 }
 .works .bg{
     padding-bottom: 7%;
+}
+.snsF{
+    filter: brightness(99%);
 }
 .titleworks{
     margin-top: 200px;
