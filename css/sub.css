@@ -326,6 +326,7 @@
     font-size: 3rem;
     font-weight: bold;
     background-color: red;
+    box-shadow: 0 0 10px 0 red;
     padding-right: -100px;
     margin: 10px 0;
 }
@@ -351,7 +352,7 @@
     }
     .takayama_M p:first-child{
         font-size: 4rem;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
     }
     .takayama_M p:first-child span{
@@ -392,8 +393,8 @@
         width: 90%;
     }
     .takayama_M p:first-child{
-        font-size: 5rem;
-        font-weight: 500;
+        font-size: 4rem;
+        font-weight: 600;
         margin: 0;
     }
     .takayama_M p:first-child span{
