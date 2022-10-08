@@ -20,7 +20,7 @@ $(window).on("scroll",function(){
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
 
-        if (scroll > position - windowHeight+300){
+        if (scroll > position - windowHeight){
         $(".ryuimg").addClass('blurfirst');
           $(".ryu p").addClass('linearfirst');
           $(".uma img").addClass("blursecond");
