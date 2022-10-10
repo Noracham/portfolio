@@ -266,7 +266,7 @@
         line-height:5rem;
     }
     .message{
-        margin: 250px 5% 0;
+        margin: 250px 3% 0;
     }
 
 }
@@ -383,6 +383,9 @@
 @media screen and (max-width:450px){
     .from{
         flex-direction: column;
+    }
+    .fromtxt{
+        margin: 100px 3%;
     }
     .takayamaimg{
         width: 70%;
@@ -632,7 +635,7 @@
     justify-content:space-around;
     background-color: rgb(68, 68, 68);
     border-radius: 40px;
-    border: #7c7c7c 2px solid;
+    /* border: #7c7c7c 2px solid; */
     padding: 10px 30px;
 }
 .skillsmile img{
