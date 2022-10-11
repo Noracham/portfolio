@@ -87,6 +87,9 @@ a{
 
 .menu input{
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
 }
 .menu span{
     position: absolute;
@@ -182,6 +185,18 @@ a{
     opacity: 0.6;
     transition: .5s;
 }
+@media screen and (max-height:700px){
+    .menu_list{
+        margin-top: 0;
+    }
+    .menu_list li{
+        margin: 0 auto;
+    }
+    .menu_list li a{
+        font-size: 5rem;
+    }
+}
+
 
 /*メイン*/
 .main{
