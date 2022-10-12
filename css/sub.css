@@ -2,9 +2,6 @@
 .titleimg{
     margin-top: 15%;
 }
-.bg{
-    /* height: 200vh; */
-}
 /*名前*/
 .nname{
     position: relative;
@@ -30,6 +27,9 @@
     justify-content: center;
     align-items: flex-start;
 }
+.ryuimg{
+    opacity: 0;
+}
 .Jname .ryu p{
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl; 
@@ -37,6 +37,7 @@
     font-size: 5rem;
     text-shadow: 0 0 10px #d000ff;
     letter-spacing: 1rem;
+    opacity: 0;
 }
 .Jname .uma p{
     writing-mode: vertical-rl;
@@ -45,6 +46,7 @@
     text-shadow: 0 0 10px #ffab00;
     color: #f7d797;
     letter-spacing: 1rem;
+    opacity: 0;
 }
 .Jname p{
     color: white;
@@ -63,6 +65,9 @@
     top: -370px;
     left: 60px;
 }
+.uma img{
+    opacity: 0;
+}
 .Ename{
     font-family: gitan-latin,sans-serif;
     font-weight: 700;
@@ -72,6 +77,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* animation-name: LtoR;
+    animation-duration: 1s;
+    transition: .5s; */
+    opacity: 0;
 }
 .Ename p:nth-child(1){  
     font-size: 14rem;
@@ -85,9 +94,9 @@
     position: absolute;
     font-size: 11rem;
     top: 150px;
-    opacity: 0.8;
     z-index: 1;
     text-shadow: 0 0 10px #ffab00;
+    color: #cccccc;
 }
 .Ename p:nth-child(2) span{
     color: #ffab00;
@@ -96,6 +105,69 @@
     border-radius: 10%;
     box-shadow: 0 0 10px rgb(192, 192, 192);
     overflow: hidden;
+}
+.LtoR{
+    animation-name: LtoR;
+    animation-duration: 1s;
+    transition: .5s;    
+    animation-fill-mode: forwards;
+}
+.blurfirst{
+    animation-name: blur;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.blursecond{
+    animation-name: blur;
+    animation-duration: 0.5s;
+    transition: .5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.linearfirst{
+    animation-name: linearAnime;
+    transition: .5s;
+    transition-timing-function: linear;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.linearsecond{
+    animation-name: linearAnime;
+    transition: .5s;
+    transition-timing-function: linear;
+    animation-duration: .5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes LtoR {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+        filter: blur(10px);
+
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+@keyframes blur{
+    from {
+      filter: blur(10px);
+      opacity: 0;
+    }
+    to {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+@keyframes linearAnime{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }
 @media screen and (max-width:959px){
     .nname{
@@ -157,22 +229,27 @@
 }
 /*メッセージ*/
 .message{
-    font-family: "ヒラギノ角ゴシック";
-    font-size: 3rem;
-    margin: 20% 5% 0;
+    font-family: ヒラギノ角ゴシック, sans-serif;
+    font-size: 2rem;
+    margin: 250px 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .maintxt{
-    line-height: 6rem;
+    line-height: 4rem;
+}
+.maintxt span{
+    font-size: 3rem;
 }
 .webdesigner{
     display: inline-block;
-    background-color: red;
-    font-size: 10rem;
+    font-size: 7rem;
+    text-shadow: 0 0 5px rgb(248, 111, 255);
+    font-weight: 600;
     margin: 0 auto;
-    line-height: 11rem
+    line-height: 9rem;
+    color: #f3bbff;
 }
 @media screen and (max-width:959px){
     .webdesigner{
@@ -188,4 +265,515 @@
         font-size: 4.5rem;
         line-height:5rem;
     }
+    .message{
+        margin: 250px 3% 0;
+    }
+
 }
+/*from*/
+.Ifrom{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.fromtxt{
+    font-family: ヒラギノ角ゴシック, sans-serif;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 100px 10%;
+}
+.from{
+    margin-top: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.takayamaimg{
+    width: 45%;
+    text-align: center;
+}
+.from img{
+    max-width: 380px;
+    margin-right: 5%;
+}
+.takayama_M{
+    font-family: "ヒラギノ角ゴシック";
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-left: 5%;
+}
+.takayama_M p:first-child{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+}
+.takayama_M p:first-child span{
+    color: red;
+}
+.takayama_M p:nth-child(2){
+    font-size: 8rem;
+    font-weight: 600;
+    margin: 10px 0 75px 0;
+}
+.takayama_M p:nth-child(2) span{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.pr{
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: red;
+    box-shadow: 0 0 10px 0 red;
+    padding-right: -100px;
+    margin: 10px 0;
+}
+.pr1{
+    width: 15rem;
+}
+.pr2{
+    width: 18rem;
+}
+.pr3{
+    width: 21rem;
+}
+@media screen and (max-width:840px) {
+    .from{
+        width: 100%;
+        margin: 250px 1% 50px 1%;
+    }
+    .takayamaimg{
+        width: 40%;
+    }
+    .from img{
+        width: 100%;
+    }
+    .takayama_M p:first-child{
+        font-size: 4rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .takayama_M p:first-child span{
+        color: red;
+    }
+    .takayama_M p:nth-child(2){
+        font-size: 6rem;
+        font-weight: 600;
+        margin: 10px 0 75px 0;
+    }
+    .takayama_M p:nth-child(2) span{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .pr{
+        font-size: 2.5rem;
+    }
+    .pr1{
+        width: 12.5rem;
+    }
+    .pr2{
+        width: 15rem;
+    }
+    .pr3{
+        width: 17.5rem;
+    } 
+}
+@media screen and (max-width:450px){
+    .from{
+        flex-direction: column;
+    }
+    .fromtxt{
+        margin: 100px 3%;
+    }
+    .takayamaimg{
+        width: 70%;
+        margin: 0;
+        margin-bottom: 75px;
+    }
+    .takayama_M{
+        width: 90%;
+    }
+    .takayama_M p:first-child{
+        font-size: 4rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .takayama_M p:first-child span{
+        color: red;
+    }
+    .takayama_M p:nth-child(2){
+        font-size: 8rem;
+        font-weight: 600;
+        margin: 10px 0 75px 0;
+    }
+    .takayama_M p:nth-child(2) span{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    .pr{
+        font-size: 3rem;
+    }
+    .pr1{
+        width: 15rem;
+    }
+    .pr2{
+        width: 18rem;
+    }
+    .pr3{
+        width: 21rem;
+    }
+    
+}
+/*syumi*/
+.syumi{
+    width: 100%;
+    margin: 200px auto;
+}
+.syumiimg{
+    display: flex;
+    flex-direction: row;
+}
+.syumiimg div{
+    opacity: 0;
+    width: 50%;
+}
+.syumiimg div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.syumiimg div:first-child{
+    margin-right: -5%; 
+}
+.syumiimg div:first-child img{
+    /* transform: skew(0,10deg);    */
+    height: 90%;
+}
+.syumiimg div:nth-child(2){
+    z-index: 2;
+    margin-top: 5%;
+    width: 50%;
+}
+.syumiimg div:last-child{
+    /* transform:skew(0,-10deg); */
+    margin-left: -5%;
+}
+.syumiimg div:last-child img{
+    height: 90%;
+}
+.syumi p{
+    font-size: 7rem;
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+}
+.syumi p:nth-of-type(2){
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 10%;
+    
+}
+@media screen and (max-width:450px){
+    /* .syumi p:nth-of-type(2){
+        width: 90%;
+    } */
+}
+/*両端２枚はアニメーション登場でskew変化*/
+.sideIn_L{
+    animation-name: In_L;
+    animation-duration: 2s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.sideIn_R{
+    animation-name: In_R;
+    animation-duration: 2s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.middleIn{
+    animation-name: midIn;
+    animation-duration: .5s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+.tasyumi{
+    animation-name: linearAnime;
+    animation-delay: 3s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes In_L{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0);
+    }100%{
+        transform: skewY(15deg);
+        opacity: 0.7;
+    }
+}
+@keyframes In_R {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50%{
+        opacity: 1;
+        transform: translate(0);
+    }100%{
+        transform: skewY(-15deg);
+        opacity: 0.7;
+    }
+}
+@keyframes midIn{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .syumiimg{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .syumiimg div{
+        width: 300px;
+        height: 225px;
+        margin: 0;
+    }
+    .syumiimg div img{
+        width: 100%;
+        height: 100%;
+    }
+    .syumiimg div:nth-child(1){
+        margin-right: 20px;
+    }
+    .syumiimg div:nth-child(1) img{
+        object-fit: fill;
+        width: 300px;
+        height: 225px;
+    }
+    .syumiimg div:nth-child(2){
+        margin-bottom: 20px;
+        margin-right: 50px;
+        }
+    .syumiimg div:nth-child(2) img{
+        width: 300px;
+        height: 225px;
+    }
+.syumi p{
+    font-size: 4.5rem;
+}
+}
+/*SKILL*/
+.myskill{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.skill{
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: white 1.5px solid;
+}
+.skill h1{
+    font-family: "ヒラギノ角ゴシック";
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 100px auto;
+    filter: drop-shadow(0 0 5px white);
+}
+.skill span{
+    font-size: 6rem;
+    font-weight: 500;
+}
+.traffic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 950px;
+}
+.skillLv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% auto;
+    width: 35%;
+}
+.skillLv p{
+    font-family: "ヒラギノ角ゴシック";
+    font-size: 3rem;
+    margin: 10px auto;
+}
+.skillsmile{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: rgb(68, 68, 68);
+    border-radius: 40px;
+    /* border: #7c7c7c 2px solid; */
+    padding: 10px 30px;
+}
+.skillsmile img{
+    filter: brightness(30%);
+}
+.smile1{
+    animation-name: trafficchange;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+.smile2{
+    animation-name: trafficchange;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+.smile3{
+    animation-name: trafficchange;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    transition: .5s;
+    animation-fill-mode: forwards;
+}
+@media screen and (max-width:700px){
+    .traffic{
+        margin-top: 20%;
+        flex-direction: column;
+    }
+    .skillLv{
+        margin-top: 10%;
+    }
+}
+@keyframes trafficchange {
+    from{
+        filter: brightness(30%);
+    }to{
+        filter: brightness(100%);
+    }
+    
+}
+/* WORKS*/
+.worksimg{
+    background-image: url(../img/works.png);
+}
+.work{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 1000px; */
+}
+.workone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 12% 3%;
+    opacity: 0;
+    transition: .5s;
+}
+.workone div{
+    position: relative;
+    width: 100%;
+}
+.workone div img{
+    position: absolute;
+    object-fit: cover;
+    
+}
+@keyframes upslide {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.up{
+    animation-name: upslide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.workone div{
+    /* border: rgb(179, 179, 179) 2px solid; */
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0.6em 0 #7c7c7c,inset 0 0 0.6em 0 #7c7c7c;
+    width: 375px;
+    height: 280px;
+}
+.workone img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.workone p{
+    text-align: center;
+}
+.workone a{
+    cursor: pointer;
+    transition: .5s;
+}
+.workone p:nth-of-type(1){
+    font-family: "ヒラギノ角ゴシック";
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 5% 0;
+}
+.workone p:nth-of-type(2){
+    font-family: "ヒラギノ角ゴシック";
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(240, 248, 255, 0.51);
+    margin: 0;
+}
+.workone a:hover{
+    transition: .5s;
+    transform: scale(0.95);
+    filter: brightness(60%);
+}
+@media screen and (min-width:1200px){
+    .work{
+        max-width: 1000px;
+    }
+}
+/* @media screen and (max-width:959px){
+    .workone img{
+        width: 340px;
+        height: 255px;
+    }
+} */
+@media screen and (max-width:750px){
+    .work{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 

@@ -36,24 +36,87 @@ $(function(){
             
             console.log("close");
         }
-        // if($(".menu input").prop("checked")==false){
-        //     $(this).css("left","75px");
-        // }else if($(".menu input").prop("checked")==true){
-        //     console.log("OK");
-        //     $(this).css("left","0px");
-        // }
     })
 
     $(window).on("scroll",function(){
+        $('.titleabout').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".titleabout").addClass('flash_title');
+            }
+        });
+        $('.titleworks').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".titleworks").addClass('flash_title');
+            }
+        });
+        $('.titlecontact').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".titlecontact").addClass('flash_title');
+            }
+        });
+        $('.aboutbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".aboutbg").addClass('flash_box');
+            }
+        });
+        $('.aboutbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".aboutbg").addClass('flash_box');
+            }
+        });
+        $('.worksbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".snsF").addClass('flash_box');
+            }
+        });
+        $('.contactbg').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 300){
+              $(".contactbg").addClass('flash_box');
+            }
+        });
+
         $('.arrow').each(function(){
 
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
 
-            console.log(windowHeight);
-
-            if (scroll > position - windowHeight + 400){
+            if (scroll > position - windowHeight + 300){
               $(".arrow").addClass('active');
             }
         });
@@ -76,8 +139,47 @@ $(function(){
     }, function () {
         // out
         $(".twitter p").text("Twitter");
-        // $(".twitter p").prop("id","");
+        $(".twitter p").prop("id","");
     }
 );
+/*SKILL*/
+$(window).on("scroll",function(){
+    $('.skillLv').each(function(){
 
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        if (scroll > position - windowHeight + 300){
+          $(".skillsmile img:nth-of-type(1)").addClass('smile1');
+          $(".traffic div:nth-of-type(-n+3) .skillsmile img:nth-of-type(2),.traffic div:last-child() .skillsmile img:nth-of-type(2)").addClass('smile2');
+          $(".traffic div:nth-of-type(-n+2) .skillsmile img:nth-of-type(3)").addClass('smile3');
+        }
+    });
+});
+var n=0;
+$(window).on("scroll",function(){
+    $('.workone').eq(n).each(function(){
+
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        console.log(position);
+
+        if (scroll > position - windowHeight + 300){
+          $(".workone").eq(n).addClass('up');
+          n++;
+          console.log(n);
+        }
+    });
+});
+/*CONTACT*/
+var copytxt = $(".mail p").text();
+console.log(copytxt);
+
+// $(".mail").on("click",function(){
+//     navigator.clipboard.writeText(copytxt);
+//     alert("メールアドレスがコピーされました");
+// })
 })

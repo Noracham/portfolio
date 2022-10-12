@@ -45,6 +45,7 @@ a{
     align-items: center;
     padding: 0;
 }
+
 /*メニュー*/
 .selectmenu{
     /* position: fixed; */
@@ -62,7 +63,7 @@ a{
     height: 75px;
     background: #333;
     border-radius: 10px;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
     top: 0;
     left: 0;
 }
@@ -86,6 +87,9 @@ a{
 
 .menu input{
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
 }
 .menu span{
     position: absolute;
@@ -104,9 +108,10 @@ a{
 }
 .menu span ion-icon{
     color: rgba(255,255,255,1);
-    font-size: 3em;
+    font-size: 3.5em;
     transition: 0.5s;
     filter: drop-shadow(0 0 5px #fff)drop-shadow(0 0 10px #fff)drop-shadow(0 0 15px #fff);
+    padding: 20%;
 }
 .menuback{
     /* display: none; */
@@ -137,6 +142,7 @@ a{
 .rump img:nth-child(1){
     top: -750px;
     width: 200px;
+    z-index: 999;
 }
 .rump img:nth-child(2){
     padding-right: 15px;
@@ -155,9 +161,11 @@ a{
     z-index: 999999;
 }
 .menu_list li{
+    font-family: multi-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 10px auto;
     text-align: center;
-    font-weight: bold;
     cursor: pointer;
     z-index: 999999;
 }
@@ -177,6 +185,18 @@ a{
     opacity: 0.6;
     transition: .5s;
 }
+@media screen and (max-height:700px){
+    .menu_list{
+        margin-top: 0;
+    }
+    .menu_list li{
+        margin: 0 auto;
+    }
+    .menu_list li a{
+        font-size: 5rem;
+    }
+}
+
 
 /*メイン*/
 .main{
@@ -186,7 +206,9 @@ a{
 }
 .main img{
     width: 70%;
-    animation: flash 2s ease 1s;
+    animation: flash 2s ease 1s forwards;
+    filter: brightness(30%);
+
 }
 @media screen and (max-width:959px){
     .main img{
@@ -198,36 +220,70 @@ a{
     .main img{
         width: 95%;
     }
+    .menu_list{
+        font-size: 6rem;
+    }
 }
 @keyframes flash {
     0%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     20%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     30%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     35%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     40%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     45%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     70%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     85%{
-        opacity: 0;
+        filter: brightness(30%);
     }
     100%{
-        opacity: 1;
+        filter: brightness(100%);
     }
     
+}
+@keyframes flash_title{
+    0%{
+        filter: brightness(100%);
+    }
+    40%{
+        filter: brightness(30%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+
+}
+@keyframes flash_box{
+    0%{
+        filter: brightness(30%);
+    }
+    100%{
+        filter: brightness(100%);
+    }
+}
+.flash_box{
+    animation-name: flash_box;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+.flash_title{
+    animation-name: flash_title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 /*ABOUT*/
 .titleimg{
@@ -237,6 +293,7 @@ a{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    filter: brightness(30%);
 }
 .about{
     width: 100vw;
@@ -259,7 +316,8 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 30px;
+    filter: brightness(30%);
 }
 .myprofile{
     display: flex;
@@ -347,9 +405,9 @@ a{
     /* display: flex;
     flex-direction: column;
     align-items: center; */
-    font-size: 1.8rem;
-    line-height: 3rem;
-    padding: 3%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding: 2%;
     background-color: rgba(0, 0, 0, 1);
     /* border: rgb(0, 255, 208) 4px solid;
     box-shadow: 0 0 0.6em 0 rgb(0, 255, 208),inset 0 0 0.6em 0 rgb(0, 255, 208); */
@@ -525,6 +583,9 @@ a{
 .works .bg{
     padding-bottom: 7%;
 }
+.snsF{
+    filter: brightness(30%);
+}
 .titleworks{
     margin-top: 200px;
     background-image: url(../img/works.png);
@@ -555,6 +616,19 @@ a{
     margin: 1%;
     border: rgb(255, 255, 255) 3px solid;
     box-shadow: 0 0 1em 0 rgb(248, 147, 59),inset 0 0 1em 0 rgb(248, 147, 59);
+}
+.cover img{
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+.cover{
+    background-color: rgb(57, 57, 57);
+    margin: 1px 0;
+    /* border-top: black 1px solid;
+    border-bottom: black 1px solid; */
+    width: 150px;
+    height: 150px;
 }
 /* .w_instagram:after{
     background:linear-gradient(215deg,red,blue);
@@ -639,6 +713,7 @@ a{
 .contactbg p{
     color: #fff;
     font-size: 1.5rem;
+    margin: 3%;
 }
 .sns{
     display: flex;
@@ -659,6 +734,13 @@ a{
 }
 .instagram::after{
     background-color: #ff0aff;
+}
+.instagram a,.twitter a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
 }
 .mail::after{
     background-color: #fff;
@@ -734,6 +816,9 @@ a{
 }
 
 @media screen and (max-width:600px){
+    .contactbg p{
+        font-size: 1.2rem;
+    }
     .mail p,.instagram p{
         margin-top: 20px;
     }

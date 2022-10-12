@@ -1,0 +1,139 @@
+@charset "utf-8";
+.maindata{
+
+    font-family: "ヒラギノ角ゴシック";
+}
+.html{
+    width: 100%;
+}
+.margin li{
+    list-style-type: disc;
+    line-height: 3.5rem;
+    font-family: "ヒラギノ角ゴシック";
+    color: white;
+    font-size: 2.5rem;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+}p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+.hidden img{
+    max-width: 100%;
+}
+.port_title{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: "ヒラギノ角ゴシック";
+}
+.port_title p:first-child{
+    margin: 100px 0 20px 0;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.port_title p:nth-child(2){
+    margin: 0 0 30px 0;
+    color: rgb(185, 185, 185);
+    font-size: 4rem;
+    font-weight: bold;
+}
+/* .port_title div{
+    position: relative;
+    width: 60%;
+    height: auto;
+
+} */
+.port_title img{
+    width: 70vw;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+}
+
+/*main*/
+.margin{
+    margin: 10% 0 25% 0;
+
+}
+.maindata{
+    margin:5% 10% ;
+}
+.subtitle_p{
+    position: relative;
+    font-size: 4rem;
+}
+.subtitle_p::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    border-bottom: rgb(180, 40, 255) 5px solid;
+    box-shadow: 0 0 10px rgb(202, 129, 255);
+}
+/*green*/
+.subtitle_o{
+    position: relative;
+    font-size: 4rem;
+}
+.subtitle_o::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    border-bottom: rgb(255, 184, 61) 5px solid;
+    box-shadow: 0 0 10px rgb(255, 207, 159);
+}
+/*orange*/
+.subtitle_g{
+    position: relative;
+    font-size: 4rem;
+}
+.subtitle_g::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 100%;
+    border-bottom: rgb(255, 194, 102) 5px solid;
+    box-shadow: 0 0 10px rgb(112, 255, 164);
+}
+
+.concept p span{
+    font-size: 2.5rem;
+    padding: 0 5px;
+    text-shadow: 0 0 5px white;
+}
+.parts img:nth-of-type(2){
+    margin: 50px 0;
+}
+.xd img{
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+    .margin h1{
+        font-size: 3rem;
+    }
+    .port_title img{
+        width: 98vw;
+    }
+.port_title p:first-child{
+    font-size: 3rem;
+}
+.port_title p:nth-child(2){
+    font-size: 2.5rem;
+}
+.maindata{
+    margin: 5% 3%;
+}
+.subtitle_p{
+    font-size: 3rem;
+}
+}
