@@ -205,6 +205,7 @@ a{
     z-index: -111111;
 }
 .main img{
+    position: absolute;
     width: 70%;
     animation: flash 2s ease 1s forwards;
     filter: brightness(30%);
@@ -284,6 +285,60 @@ a{
     animation-name: flash_title;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+/*バブル*/
+.container{
+    position: relative;
+    width: 3000px;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    overflow: hidden;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animatebubbles 15s linear infinite;
+    animation-delay: 2.5s;
+    animation-duration: calc(150s / var(--i));
+    opacity: 0;
+}
+.bubbles span:nth-child(even){
+    background-color: #ff5afc;
+    box-shadow: 0 0 0 10px #ff5afc44,
+    0 0 50px #ff5afc,
+    0 0 100px #ff5afc;
+
+}
+.bubbles span:nth-child(3n){
+    background-color: #ffc85a;
+    box-shadow: 0 0 0 10px #ffc85a44,
+    0 0 50px #ffc85a,
+    0 0 100px #ffc85a;
+
+}
+
+@keyframes animatebubbles {
+    0%{
+        opacity: 1;
+        transform: translateY(100vh) scale(0);
+    }100%{
+        transform: translateY(-10vh) scale(1);
+        opacity: 0.3;
+    }
+    
 }
 /*ABOUT*/
 .titleimg{
@@ -648,6 +703,7 @@ a{
     opacity: 0;
     transform: translate(0,-100px);
     transition: all 1s;
+    padding-right: 3px;
 }
 .arrow.active{
     opacity: 1;
