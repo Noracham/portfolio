@@ -448,6 +448,79 @@ a{
 .about a{
     margin-top: 200px;
 }
+@media screen and (max-width:959px){
+    .time{
+        width: 700px;
+    }
+    .today{
+        width: 300px;
+    }
+    .week{
+        width: 350px;
+    }
+    .now-time .time p{
+        font-size: 170px;
+    }
+.now-time .today p{
+    font-size: 90px;
+}
+.now-time .week p{
+    font-size: 100px;
+}
+
+    .abouttext{
+        font-size: 80px;
+    }
+    .abouttext-my p:nth-of-type(6){
+        font-size: 45px;
+    }
+    .abouttext-my p::before{
+        white-space: pre-line;
+        font-size: 78px;
+    }
+    .abouttext-my p:nth-of-type(3)::before{
+        font-size: 80px;
+    }
+    .abouttext-my p:nth-of-type(4)::before{
+        font-size: 81px;
+    }
+    .abouttext-my p:nth-of-type(5)::before{
+        font-size: 80px;
+        right: 0;
+    }
+}
+@media screen and (max-width:700px){
+    .time{
+        width: 350px;
+    }
+    .today{
+        top: -60px;
+        width: 130px;
+    }
+    .week{
+        top: -70px;
+        width: 180px;
+    }
+    .now-time .time p{
+        font-size: 100px;
+    }
+    .now-time .today p{
+        font-size: 60px;
+    }
+    .now-time .week p{
+        font-size: 60px;
+    }
+    .abouttext-my p:nth-of-type(4)::before{
+        left: 0;
+    }
+    .abouttext-my p:nth-of-type(2)::before{
+        left: 0;
+    }
+    .abouttext-my p:nth-of-type(6){
+        font-size: 25px;
+    }
+
+}
 
 
 
@@ -538,7 +611,7 @@ a{
 }
 .mail-outline{
     color: #ffffff;
-    filter: drop-shadow(0 0 5px rgb(159, 159, 159)); */
+    filter: drop-shadow(0 0 5px rgb(159, 159, 159));
 }
 @media screen and (max-width:959px){
     .bg{
