@@ -341,6 +341,117 @@ a{
     
 }
 /*ABOUT*/
+.abouttext{
+    font-family: "Elektrix OT";
+    font-weight: bold;
+    font-size: 100px;
+}
+.abouttext-my{
+    position: relative;
+    margin-top: 100px;
+}
+.abouttext-my p{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+.abouttext-my p:nth-of-type(1),.abouttext-my p:nth-of-type(2){
+    color: #8F18C1;
+}
+.abouttext-my p:nth-of-type(3),.abouttext-my p:nth-of-type(4){
+    color: #038621;
+}
+.abouttext-my p:nth-of-type(5){
+    color: #9D6700;
+}
+.abouttext-my p:nth-of-type(6){
+    font-size: 60px;
+    font-family: AB-kumiki_m;
+    color: #FFDA95;
+}
+.abouttext-my p:nth-of-type(even),.abouttext-my p:nth-of-type(5){
+    margin-bottom: 100px;
+}
+.abouttext-my p::before{
+    font-size: 98px;
+    white-space: pre;
+    position: absolute;
+    font-weight: 100;
+}
+.abouttext-my p:nth-of-type(1)::before{
+    content: "I AM RYOMA";
+    color: #EBB9FD;
+}
+.abouttext-my p:nth-of-type(2)::before{
+    content: "TAKAYAMA CITY";
+    color: #EBB9FD;
+}
+.abouttext-my p:nth-of-type(3)::before{
+    font-size: 100px;
+    content: "WEB DESIGN";
+    color: #A5FFBA;
+}
+.abouttext-my p:nth-of-type(4)::before{
+    font-size: 101px;
+    content: "BUNNER DESIGN";
+    color: #A5FFBA;
+}
+.abouttext-my p:nth-of-type(5)::before{
+    font-size: 100px;
+    left: 0;
+    content: "What’s wrong with\A enjoying the moment?";
+    color: #FFDA95;
+}
+.now-time{
+    position: relative;
+    margin-top: 300px;
+    width: 100%;
+    max-width: 1100px;
+}
+.now-time div{
+    border: 5px solid white;
+}
+.time{
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
+    border-radius: 19% 59% 10% 79% / 40% 10% 81% 10%;
+}
+.today{
+    position: absolute;
+    width: 400px;
+    border-radius: 19% 55% 10% 100% / 29% 98% 42% 10% ;
+    left: 0;
+    top: -100px;
+}
+.week{
+    position: absolute;
+    width: 500px;
+    border-radius: 19% 55% 10% 100% / 83% 98% 0% 66% ;
+    top: -120px;
+    right: 0;
+}
+.now-time .today p{
+    font-size: 100px;
+}
+.now-time .week p{
+    font-size: 130px;
+}
+.now-time p{
+    text-align: center;
+    font-size: 200px;
+    font-family: "Elektrix OT";
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+.about a{
+    margin-top: 200px;
+}
+
+
+
+
 .titleimg{
     width: 100%;
     height: 230px;
@@ -362,9 +473,7 @@ a{
     width: 99%;
 }
 .bg{
-    margin: 10%;
-    /* padding: 0 5%; */
-    min-width: 955px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.536);
     border: 2px solid rgb(0, 0, 0);
     backdrop-filter: blur(8px);
@@ -429,7 +538,7 @@ a{
 }
 .mail-outline{
     color: #ffffff;
-    filter: drop-shadow(0 0 5px rgb(159, 159, 159));
+    filter: drop-shadow(0 0 5px rgb(159, 159, 159)); */
 }
 @media screen and (max-width:959px){
     .bg{
