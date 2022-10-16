@@ -90,6 +90,18 @@ $(function(){
     //     $(".bubbles").html('<span style="--i:18;"></span>');
     // }
 
+    /*about*/
+    function todayinfo(){
+        var today = new Date();
+        $weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        month = today.getMonth()+1;
+
+        $(".week p").text($weekday[today.getDay()]);
+        $(".today p").text(month + "/" + today.getDate());
+        $(".time p").text(today.getHours()+ ":" +("0" + today.getMinutes()).slice(-2) + ":" + ("0" + today.getSeconds()).slice(-2));
+    }
+    setInterval(todayinfo,1000);
+
     
 
     $(window).on("scroll",function(){
