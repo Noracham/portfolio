@@ -55,6 +55,7 @@ a{
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 9999;
 }
 .menu{
     position: fixed;
@@ -291,8 +292,12 @@ a{
 .container{
     position: relative;
     width: 3000px;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    left: 1.5%;
 }
 .bubbles{
     position: relative;
@@ -348,60 +353,162 @@ a{
 }
 .abouttext-my{
     position: relative;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 .abouttext-my p{
     text-align: center;
     width: 100%;
     margin: 10px 0;
 }
-.abouttext-my p:nth-of-type(1),.abouttext-my p:nth-of-type(2){
+.abouttext-my .ab-content:first-of-type p{
     color: #8F18C1;
 }
-.abouttext-my p:nth-of-type(3),.abouttext-my p:nth-of-type(4){
+.abouttext-my .ab-content:nth-of-type(2) p{
     color: #038621;
 }
-.abouttext-my p:nth-of-type(5){
+.abouttext-my .ab-content:nth-of-type(3) p{
     color: #9D6700;
 }
-.abouttext-my p:nth-of-type(6){
+.nowenjoy{
+    margin-top: 400px;
     font-size: 60px;
+    text-align: center;
     font-family: AB-kumiki_m;
     color: #FFDA95;
+    color: transparent;
+    background:linear-gradient(to right,rgb(255, 0, 0),rgb(255, 255, 0),rgb(0, 255, 68),rgb(0, 247, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 .abouttext-my p:nth-of-type(even),.abouttext-my p:nth-of-type(5){
-    margin-bottom: 100px;
+    margin-bottom: 400px;
 }
-.abouttext-my p::before{
+.abouttext-my .ab-content p::before{
     font-size: 98px;
     white-space: pre;
     position: absolute;
     font-weight: 100;
 }
-.abouttext-my p:nth-of-type(1)::before{
+.abouttext-my .ab-content p:nth-of-type(1)::before{
     content: "I AM RYOMA";
     color: #EBB9FD;
 }
-.abouttext-my p:nth-of-type(2)::before{
+.abouttext-my .ab-content p:nth-of-type(2)::before{
     content: "TAKAYAMA CITY";
     color: #EBB9FD;
 }
-.abouttext-my p:nth-of-type(3)::before{
+.abouttext-my .ab-content:nth-of-type(2) p::before{
     font-size: 100px;
     content: "WEB DESIGN";
     color: #A5FFBA;
 }
-.abouttext-my p:nth-of-type(4)::before{
+.abouttext-my .ab-content:nth-of-type(2) p:nth-of-type(2)::before{
     font-size: 101px;
     content: "BUNNER DESIGN";
     color: #A5FFBA;
 }
-.abouttext-my p:nth-of-type(5)::before{
+.abouttext-my .ab-content:nth-of-type(3) p::before{
     font-size: 100px;
-    left: 0;
+    left: 40px;
     content: "What’s wrong with\A enjoying the moment?";
     color: #FFDA95;
 }
+.ab-content{
+    position: relative;
+}
+.abouttext-my .ab-content img{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    top: -150px;
+    left: 200px;
+    filter: brightness(50%);
+    animation: smilerotate infinite linear;
+    animation-duration: 3s;
+}
+.abouttext-my .ab-content:nth-of-type(1) img{
+    filter: hue-rotate(250deg);
+}
+.abouttext-my .ab-content:nth-of-type(2) img{
+    filter: hue-rotate(50deg);
+}
+.abouttext-my .ab-content:nth-of-type(3) img{
+    filter: hue-rotate(300deg);
+}
+/* .abouttext-my img:nth-of-type(1){
+    width: 500px;
+    top: -150px;
+    filter: hue-rotate(250deg);
+}
+.abouttext-my img:nth-of-type(2){
+    width: 500px;
+    top: 500px;
+    filter: hue-rotate(50deg);
+}
+.abouttext-my img:nth-of-type(3){
+    width: 500px;
+    top: 1150px;
+    filter: hue-rotate(300deg);
+} */
+@keyframes smilerotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.boundsmile{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 300px auto 100px;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: bound-anime 1s infinite;
+    filter: hue-rotate(300deg);
+}
+.ball:nth-of-type(2){
+    left: 150px;
+    animation-delay: 0.15s;
+    filter: hue-rotate(250deg);
+}
+.ball:nth-of-type(3){
+    left: 300px;
+    animation-delay: 0.3s;
+    filter: hue-rotate(200deg);
+}
+.ball:nth-of-type(4){
+    left: 450px;
+    animation-delay: 0.45s;
+    filter: hue-rotate(150deg);
+}
+.ball:nth-of-type(5){
+    left: 600px;
+    animation-delay: 0.6s;
+    filter: hue-rotate(100deg);
+}
+.ball:nth-of-type(6){
+    left: 750px;
+    animation-delay: 0.75s;
+    filter: hue-rotate(50deg);
+}
+
+@keyframes bound-anime{
+    0%,100% {top: 0;transform: scale(1);}
+	30% {top: -60%; transform: scale(0.96,1.04);}
+	60% {transform: scale(1);}
+	90% {top: 0;transform: scale(1.15,0.9);}
+}
+
 .now-time{
     position: relative;
     margin-top: 300px;
@@ -446,7 +553,7 @@ a{
     color: white;
 }
 .about a{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 @media screen and (max-width:959px){
     .time{
@@ -471,23 +578,65 @@ a{
     .abouttext{
         font-size: 80px;
     }
-    .abouttext-my p:nth-of-type(6){
+    .nowenjoy{
         font-size: 45px;
     }
-    .abouttext-my p::before{
+    .abouttext-my .ab-content p::before{
         white-space: pre-line;
         font-size: 78px;
     }
-    .abouttext-my p:nth-of-type(3)::before{
+    .abouttext-my .ab-content:nth-of-type(2) p::before{
         font-size: 80px;
     }
-    .abouttext-my p:nth-of-type(4)::before{
+    .abouttext-my .ab-content:nth-of-type(2) p:nth-of-type(2)::before{
         font-size: 81px;
     }
-    .abouttext-my p:nth-of-type(5)::before{
+    .abouttext-my .ab-content:nth-of-type(3) p::before{
         font-size: 80px;
-        right: 0;
+        left: 23px;
     }
+    .abouttext-my .ab-content img{
+        top: -100px;
+        left: 150px;
+        width: 400px;
+        height: 400px;
+    }
+
+
+
+    .ball{
+        width: 80px;
+    }
+    .ball:nth-of-type(2){
+        left: 100px;
+        animation-delay: 0.15s;
+        filter: hue-rotate(250deg);
+    }
+    .ball:nth-of-type(3){
+        left: 200px;
+        animation-delay: 0.3s;
+        filter: hue-rotate(200deg);
+    }
+    .ball:nth-of-type(4){
+        left: 300px;
+        animation-delay: 0.45s;
+        filter: hue-rotate(150deg);
+    }
+    .ball:nth-of-type(5){
+        left: 400px;
+        animation-delay: 0.6s;
+        filter: hue-rotate(100deg);
+    }
+    .ball:nth-of-type(6){
+        left: 500px;
+        animation-delay: 0.75s;
+        filter: hue-rotate(50deg);
+    }
+    .abouttext .boundsmile{
+        width: 600px;
+    }
+    
+
 }
 @media screen and (max-width:700px){
     .time{
@@ -510,16 +659,63 @@ a{
     .now-time .week p{
         font-size: 60px;
     }
-    .abouttext-my p:nth-of-type(4)::before{
-        left: 0;
-    }
-    .abouttext-my p:nth-of-type(2)::before{
-        left: 0;
-    }
-    .abouttext-my p:nth-of-type(6){
+    .nowenjoy{
         font-size: 25px;
     }
 
+    .abouttext-my .ab-content:nth-of-type(3) p::before{
+        left: 0;
+    }
+    .abouttext-my .ab-content img{
+        top: -5%;
+        left: 12%;
+        width: 300px;
+        height: 300px;
+    }
+    .abouttext-my .ab-content:nth-of-type(3) img{
+        top: 15%;
+    }
+
+
+
+    .ball{
+        width: 50px;
+    }
+    .abouttext .boundsmile{
+        width: 350px;
+    }
+    .ball:nth-of-type(2){
+        left: 60px;
+        animation-delay: 0.15s;
+        filter: hue-rotate(250deg);
+    }
+    .ball:nth-of-type(3){
+        left: 120px;
+        animation-delay: 0.3s;
+        filter: hue-rotate(200deg);
+    }
+    .ball:nth-of-type(4){
+        left: 180px;
+        animation-delay: 0.45s;
+        filter: hue-rotate(150deg);
+    }
+    .ball:nth-of-type(5){
+        left: 240px;
+        animation-delay: 0.6s;
+        filter: hue-rotate(100deg);
+    }
+    .ball:nth-of-type(6){
+        left: 300px;
+        animation-delay: 0.75s;
+        filter: hue-rotate(50deg);
+    }
+
+
+}
+@media screen and (max-width:466px){
+    .abouttext-my .ab-content p:nth-of-type(2)::before,.abouttext-my .ab-content:nth-of-type(3) p::before{
+        left: 2px;
+    }
 }
 
 
@@ -533,6 +729,7 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
     filter: brightness(30%);
+    margin-bottom: 100px;
 }
 .about{
     width: 100vw;
