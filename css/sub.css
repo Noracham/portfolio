@@ -8,16 +8,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     /* margin: 0 auto; */
     /* width: 100%; */
 }
 .Jname{
     /* position: absolute; */
     z-index: 999;
-    padding-top: 200px;
-    padding-left: 100px;
+    padding-top: 100px;
     height: 800px;
+    margin-right: 50px;
     /* left: 50px;
     top: 250px; */
 }
@@ -69,37 +69,35 @@
     opacity: 0;
 }
 .Ename{
-    font-family: gitan-latin,sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    /* top: -10px;
-    right: 20px; */
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    /* animation-name: LtoR;
-    animation-duration: 1s;
-    transition: .5s; */
-    opacity: 0;
+    /* align-items: flex-start; */
 }
-.Ename p:nth-child(1){  
-    font-size: 14rem;
-    z-index: 20;
+.Ename p{
+    margin: 0;
+    opacity: 0;
+    font-family: rough-love,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    z-index: 92929;
+    color: white;
+}
+.Ename p:first-child{
+    color: #d000ff;
     text-shadow: 0 0 10px #d000ff;
 }
-.Ename p:nth-child(1) span{
-    color: #d000ff;
-}
-.Ename p:nth-child(2){
-    position: absolute;
-    font-size: 11rem;
-    top: 150px;
-    z-index: 1;
-    text-shadow: 0 0 10px #ffab00;
-    color: #cccccc;
-}
-.Ename p:nth-child(2) span{
+.Ename p:nth-of-type(2){
     color: #ffab00;
+    text-shadow: 0 0 10px #ffab00;
+}
+.Ename p:nth-of-type(3){
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #fff;
+    font-size: 18rem;
+    margin: 5% 0;
 }
 .myimg{
     border-radius: 10%;
@@ -124,6 +122,14 @@
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
+.blurthird{
+    animation-name: blur;
+    animation-duration: 1s;
+    transition: .5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
 .linearfirst{
     animation-name: linearAnime;
     transition: .5s;
@@ -140,6 +146,7 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
+
 @keyframes LtoR {
     from{
         opacity: 0;
@@ -169,11 +176,34 @@
         opacity: 1;
     }
 }
+@media screen and (max-width:1200px){
+    .Ename p{
+        font-size: 7rem;
+    }
+    .Ename p:nth-of-type(3){
+        font-size: 15rem;
+    }
+}
 @media screen and (max-width:959px){
     .nname{
         flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .Ename{
+        margin-top: -50px;
+    }
+    .Ename p{
+        font-size: 5.5rem;
+    }
+    .Ename p:nth-of-type(1),.Ename p:nth-of-type(2){
+        padding-left: 3%;
+    }
+    .Ename p:nth-of-type(3){
+        font-size: 14rem;
     }
     .Jname{
+        margin: 0;
         padding-left: 0;
         height: 1200px;
     }
@@ -192,13 +222,24 @@
     .Jname .uma p{
         font-size: 6rem;
     }
-
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:600px){
+    .Ename{
+        width: 100vw;
+        margin: 50px 0 0 0;
+    }
+    .Ename p{
+        font-size: 3.2rem;
+    }
+    .Ename p:nth-of-type(3){
+        font-size: 8rem;
+        overflow-x: hidden;
+    }
+
     .Jname{
         padding-left: 0;
         height: 800px;
-        margin-bottom: 200px;
+        margin:0;
     }
     .ryu img{
         width: 267px;
@@ -215,41 +256,65 @@
     .Jname .uma p{
         font-size: 4rem;
     }
-
-.Ename p:nth-child(1){
-    font-size: 9rem;  
-}
-.Ename p:nth-child(2){
-    font-size: 6rem;
-    top: 110px;  
-}
 .myimg{
     width: 100%;
 }
+}
+@media screen and (max-width:350px){
+    html{
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    .Ename p{
+        font-size: 2.7rem;
+    }
+    .Ename p:nth-of-type(3){
+        font-size: 6rem;
+        overflow-x: hidden;
+    }
+    .skillsmile{
+        width: 100vw;
+    }
+    .myskill{
+        overflow: hidden;
+        width: 100vw;
+    }
+
+
 }
 /*メッセージ*/
 .message{
     font-family: ヒラギノ角ゴシック, sans-serif;
     font-size: 2rem;
-    margin: 250px 10% 0;
+    font-weight: 150;
+    margin: 100px 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 .maintxt{
     line-height: 4rem;
+    margin: 0;
 }
 .maintxt span{
     font-size: 3rem;
 }
 .webdesigner{
+    font-family: rough-love,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     display: inline-block;
     font-size: 7rem;
     text-shadow: 0 0 5px rgb(248, 111, 255);
     font-weight: 600;
-    margin: 0 auto;
+    margin: 5% auto;
     line-height: 9rem;
     color: #f3bbff;
+}
+.webdesigner span{
+    font-family: ヒラギノ角ゴシック,sans-serif;
+    font-size: 3rem;
 }
 @media screen and (max-width:959px){
     .webdesigner{
@@ -262,8 +327,13 @@
         line-height: 4rem;
     }
     .webdesigner{
-        font-size: 4.5rem;
+        margin-top: 10%;
+        font-size: 6rem;
         line-height:5rem;
+    }
+    .webdesigner span{
+        font-size: 2.5rem;
+    }
     }
     .message{
         margin: 250px 3% 0;

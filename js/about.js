@@ -3,12 +3,14 @@ $(function(){
 $(window).on("scroll",function(){
     $('.Ename').each(function(){
 
-        var position = $(this).offset().top;
+        var position = $(".Jname").offset().top;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
 
-        if (scroll > position - windowHeight + 500){
-          $(".Ename").addClass('LtoR');
+        if (scroll > position - windowHeight){
+          $(".EnameAnime1").addClass('linearfirst');
+          $(".EnameAnime2").addClass('linearsecond');
+          $(".EnameAnime3").addClass('blurthird');
         }
     });
 });
