@@ -38,58 +38,6 @@ $(function(){
         }
     })
 
-    /*バブル制御*/
-    // var window_w = $(window).width();
-    // if(window_w < 500){
-    //     console.log(window_w);
-    //     $(".bubbles").append('<span style="--i:13;"></span><span style="--i:11;"></span><span style="--i:20;"></span><span style="--i:13;"></span><span style="--i:16;"></span><span style="--i:19;"></span><span style="--i:25;"></span><span style="--i:18;"></span><span style="--i:23;"></span><span style="--i:15;"></span><span style="--i:14;"></span><span style="--i:27;"></span>');
-    // }
-    // if(500 < window_w < 600){
-    //     $(".bubbles").html('<span style="--i:26;"></span>');
-    // }
-    // if(600 < window_w < 700){
-    //     $(".bubbles").html('<span style="--i:10;"></span>');
-    // }
-    // if(700 < window_w < 800){
-    //     $(".bubbles").html('<span style="--i:15;"></span>');
-    // }
-    // if(800 < window_w < 900){
-    //     $(".bubbles").html('<span style="--i:23;"></span>');
-    // }
-    // if(900 < window_w < 1000){
-    //     $(".bubbles").html('<span style="--i:18;"></span>');
-    // }
-    // if(1000 < window_w < 1100){
-    //     $(".bubbles").html('<span style="--i:29;"></span>');
-    // }
-    // if(1100 < window_w < 1200){
-    //     $(".bubbles").html('<span style="--i:11;"></span>');
-    // }
-    // if(1200 < window_w < 1300){
-    //     $(".bubbles").html('<span style="--i:16;"></span>');
-    // }
-    // if(1300 < window_w < 1400){
-    //     $(".bubbles").html('<span style="--i:19;"></span>');
-    // }
-    // if(1400 < window_w < 1500){
-    //     $(".bubbles").html('<span style="--i:28;"></span>');
-    // }
-    // if(1500 < window_w < 1600){
-    //     $(".bubbles").html('<span style="--i:20;"></span>');
-    // }
-    // if(1600 < window_w < 1700){
-    //     $(".bubbles").html('<span style="--i:14;"></span>');
-    // }
-    // if(1700 < window_w < 1800){
-    //     $(".bubbles").html('<span style="--i:10;"></span>');
-    // }
-    // if(1800 < window_w < 1900){
-    //     $(".bubbles").html('<span style="--i:26;"></span>');
-    // }
-    // if(1900 < window_w < 2000){
-    //     $(".bubbles").html('<span style="--i:18;"></span>');
-    // }
-
     /*about*/
     function todayinfo(){
         var today = new Date();

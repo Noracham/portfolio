@@ -15,6 +15,8 @@ $(window).on("scroll",function(){
     });
 });
 
+var n=0;
+
 $(window).on("scroll",function(){
     $('.Jname').each(function(){
 
