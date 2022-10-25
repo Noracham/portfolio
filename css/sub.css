@@ -2,6 +2,7 @@
 .titleimg {
   margin-top: 15%;
 }
+/* about.html */
 /*名前*/
 .nname {
   position: relative;
@@ -9,17 +10,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  /* margin: 0 auto; */
-  /* width: 100%; */
 }
 .Jname {
-  /* position: absolute; */
   z-index: 999;
   padding-top: 100px;
   height: 800px;
   margin-right: 50px;
-  /* left: 50px;
-    top: 250px; */
 }
 .ryu {
   display: flex;
@@ -72,7 +68,6 @@
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
 }
 .Ename p {
   margin: 0;
@@ -339,317 +334,6 @@
   margin: 250px 3% 0;
 }
 
-/*from*/
-.Ifrom {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.fromtxt {
-  font-family: ヒラギノ角ゴシック, sans-serif;
-  font-size: 2rem;
-  line-height: 4rem;
-  margin: 100px 10%;
-}
-.from {
-  margin-top: 350px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.takayamaimg {
-  width: 45%;
-  text-align: center;
-}
-.from img {
-  max-width: 380px;
-  margin-right: 5%;
-}
-.takayama_M {
-  font-family: "ヒラギノ角ゴシック";
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  padding-left: 5%;
-}
-.takayama_M p:first-child {
-  font-size: 4rem;
-  font-weight: 600;
-  margin: 0;
-}
-.takayama_M p:first-child span {
-  color: red;
-}
-.takayama_M p:nth-child(2) {
-  font-size: 8rem;
-  font-weight: 600;
-  margin: 10px 0 75px 0;
-}
-.takayama_M p:nth-child(2) span {
-  font-size: 3rem;
-  font-weight: 400;
-}
-.pr {
-  font-size: 3rem;
-  font-weight: bold;
-  background-color: red;
-  box-shadow: 0 0 10px 0 red;
-  padding-right: -100px;
-  margin: 10px 0;
-}
-.pr1 {
-  width: 15rem;
-}
-.pr2 {
-  width: 18rem;
-}
-.pr3 {
-  width: 21rem;
-}
-@media screen and (max-width: 840px) {
-  .from {
-    width: 100%;
-    margin: 250px 1% 50px 1%;
-  }
-  .takayamaimg {
-    width: 40%;
-  }
-  .from img {
-    width: 100%;
-  }
-  .takayama_M p:first-child {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0;
-  }
-  .takayama_M p:first-child span {
-    color: red;
-  }
-  .takayama_M p:nth-child(2) {
-    font-size: 6rem;
-    font-weight: 600;
-    margin: 10px 0 75px 0;
-  }
-  .takayama_M p:nth-child(2) span {
-    font-size: 3rem;
-    font-weight: 400;
-  }
-  .pr {
-    font-size: 2.5rem;
-  }
-  .pr1 {
-    width: 12.5rem;
-  }
-  .pr2 {
-    width: 15rem;
-  }
-  .pr3 {
-    width: 17.5rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  .from {
-    flex-direction: column;
-  }
-  .fromtxt {
-    margin: 100px 3%;
-  }
-  .takayamaimg {
-    width: 70%;
-    margin: 0;
-    margin-bottom: 75px;
-  }
-  .takayama_M {
-    width: 90%;
-  }
-  .takayama_M p:first-child {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0;
-  }
-  .takayama_M p:first-child span {
-    color: red;
-  }
-  .takayama_M p:nth-child(2) {
-    font-size: 8rem;
-    font-weight: 600;
-    margin: 10px 0 75px 0;
-  }
-  .takayama_M p:nth-child(2) span {
-    font-size: 3rem;
-    font-weight: 400;
-  }
-  .pr {
-    font-size: 3rem;
-  }
-  .pr1 {
-    width: 15rem;
-  }
-  .pr2 {
-    width: 18rem;
-  }
-  .pr3 {
-    width: 21rem;
-  }
-}
-/*syumi*/
-.syumi {
-  width: 100%;
-  margin: 200px auto;
-}
-.syumiimg {
-  display: flex;
-  flex-direction: row;
-}
-.syumiimg div {
-  opacity: 0;
-  width: 50%;
-}
-.syumiimg div img {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-}
-.syumiimg div:first-child {
-  margin-right: -5%;
-}
-.syumiimg div:first-child img {
-  /* transform: skew(0,10deg);    */
-  height: 90%;
-}
-.syumiimg div:nth-child(2) {
-  z-index: 2;
-  margin-top: 5%;
-  width: 50%;
-}
-.syumiimg div:last-child {
-  /* transform:skew(0,-10deg); */
-  margin-left: -5%;
-}
-.syumiimg div:last-child img {
-  height: 90%;
-}
-.syumi p {
-  font-size: 7rem;
-  font-family: "ヒラギノ角ゴシック";
-  font-weight: 600;
-  text-align: center;
-  opacity: 0;
-}
-.syumi p:nth-of-type(2) {
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: 400;
-  width: 80%;
-  margin: 0 10%;
-}
-@media screen and (max-width: 450px) {
-  /* .syumi p:nth-of-type(2){
-        width: 90%;
-    } */
-}
-/*両端２枚はアニメーション登場でskew変化*/
-.sideIn_L {
-  animation-name: In_L;
-  animation-duration: 2s;
-  transition: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-.sideIn_R {
-  animation-name: In_R;
-  animation-duration: 2s;
-  transition: 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
-}
-.middleIn {
-  animation-name: midIn;
-  animation-duration: 0.5s;
-  transition: 0.5s;
-  animation-fill-mode: forwards;
-}
-.tasyumi {
-  animation-name: linearAnime;
-  animation-delay: 3s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-@keyframes In_L {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(0);
-  }
-  100% {
-    transform: skewY(15deg);
-    opacity: 0.7;
-  }
-}
-@keyframes In_R {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(0);
-  }
-  100% {
-    transform: skewY(-15deg);
-    opacity: 0.7;
-  }
-}
-@keyframes midIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-@media screen and (max-width: 450px) {
-  .syumiimg {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .syumiimg div {
-    width: 300px;
-    height: 225px;
-    margin: 0;
-  }
-  .syumiimg div img {
-    width: 100%;
-    height: 100%;
-  }
-  .syumiimg div:nth-child(1) {
-    margin-right: 20px;
-  }
-  .syumiimg div:nth-child(1) img {
-    object-fit: fill;
-    width: 300px;
-    height: 225px;
-  }
-  .syumiimg div:nth-child(2) {
-    margin-bottom: 20px;
-    margin-right: 50px;
-  }
-  .syumiimg div:nth-child(2) img {
-    width: 300px;
-    height: 225px;
-  }
-  .syumi p {
-    font-size: 4.5rem;
-  }
-}
 /*SKILL*/
 .myskill {
   width: 100%;
@@ -747,7 +431,7 @@
     filter: brightness(100%);
   }
 }
-/* WORKS*/
+/* works.html*/
 .worksflex {
   display: flex;
   flex-direction: column;
@@ -761,75 +445,6 @@
   display: flex;
   flex-direction: column;
   /* max-width: 1000px; */
-}
-.workone {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  padding: 12% 3%;
-  opacity: 0;
-  transition: 0.5s;
-}
-.workone div {
-  position: relative;
-  width: 100%;
-}
-.workone div img {
-  position: absolute;
-  object-fit: cover;
-}
-@keyframes upslide {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.up {
-  animation-name: upslide;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-.workone div {
-  /* border: rgb(179, 179, 179) 2px solid; */
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0 0 0.6em 0 #7c7c7c, inset 0 0 0.6em 0 #7c7c7c;
-  width: 375px;
-  height: 280px;
-}
-.workone img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.workone p {
-  text-align: center;
-}
-.workone a {
-  cursor: pointer;
-  transition: 0.5s;
-}
-.workone p:nth-of-type(1) {
-  font-family: "ヒラギノ角ゴシック";
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin: 5% 0;
-}
-.workone p:nth-of-type(2) {
-  font-family: "ヒラギノ角ゴシック";
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: rgba(240, 248, 255, 0.51);
-  margin: 0;
-}
-.workone a:hover {
-  transition: 0.5s;
-  transform: scale(0.95);
-  filter: brightness(60%);
 }
 .worksmob {
   opacity: 0;
@@ -911,6 +526,7 @@
   border-right: 600px solid rgb(121, 0, 107);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(121, 0, 107);
+  overflow: hidden;
 }
 .worksmob:nth-of-type(2) .traiangle {
   border-left: 0 solid transparent;
@@ -993,16 +609,127 @@
     max-width: 1000px;
   }
 }
-/* @media screen and (max-width:959px){
-    .workone img{
-        width: 340px;
-        height: 255px;
-    }
-} */
 @media screen and (max-width: 750px) {
   .work {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .worksmob{
+    width: 530px;
+  }
+  .worksmob img{
+    width: 520px;
+    height: 393px;
+  }
+  .worksmob h1{
+    font-size: 7.5rem;
+    bottom: 5px;
+    padding-right: 20%;
+  }
+  .worksmob h1 span{
+    font-size: 6.5rem;
+  }
+  .worksinfo{
+    font-size: 1.2rem;
+    bottom: -200px;
+  }
+  .traiangle{
+    border-right: 530px solid rgb(121, 0, 107);
+    border-top: 441px solid transparent;  
+  }
+  .worksmob:nth-of-type(2) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 530px solid rgb(209, 209, 209);
+    border-top: 441px solid transparent;
+    border-bottom: 0 solid rgb(209, 209, 209);
+  }
+  .worksmob:nth-of-type(3) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 530px solid rgb(0, 96, 14);
+    border-top: 441px solid transparent;
+    border-bottom: 0 solid rgb(0, 96, 14);
+  }
+  
 }
+@media screen and (max-width: 600px) {
+  .worksmob{
+    width: 430px;
+  }
+  .worksmob img{
+    width: 420px;
+    height: 315px;
+  }
+  .worksmob h1{
+    font-size: 6.5rem;
+    bottom: 15px;
+    padding-right: 20%;
+  }
+  .worksmob h1 span{
+    font-size: 5.5rem;
+    right: 150px;
+  }
+  .worksinfo{
+    font-size: 1.1rem;
+    bottom: -170px;
+  }
+  .traiangle{
+    border-right: 430px solid rgb(121, 0, 107);
+    border-top: 358px solid transparent;  
+  }
+  .worksmob:nth-of-type(2) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 430px solid rgb(209, 209, 209);
+    border-top: 358px solid transparent;
+    border-bottom: 0 solid rgb(209, 209, 209);
+  }
+  .worksmob:nth-of-type(3) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 430px solid rgb(0, 96, 14);
+    border-top: 358px solid transparent;
+    border-bottom: 0 solid rgb(0, 96, 14);
+  }
+
+}
+@media screen and (max-width: 460px) {
+  .worksmob{
+    width: 330px;
+  }
+  .worksmob img{
+    width: 320px;
+    height: 240px;
+  }
+  .worksmob h1{
+    font-size: 5rem;
+    bottom: -10px;
+    padding: 0;
+    margin-left: -50px;
+  }
+  .worksmob h1 span{
+    font-size: 4rem;
+    top: 45px;
+    right: 70px;
+  }
+  .worksinfo{
+    font-size: .9rem;
+    bottom: -130px;
+  }
+  .traiangle{
+    border-right: 330px solid rgb(121, 0, 107);
+    border-top: 275px solid transparent;  
+  }
+  .worksmob:nth-of-type(2) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 330px solid rgb(209, 209, 209);
+    border-top: 275px solid transparent;
+    border-bottom: 0 solid rgb(209, 209, 209);
+  }
+  .worksmob:nth-of-type(3) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 330px solid rgb(0, 96, 14);
+    border-top: 275px solid transparent;
+    border-bottom: 0 solid rgb(0, 96, 14);
+  }
+
+}
+
