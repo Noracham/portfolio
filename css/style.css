@@ -48,9 +48,7 @@ a {
 
 /*メニュー*/
 .selectmenu {
-  /* position: fixed; */
   left: -100%;
-  /* display: none; */
   width: 100%;
   height: 100%;
   top: 0;
@@ -116,7 +114,6 @@ a {
   padding: 20%;
 }
 .menuback {
-  /* display: none; */
   position: fixed;
   left: -100%;
   width: 100%;
@@ -336,8 +333,6 @@ a {
 }
 /*ABOUT*/
 .abouttext {
-  /* font-family: "Elektrix OT";
-    font-weight: bold; */
   font-size: 100px;
 }
 .abouttext-my {
@@ -445,21 +440,6 @@ position: absolute;
 .abouttext-my .ab-content:nth-of-type(3) img {
   filter: hue-rotate(300deg);
 }
-/* .abouttext-my img:nth-of-type(1){
-    width: 500px;
-    top: -150px;
-    filter: hue-rotate(250deg);
-}
-.abouttext-my img:nth-of-type(2){
-    width: 500px;
-    top: 500px;
-    filter: hue-rotate(50deg);
-}
-.abouttext-my img:nth-of-type(3){
-    width: 500px;
-    top: 1150px;
-    filter: hue-rotate(300deg);
-} */
 @keyframes smilerotate {
   from {
     transform: rotate(0);
@@ -529,7 +509,7 @@ position: absolute;
   }
 }
 
-.now-time {
+/* .now-time {
   position: relative;
   margin-top: 300px;
   width: 100%;
@@ -564,19 +544,19 @@ position: absolute;
 .now-time .week p {
   font-size: 130px;
 }
-.now-time p {
+.abouttext .now-time p {
   text-align: center;
   font-size: 200px;
   font-family: "Elektrix-OT", serif;
   font-weight: bold;
   margin: 0;
   color: white;
-}
+} */
 .about a {
   margin-top: 100px;
 }
 @media screen and (max-width: 959px) {
-  .time {
+  /* .time {
     width: 700px;
   }
   .today {
@@ -593,7 +573,7 @@ position: absolute;
   }
   .now-time .week p {
     font-size: 100px;
-  }
+  } */
 
   .abouttext {
     font-size: 80px;
@@ -652,7 +632,7 @@ position: absolute;
   }
 }
 @media screen and (max-width: 700px) {
-  .time {
+  /* .time {
     width: 350px;
   }
   .today {
@@ -670,7 +650,7 @@ position: absolute;
     font-size: 60px;
   }
   .now-time .week p {
-    font-size: 60px;
+    font-size: 60px; */
   }
   .nowenjoy {
     font-size: 25px;
@@ -725,7 +705,7 @@ position: absolute;
     animation-delay: 0.75s;
     filter: hue-rotate(50deg);
   }
-}
+
 @media screen and (max-width: 466px) {
   .abouttext-my .ab-content p:nth-of-type(2)::before,
   .abouttext-my .ab-content:nth-of-type(3) p::before {
@@ -764,45 +744,6 @@ position: absolute;
   align-items: center;
   border-radius: 30px;
   filter: brightness(30%);
-}
-.myprofile {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10% 0;
-}
-.me {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 4.5rem;
-}
-.me img {
-  width: 150px;
-  border-radius: 50%;
-  border: rgb(0, 255, 208) 3px solid;
-  box-shadow: 0 0 0.6em 0 rgb(0, 255, 208), inset 0 0 0.6em 0 rgb(0, 255, 208);
-  padding: 1%;
-}
-.name {
-  text-align: center;
-  font-size: 3rem;
-}
-.JPname {
-  z-index: 999;
-}
-.firstName {
-  color: rgba(0, 255, 208, 0.348);
-}
-.ENname {
-  margin-top: -23%;
-  color: rgba(255, 255, 255, 0.355);
-}
-.info {
-  font-size: 1.4rem;
-  padding-bottom: 15%;
 }
 .logo-twitter {
   color: #00a1ff;
@@ -844,20 +785,6 @@ position: absolute;
   }
 }
 
-/*プロフィール文*/
-.meinfo {
-  position: relative;
-  width: 50%;
-  /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  padding: 2%;
-  background-color: rgba(0, 0, 0, 1);
-  /* border: rgb(0, 255, 208) 4px solid;
-    box-shadow: 0 0 0.6em 0 rgb(0, 255, 208),inset 0 0 0.6em 0 rgb(0, 255, 208); */
-}
 /*ネオン枠*/
 .neon-frame:after {
   content: "";
@@ -1070,15 +997,9 @@ position: absolute;
 .cover {
   background-color: rgb(57, 57, 57);
   margin: 1px 0;
-  /* border-top: black 1px solid;
-    border-bottom: black 1px solid; */
   width: 150px;
   height: 150px;
 }
-/* .w_instagram:after{
-    background:linear-gradient(215deg,red,blue);
-    top: -2px;
-} */
 .flexpea {
   display: flex;
   flex-direction: column;
