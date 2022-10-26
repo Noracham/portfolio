@@ -365,7 +365,6 @@
 }
 .traffic {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   max-width: 950px;
 }
@@ -373,13 +372,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 5% auto;
   width: 35%;
 }
 .skillLv p {
   font-family: "ヒラギノ角ゴシック";
   font-size: 3rem;
-  margin: 10px auto;
+  margin: 10px;
 }
 .skillsmile {
   display: flex;
@@ -731,47 +731,47 @@
   }
   .worksmob:nth-of-type(4) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(255, 142, 212);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(255, 142, 212);
   }
   .worksmob:nth-of-type(5) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(98, 255, 239);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(98, 255, 239);
   }
   .worksmob:nth-of-type(6) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(255, 182, 98);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(255, 182, 98);
   }
   .worksmob:nth-of-type(7) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(255, 98, 98);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(255, 98, 98);
   }
   .worksmob:nth-of-type(8) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(173, 173, 173);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(173, 173, 173);
   }
   .worksmob:nth-of-type(9) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(121, 255, 98);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(121, 255, 98);
   }
   .worksmob:nth-of-type(10) .traiangle {
     border-left: 0 solid transparent;
-    border-right: 530px solid rgb(0, 96, 14);
+    border-right: 530px solid rgb(184, 0, 235);
     border-top: 441px solid transparent;
-    border-bottom: 0 solid rgb(0, 96, 14);
+    border-bottom: 0 solid rgb(184, 0, 235);
   }
-
+  
   
 }
 @media screen and (max-width: 600px) {
