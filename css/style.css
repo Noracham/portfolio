@@ -426,7 +426,7 @@ a {
 position: absolute;
   transform: translateX(-100px);
   width: 550px;
-  filter: brightness(50%);
+  /* filter: brightness(50%); */
   animation: smilerotate infinite linear;
   animation-duration: 3s;
 }
@@ -750,6 +750,7 @@ position: absolute;
   background-color: rgba(0, 0, 0, 0.536);
   border: 2px solid rgb(0, 0, 0);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
   align-items: center;

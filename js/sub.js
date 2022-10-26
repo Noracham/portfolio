@@ -66,22 +66,6 @@ $(window).on("scroll",function(){
         }
     });
 });
-// var n=0;
-
-//     $('.workone').eq(n).each(function(){
-
-//         var position = $(this).offset().top;
-//         var scroll = $(window).scrollTop();
-//         var windowHeight = $(window).height();
-
-//         console.log(position);
-
-//         if (scroll > position - windowHeight + 500){
-//           $(".workone").eq(n).addClass('up');
-//           n++;
-//           console.log(n);
-//         }
-//     });
 });
 });
 
