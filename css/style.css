@@ -356,9 +356,8 @@ a {
 .abouttext-my .ab-content:nth-of-type(3) p {
   color: #9d6700;
 }
-.nowenjoy {
+.nowenjoy{
   margin-top: 400px;
-  font-size: 60px;
   text-align: center;
   color: transparent;
   background: linear-gradient(
@@ -370,8 +369,7 @@ a {
   );
   background-clip: text;
   -webkit-background-clip: text;
-}
-.nowenjoy p {
+  font-size: 60px;
   font-family: ab-kumiki-m, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -414,17 +412,18 @@ a {
   position: relative;
   margin: 700px auto;
 }
-.bgsmile{
+.ab-content .bgsmile{
     position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: -1;
+    top: 100px;
 }
 .ab-content .bgsmile img {
 position: absolute;
-  top: -150px;
+  transform: translateX(-100px);
   width: 550px;
   filter: brightness(50%);
   animation: smilerotate infinite linear;
@@ -596,7 +595,7 @@ position: absolute;
   }
   .ab-content .bgsmile img {
     width: 500px;
-    top: -150px;
+    top: -240px;
   }
 
   .ball {
@@ -651,10 +650,7 @@ position: absolute;
   }
   .now-time .week p {
     font-size: 60px; */
-  }
-  .nowenjoy {
-    font-size: 25px;
-  }
+  
 
   .abouttext-my .ab-content:nth-of-type(3) p::before {
     left: 0;
@@ -663,14 +659,17 @@ position: absolute;
     margin: 400px auto;
   }
   .ab-content .bgsmile{
-    top: -100px;
+    top: -170px;
+  }
+  .ab-content:last-child .bgsmile{
+    top: -130px;
   }
   .ab-content .bgsmile img{
     width: 300px;
     overflow: hidden;
   }
   .ab-content .bgsmile img:last-child {
-    top: 110px;
+    top: 120px;
   }
 
 
@@ -705,11 +704,18 @@ position: absolute;
     animation-delay: 0.75s;
     filter: hue-rotate(50deg);
   }
+}
 
 @media screen and (max-width: 466px) {
   .abouttext-my .ab-content p:nth-of-type(2)::before,
   .abouttext-my .ab-content:nth-of-type(3) p::before {
     left: 2px;
+  }
+  .ab-content .bgsmile{
+    top: -130px;
+  }
+  .ab-content:last-child .bgsmile{
+    top: -90px;
   }
 }
 
