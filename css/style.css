@@ -6,7 +6,6 @@ html {
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  max-width: 100vw;
 }
 body {
   z-index: 1;
@@ -290,17 +289,17 @@ a {
   min-width: 100vw;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow-x: hidden;
+  height: 100%;
   left: 1.5%;
 }
 .bubbles {
   position: relative;
   display: flex;
+  /* overflow: hidden; */
 }
 .bubbles span {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-width: 30px;
   width: 30px;
   height: 30px;
@@ -311,7 +310,11 @@ a {
   animation: animatebubbles 15s linear infinite;
   animation-delay: 2.5s;
   animation-duration: calc(150s / var(--i));
+  -webkit-animation: animatebubbles 15s linear infinite;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-duration: calc(150s / var(--i));
   opacity: 0;
+  z-index: -1;
 }
 .bubbles span:nth-child(even) {
   background-color: #ff5afc;
@@ -325,10 +328,10 @@ a {
 @keyframes animatebubbles {
   0% {
     opacity: 1;
-    transform: translateY(100vh) scale(0);
+    transform: translateY(100vh) scale(0.15);
   }
   100% {
-      opacity: 0.3;
+    opacity: 0.3;
     transform: translateY(-10vh) scale(1);
   }
 }
@@ -357,7 +360,7 @@ a {
 .abouttext-my .ab-content:nth-of-type(3) p {
   color: #9d6700;
 }
-.nowenjoy{
+.nowenjoy {
   margin-top: 400px;
   text-align: center;
   color: transparent;
@@ -409,21 +412,21 @@ a {
   content: "What’s wrong with\A enjoying the moment?";
   color: #ffda95;
 }
-.ab-content{
+.ab-content {
   position: relative;
   margin: 700px auto;
 }
-.ab-content .bgsmile{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-    top: 100px;
+.ab-content .bgsmile {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  top: 100px;
 }
 .ab-content .bgsmile img {
-position: absolute;
+  position: absolute;
   transform: translateX(-100px);
   width: 550px;
   /* filter: brightness(50%); */
@@ -651,28 +654,26 @@ position: absolute;
   }
   .now-time .week p {
     font-size: 60px; */
-  
 
   .abouttext-my .ab-content:nth-of-type(3) p::before {
     left: 0;
   }
-  .ab-content{
+  .ab-content {
     margin: 400px auto;
   }
-  .ab-content .bgsmile{
+  .ab-content .bgsmile {
     top: -170px;
   }
-  .ab-content:last-child .bgsmile{
+  .ab-content:last-child .bgsmile {
     top: -130px;
   }
-  .ab-content .bgsmile img{
+  .ab-content .bgsmile img {
     width: 300px;
     overflow: hidden;
   }
   .ab-content .bgsmile img:last-child {
     top: 120px;
   }
-
 
   .ball {
     width: 50px;
@@ -712,13 +713,13 @@ position: absolute;
   .abouttext-my .ab-content:nth-of-type(3) p::before {
     left: 2px;
   }
-  .ab-content .bgsmile{
+  .ab-content .bgsmile {
     top: -130px;
   }
-  .ab-content:last-child .bgsmile{
+  .ab-content:last-child .bgsmile {
     top: -90px;
   }
-  .nowenjoy{
+  .nowenjoy {
     padding-right: 8%;
   }
 }

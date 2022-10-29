@@ -93,6 +93,7 @@
   text-shadow: 0 0 10px #fff;
   font-size: 18rem;
   margin: 5% 0;
+  overflow: hidden;
 }
 .myimg {
   border-radius: 10%;
@@ -508,6 +509,11 @@
   border-top: 5px solid rgb(184, 0, 235);
   box-shadow: -7px -7px 10px 0 rgba(184, 0, 235, 0.659);
 }
+.worksmob:nth-of-type(11){
+  border-left: 5px solid rgb(255, 170, 73);
+  border-top: 5px solid rgb(255, 170, 73);
+  box-shadow: -7px -7px 10px 0 rgba(255, 170, 73, 0.659);
+}
 
 .worksfadeIn {
   animation-name: worksfadeIn;
@@ -618,6 +624,12 @@
   border-right: 600px solid rgb(184, 0, 235);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(184, 0, 235);
+}
+.worksmob:nth-of-type(11) .traiangle {
+  border-left: 0 solid transparent;
+  border-right: 600px solid rgb(255, 170, 73);
+  border-top: 500px solid transparent;
+  border-bottom: 0 solid rgb(255, 170, 73);
 }
 
 .worksrotate {
@@ -772,6 +784,13 @@
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(184, 0, 235);
   }
+  .worksmob:nth-of-type(11) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 530px solid rgb(255, 170, 73);
+    border-top: 441px solid transparent;
+    border-bottom: 0 solid rgb(255, 170, 73);
+  }
+
   
   
 }
@@ -854,6 +873,13 @@
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(184, 0, 235);
   }
+  .worksmob:nth-of-type(10) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 430px solid rgb(255, 170, 73);
+    border-top: 358px solid transparent;
+    border-bottom: 0 solid rgb(255, 170, 73);
+  }
+
   
 
 }
@@ -938,6 +964,13 @@
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(184, 0, 235);
   }
+  .worksmob:nth-of-type(11) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 330px solid rgb(255, 170, 73);
+    border-top: 275px solid transparent;
+    border-bottom: 0 solid rgb(255, 170, 73);
+  }
+
 
 
 }

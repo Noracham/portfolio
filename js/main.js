@@ -166,7 +166,7 @@ $(window).on("scroll",function(){
 
         if (scroll > position - windowHeight + 300){
           $(".skillsmile img:nth-of-type(1)").addClass('smile1');
-          $(".traffic div:nth-of-type(-n+3) .skillsmile img:nth-of-type(2),.traffic div:last-child() .skillsmile img:nth-of-type(2)").addClass('smile2');
+          $(".traffic div:nth-of-type(-n+5) .skillsmile img:nth-of-type(2),.traffic div:nth-of-type(9) .skillsmile img:nth-of-type(2),.traffic div:nth-of-type(10) .skillsmile img:nth-of-type(2),.traffic div:nth-of-type(11) .skillsmile img:nth-of-type(2)").addClass('smile2');
           $(".traffic div:nth-of-type(-n+2) .skillsmile img:nth-of-type(3)").addClass('smile3');
         }
     });
@@ -196,4 +196,16 @@ console.log(copytxt);
 //     navigator.clipboard.writeText(copytxt);
 //     alert("メールアドレスがコピーされました");
 // })
+
+
+
+
+
+$('.container').css('overflow','hidden');
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
 })
+
+
+
