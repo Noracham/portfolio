@@ -415,6 +415,10 @@ a {
 .ab-content {
   position: relative;
   margin: 700px auto;
+  filter: brightness(30%);
+}
+.ab-content:first-child{
+  margin-top: 300px;
 }
 .ab-content .bgsmile {
   position: absolute;
@@ -756,8 +760,11 @@ a {
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
-  filter: brightness(30%);
 }
+.contactbg{
+  margin-bottom: 10%;
+}
+
 .logo-twitter {
   color: #00a1ff;
   filter: drop-shadow(0 0 5px rgb(87, 120, 251));
@@ -771,6 +778,12 @@ a {
 }
 .icons a {
   cursor: pointer;
+}
+.mail{
+  margin-top: 15%;
+}
+.mail p{
+  padding-left: 5%;
 }
 .mail-outline {
   color: #ffffff;
@@ -1088,20 +1101,21 @@ a {
   margin-top: 200px;
   background-image: url(../img/contact.png);
 }
-.contactbg {
+.flash_contact {
   justify-content: center;
+  filter: brightness(30%);
 }
-.contactbg p {
+.flash_contact p:first-child {
   color: #fff;
   font-size: 1.5rem;
-  margin: 3%;
+  margin: 3% 0 10%;
 }
 .sns {
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: #fff;
-  margin: 10% 0;
+  margin: 20% 0;
 }
 .twitter,
 .instagram {
@@ -1163,13 +1177,10 @@ a {
   text-align: center;
   transition: 0.5s;
 }
-.contactbg {
+.flash_contact {
   padding: 3% 0 7% 0;
 }
-.contactbg p {
-  align-self: flex-start;
-  margin-left: 5%;
-}
+
 #ip {
   animation-name: ip;
   animation-duration: 0.5s;
@@ -1186,31 +1197,35 @@ a {
   }
 }
 
-@media screen and (max-width: 959px) {
-  .sns_icon::after {
-    transform: scale(1, 1);
-  }
-}
+
 .twitter ion-icon,
 .instagram ion-icon {
   width: 60px;
   font-size: 6rem;
 }
 .mail ion-icon {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 @media screen and (max-width: 600px) {
-  .contactbg p {
+  .flash_contact p {
     font-size: 1.2rem;
   }
+  .mail{
+    margin-top: 0%;
+  }
+  
   .mail p,
   .instagram p {
     margin-top: 20px;
   }
+  .twitter p,.instagram p{
+    margin-left: 0;
+  }
   .sns {
     flex-direction: column;
     margin-bottom: 0;
+    margin-top: 15%;
   }
   .sns .sns_icon {
     margin-bottom: 20%;
@@ -1218,13 +1233,14 @@ a {
   .sns_icon p {
     font-size: 3rem;
   }
-  .mail {
-    margin-bottom: 10%;
+  .mail ion-icon{
+    font-size: 6rem;
+    margin-top: 3%;
   }
 
   .twitter ion-icon,
   .instagram ion-icon {
-    font-size: 6rem;
+    font-size: 5rem;
     width: 100px;
   }
   .instagram p {

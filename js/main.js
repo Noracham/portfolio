@@ -83,26 +83,47 @@ $(function(){
               $(".titlecontact").addClass('flash_title');
             }
         });
-        $('.aboutbg').each(function(){
+        // $('.aboutbg').each(function(){
+
+        //     var position = $(this).offset().top;
+        //     var scroll = $(window).scrollTop();
+        //     var windowHeight = $(window).height();
+
+        //     if (scroll > position - windowHeight + 300){
+        //       $(".flash_about").addClass('flash_box');
+        //     }
+        // });
+        $('.ab-content:nth-of-type(1)').each(function(){
 
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
 
-            if (scroll > position - windowHeight + 300){
-              $(".aboutbg").addClass('flash_box');
+            if (scroll > position - windowHeight + 100){
+              $(".ab-content:nth-of-type(1)").addClass('flash_box');
             }
         });
-        $('.aboutbg').each(function(){
+        $('.ab-content:nth-of-type(2)').each(function(){
 
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
 
-            if (scroll > position - windowHeight + 300){
-              $(".aboutbg").addClass('flash_box');
+            if (scroll > position - windowHeight + 100){
+              $(".ab-content:nth-of-type(2)").addClass('flash_box');
             }
         });
+        $('.ab-content:nth-of-type(3)').each(function(){
+
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            if (scroll > position - windowHeight + 100){
+              $(".ab-content:nth-of-type(3)").addClass('flash_box');
+            }
+        });
+
         $('.worksbg').each(function(){
 
             var position = $(this).offset().top;
@@ -120,7 +141,7 @@ $(function(){
             var windowHeight = $(window).height();
 
             if (scroll > position - windowHeight + 300){
-              $(".contactbg").addClass('flash_box');
+              $(".flash_contact").addClass('flash_box');
             }
         });
 
