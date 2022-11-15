@@ -197,35 +197,77 @@
 }
 .about_text{
     font-size: 100px;
+    @include m.mq(tab){
+        font-size: 9rem;
+    }
+    @include m.mq(sp){
+        font-size: 5rem;
+    }
     .about_text_my{
         margin-top: 300px;
         p{
             width: 100%;
         }
+        .ab-content:last-of-type .bgsmile{
+            @include m.mq(sp){
+                top: -210px;
+            }
+        }
+
     }
 }
 .ab-content{
     text-align: center;
+    margin: 20% 0;
     &:nth-of-type(2) p:nth-of-type(1)::before{
         font-size: 100px;
         content: "WEB DESIGN";
-        color: #a5ffba;      
+        color: #a5ffba;
+        @include m.mq(tab){
+            font-size: 90px;
+        } 
+        @include m.mq(sp){
+            font-size: 50px;
+        }
     }
     &:nth-of-type(2) p:nth-of-type(2)::before{
         font-size: 101px;
         content: "BUNNER DESIGN";
-        color: #a5ffba;      
+        color: #a5ffba;
+        @include m.mq(tab){
+            font-size: 91px;
+        }      
+        @include m.mq(sp){
+            font-size: 51px;
+        }
+    }
+    &:nth-of-type(3) p{
+        @include m.mq(sp){
+            font-size: 35px;
+        }
     }
     &:nth-of-type(3) p:nth-of-type(1)::before{
         font-size: 100px;
         text-align: center;
         content: "What’s wrong with";
-        color: #ffda95;      
+        color: #ffda95;     
+        @include m.mq(tab){
+            font-size: 90px;
+        } 
+        @include m.mq(sp){
+            font-size: 35px;
+        }
     }
     &:nth-of-type(3) p:nth-of-type(2)::before{
         font-size: 100px;
         text-align: center;
         content: "enjoying the moment?";
+        @include m.mq(tab){
+            font-size: 90px;
+        }
+        @include m.mq(sp){
+            font-size: 35px;
+        }
         
         color: #ffda95;      
     }
@@ -240,6 +282,12 @@
             white-space: pre;
             position: absolute;
             font-weight: 100;
+            @include m.mq(tab){
+                font-size: 88px;
+            }
+            @include m.mq(sp){
+                font-size: 48px;
+            }
         }
         &:nth-of-type(1)::before{
             content: "I AM RYOMA";
@@ -262,7 +310,25 @@
     }
     .bgsmile{
         position: relative;
-        top: -400px;
+        top: -390px;
         z-index: -1;
+        @include m.mq(sp){
+            top: -230px;
+        }
+        img{
+            @include m.mq(sp){
+                width: 300px;
+            }
+        }
     }
+    &:nth-of-type(1) img{
+        filter: hue-rotate(250deg);
+    }
+    &:nth-of-type(2) img{
+        filter: hue-rotate(50deg);
+    }
+    &:nth-of-type(3) img{
+        filter: hue-rotate(300deg);
+    }
+
 }
