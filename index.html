@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="WEBデザイナーを目指し、日々猛進する現役専門学生の初ポートフォリオサイト。ネオン（光）をモチーフにしたサイトに仕上げました。" name="description">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="re_css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>NishioRyoma</title>
     <script>
@@ -23,17 +23,17 @@
     <div class="menu">
         <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
         <input type="checkbox">
-        <span id="inbox"><ion-icon name="bulb-outline"></ion-icon></span>
+        <span id="inbox" class="flex"><ion-icon name="bulb-outline"></ion-icon></span>
     </div>
     <header class="selectmenu">
-        <div class="menuback">
+        <div class="menuback flex">
             <ul class="menu_list">
                 <li><a href="index.html">MAIN</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="works.html">WORKS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <div class="rump">
+            <div class="rump flex">
                 <img class="in_rump" src="img/rump.png" alt="">
                 <img class="in_light" src="img/light.png" alt="">
             </div>
@@ -140,10 +140,9 @@
                     <div class="ab-content">
                         <div class="bgsmile"><img src="img/smile1.png" alt=""></div>
                     <p>What’s wrong with<br>enjoying the moment?</p>
-                </div>
-                    
+                </div>     
             </div>
-            <p class="nowenjoy">「今を楽しんで何が悪い？」</p>
+            <!-- <p class="nowenjoy">「今を楽しんで何が悪い？」</p>
             <div class="boundsmile">
                 <span class="ball"><img src="img/smile1.png" alt=""></span>
                 <span class="ball"><img src="img/smile1.png" alt=""></span>
@@ -151,7 +150,7 @@
                 <span class="ball"><img src="img/smile1.png" alt=""></span>
                 <span class="ball"><img src="img/smile1.png" alt=""></span>
                 <span class="ball"><img src="img/smile1.png" alt=""></span>
-            </div>
+            </div> -->
                 <!-- <div class="now-time">
                     <div class="week"><p></p></div>
                     <div class="today"><p>10/20</p></div>
@@ -219,7 +218,11 @@
     </section>
 </div>
 </div>
-
+<style>
+    .aboutbg{
+        z-index: 999;
+    }
+</style>
     
     <script
     src="https://code.jquery.com/jquery-3.6.1.js"

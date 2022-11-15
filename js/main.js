@@ -1,5 +1,6 @@
 $(function(){
-    var check = false;
+    let check = false;
+    //メニュー切り替え
     $("#inbox").click(function(){
         if(check == false){
             $(this).css({"left":"75px",});
@@ -13,7 +14,7 @@ $(function(){
             // $(".allopacity").animate({"opacity":"0"},500);
             $(".hidden").css({"display":"none"});
 
-            $(".in_rump").animate({"top":"-150px"},500);
+            $(".in_rump").animate({"top":"0px"},500);
             $(".in_light").delay(1000).animate({"opacity":"1"},500);
             $(".menu_list").delay(1000).animate({"opacity":"1"});
 
@@ -209,15 +210,6 @@ $(window).on("scroll",function(){
         }
     });
 });
-/*CONTACT*/
-var copytxt = $(".mail p").text();
-console.log(copytxt);
-
-// $(".mail").on("click",function(){
-//     navigator.clipboard.writeText(copytxt);
-//     alert("メールアドレスがコピーされました");
-// })
-
 
 
 

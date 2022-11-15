@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%; /*10px*/
+  font-family: "oshidashi-m-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+body {
+  z-index: 1;
+  background-image: url(../img/back.png);
+  background-size: auto;
+  width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p {
+  color: white;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (max-width: 959px) {
+    body {
+      background-position: 55%;
+    }
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hidden{
+    display: none;
+}

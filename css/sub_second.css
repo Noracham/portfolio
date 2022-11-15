@@ -1,6 +1,5 @@
 @charset "utf-8";
 .maindata{
-
     font-family: "ヒラギノ角ゴシック";
 }
 .html{
@@ -29,6 +28,7 @@ h1{
     align-items: center;
     width: 100%;
     font-family: "ヒラギノ角ゴシック";
+    margin-bottom: 10%;
 }
 .port_title p:first-child{
     margin: 100px 0 20px 0;
