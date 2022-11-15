@@ -1,6 +1,7 @@
+@charset "UTF-8";
 .menu {
   position: fixed;
-  z-index: 100;
+  z-index: 9999;
   width: 150px;
   height: 75px;
   background: #333;
@@ -75,7 +76,7 @@
 }
 .menuback .rump img:nth-of-type(1) {
   position: relative;
-  top: -50px;
+  top: -750px;
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
@@ -86,6 +87,7 @@
 .menuback .rump img:nth-of-type(2) {
   margin-top: -30px;
   margin-right: 18px;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .menuback .rump img:nth-of-type(2) {
@@ -102,6 +104,7 @@
   padding: 0;
   top: 400px;
   z-index: 10;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .menuback .menu_list {
@@ -128,6 +131,174 @@
 }
 .menuback .menu_list li:nth-child(4) a {
   color: rgba(161, 2, 0, 0.8588235294);
+}
+.menuback .menu_list li a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+@-webkit-keyframes title_flash {
+  0% {
+    filter: brightness(100%);
+  }
+  20% {
+    filter: brightness(30%);
+  }
+  30% {
+    filter: brightness(100%);
+  }
+  35% {
+    filter: brightness(30%);
+  }
+  40% {
+    filter: brightness(100%);
+  }
+  45% {
+    filter: brightness(30%);
+  }
+  70% {
+    filter: brightness(100%);
+  }
+  85% {
+    filter: brightness(30%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+@keyframes title_flash {
+  0% {
+    filter: brightness(100%);
+  }
+  20% {
+    filter: brightness(30%);
+  }
+  30% {
+    filter: brightness(100%);
+  }
+  35% {
+    filter: brightness(30%);
+  }
+  40% {
+    filter: brightness(100%);
+  }
+  45% {
+    filter: brightness(30%);
+  }
+  70% {
+    filter: brightness(100%);
+  }
+  85% {
+    filter: brightness(30%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+.main img {
+  -webkit-animation: title_flash 2s ease 1s forwards;
+          animation: title_flash 2s ease 1s forwards;
+  filter: brightness(30%);
+  width: 70%;
+}
+@media screen and (max-width: 1024px) {
+  .main img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main img {
+    width: 95%;
+  }
+}
+
+.titleimg {
+  width: 100%;
+  height: 230px;
+  background-image: url(../img/about.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(30%);
+  margin-bottom: 100px;
+}
+
+.about {
+  flex-direction: column;
+}
+
+.about_text {
+  font-size: 100px;
+}
+.about_text .about_text_my {
+  margin-top: 300px;
+}
+.about_text .about_text_my p {
+  width: 100%;
+}
+
+.ab-content {
+  text-align: center;
+}
+.ab-content:nth-of-type(2) p:nth-of-type(1)::before {
+  font-size: 100px;
+  content: "WEB DESIGN";
+  color: #a5ffba;
+}
+.ab-content:nth-of-type(2) p:nth-of-type(2)::before {
+  font-size: 101px;
+  content: "BUNNER DESIGN";
+  color: #a5ffba;
+}
+.ab-content:nth-of-type(3) p:nth-of-type(1)::before {
+  font-size: 100px;
+  text-align: center;
+  content: "What’s wrong with";
+  color: #ffda95;
+}
+.ab-content:nth-of-type(3) p:nth-of-type(2)::before {
+  font-size: 100px;
+  text-align: center;
+  content: "enjoying the moment?";
+  color: #ffda95;
+}
+.ab-content p {
+  font-family: elektrix, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+}
+.ab-content p::before {
+  font-size: 98px;
+  white-space: pre;
+  position: absolute;
+  font-weight: 100;
+}
+.ab-content p:nth-of-type(1)::before {
+  content: "I AM RYOMA";
+  color: #ebb9fd;
+}
+.ab-content p:nth-of-type(2)::before {
+  content: "TAKAYAMA CITY";
+  color: #ebb9fd;
+}
+.ab-content:nth-of-type(1) p {
+  color: #8f18c1;
+}
+.ab-content:nth-of-type(2) p {
+  color: #038621;
+}
+.ab-content:nth-of-type(3) p {
+  color: #9d6700;
+}
+.ab-content .bgsmile {
+  position: relative;
+  top: -400px;
+  z-index: -1;
 }
 
 html {
@@ -176,6 +347,22 @@ a {
   align-items: center;
 }
 
-.hidden {
+.wrapper {
+  width: 100vw;
+  margin-top: 15%;
+}
+
+.bg {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.536);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.test_hid {
   display: none;
 }/*# sourceMappingURL=style.css.map */
