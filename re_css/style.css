@@ -391,6 +391,28 @@
   filter: hue-rotate(300deg);
 }
 
+@-webkit-keyframes smile_rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes smile_rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.smile_rotate {
+  -webkit-animation: smile_rotate 3s infinite linear;
+          animation: smile_rotate 3s infinite linear;
+}
+
 html {
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;

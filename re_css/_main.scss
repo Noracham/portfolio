@@ -330,5 +330,16 @@
     &:nth-of-type(3) img{
         filter: hue-rotate(300deg);
     }
-
+    
+}
+@keyframes smile_rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.smile_rotate{
+    animation: smile_rotate 3s infinite linear;
 }
