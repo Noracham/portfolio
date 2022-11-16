@@ -28,32 +28,47 @@ a {
   text-decoration: none;
 }
 @media screen and (max-width: 959px) {
-    body {
-      background-position: 55%;
-    }
+  body {
+    background-position: 55%;
+  }
 }
 //基本flex
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 //大枠サイズ調整
-.wrapper{
-    width: 100vw;
-    margin-top: 15%;
+.wrapper {
+  width: 100vw;
+  margin-top: 15%;
 }
 //背景
-.bg{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.536);
-    backdrop-filter: blur(8px); 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px;  
+.bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.536);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
 }
 
-.test_hid{
-    display: none;
+.test_hid {
+  display: none;
+}
+// タイトルアニメーション
+.title_flash {
+  animation: title_flash 1.5s forwards;
+}
+@keyframes title_flash {
+  0% {
+    filter: brightness(100%);
+  }
+  40% {
+    filter: brightness(30%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
 }

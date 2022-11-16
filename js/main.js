@@ -1,5 +1,18 @@
 $(function(){
     let check = false;
+
+    // inviewテンプレ
+    $(".v_inblur").on("inview",function(event,isInView){
+        if(isInView){
+            $(this).addClass("visible_blur")
+        }else{
+
+        }
+    });
+    $(".v_inup").one("inview",function(event,isInView){
+        $(this).addClass("visible_inup")
+    })
+
     //メニュー切り替え
     $("#inbox").click(function(){
         if(check == false){
@@ -40,6 +53,15 @@ $(function(){
     })
 
     /*about*/
+    $(".bgsmile").one("inview",function(event,isInView){
+        $(this).addClass("smile_rotate")
+    })
+
+
+    $(".titleimg").one("inview",function(event,isInView){
+        $(this).addClass("title_flash")
+    })
+
     $(window).on("scroll",function(){
         $('.titleabout').each(function(){
 

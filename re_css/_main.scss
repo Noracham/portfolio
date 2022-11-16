@@ -312,6 +312,7 @@
         position: relative;
         top: -390px;
         z-index: -1;
+        filter: brightness(30%);
         @include m.mq(sp){
             top: -230px;
         }
@@ -335,11 +336,23 @@
 @keyframes smile_rotate {
     from{
         transform: rotate(0);
+        filter: brightness(30%);
     }
     to{
         transform: rotate(360deg);
+        filter: brightness(100%);
+
     }
 }
+    @keyframes brightness_change {
+        from{
+            filter: brightness(30%);
+        }
+        to{
+            filter: brightness(100%);
+        }
+    
+    }
 .smile_rotate{
-    animation: smile_rotate 3s infinite linear;
+    animation: smile_rotate 3s infinite linear,brightness_change 1s forwards;
 }
