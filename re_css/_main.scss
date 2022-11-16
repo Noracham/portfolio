@@ -189,7 +189,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     filter: brightness(30%);
-    margin-bottom: 100px;  
+    margin-bottom: 100px; 
+    @include m.mq(tab){
+        background-size: 150% auto;
+        max-width: 100vw;
+      }
+      @include m.mq(sp){
+        background-size: 200% auto;
+        max-width: 100vw;
+      }
+     
 }
 //about
 .about{
@@ -197,6 +206,7 @@
 }
 .about_text{
     font-size: 100px;
+    z-index: -1;
     @include m.mq(tab){
         font-size: 9rem;
     }
@@ -219,6 +229,20 @@
 .ab-content{
     text-align: center;
     margin: 20% 0;
+    z-index: 3;
+
+    // 落下アニメーション１
+    .down_anime1{
+        animation: down_anime1 2s ease 1s forwards;
+        @keyframes down_anime1 {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+    }
     &:nth-of-type(2) p:nth-of-type(1)::before{
         font-size: 100px;
         content: "WEB DESIGN";
@@ -313,6 +337,9 @@
         top: -390px;
         z-index: -1;
         filter: brightness(30%);
+        &:hover{
+            
+        }
         @include m.mq(sp){
             top: -230px;
         }
@@ -336,11 +363,9 @@
 @keyframes smile_rotate {
     from{
         transform: rotate(0);
-        filter: brightness(30%);
     }
     to{
         transform: rotate(360deg);
-        filter: brightness(100%);
 
     }
 }
@@ -354,5 +379,11 @@
     
     }
 .smile_rotate{
-    animation: smile_rotate 3s infinite linear,brightness_change 1s forwards;
+    animation: brightness_change 1s forwards,smile_rotate 3s infinite linear;
+}
+.dump{
+    width: 100%;
+    img{
+        width: 100%;
+    }
 }

@@ -59,7 +59,20 @@ $(function(){
 
 
     $(".titleimg").one("inview",function(event,isInView){
-        $(this).addClass("title_flash")
+        $(this).addClass("subtitle_flash")
+    })
+
+    $(".ab-content p:first-child").one("inview",function(event,isInView){
+        $(this).addClass("abouttext_flash")
+    })
+
+    $(".ab-content p:nth-of-type(2)").one("inview",function(event,isInView){
+        $(this).addClass("abouttext_flash_du2")
+    })
+
+
+    $(".ab-content:nth-of-type(1)").on("click",function(){
+        $(this).addClass("down_anime1");
     })
 
     $(window).on("scroll",function(){
