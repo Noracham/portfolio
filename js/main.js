@@ -25,11 +25,14 @@ $(function(){
             $(".menuback").animate({"opacity":"1"},500);
 
             // $(".allopacity").animate({"opacity":"0"},500);
-            $(".hidden").css({"display":"none"});
+            $(".hide").addClass("hidden");
 
+            $(".selectmenu").animate({"left":"0"},0.0001)
             $(".in_rump").animate({"top":"0px"},500);
+            $(".in_light").css({"display":"block"},0.1)
             $(".in_light").delay(1000).animate({"opacity":"1"},500);
             $(".menu_list").delay(1000).animate({"opacity":"1"});
+            $(".selectmenu").css({"display":"block"})
 
             console.log("menu");
             
@@ -42,11 +45,13 @@ $(function(){
             $(".menuback").animate({"left":"-100%"},1);
 
             // $(".allopacity").animate({"opacity":"1"},500);
-            $(".hidden").css({"display":"block"});
+            $(".hide").removeClass("hidden");
 
             $(".in_rump").animate({"top":"-750px"},500);
             $(".in_light").animate({"opacity":"0"},1);
+            $(".in_light").css({"display":"none"},0.1)
             $(".menu_list").animate({"opacity":"0"},1);
+            $(".selectmenu").delay(1000).animate({"left":"-100vw"},0.0001)
             
             console.log("close");
         }
@@ -158,14 +163,14 @@ $(function(){
             }
         });
 
-        $('.arrow').each(function(){
+        $('.ar').each(function(){
 
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
 
             if (scroll > position - windowHeight + 300){
-              $(".arrow").addClass('active');
+              $(".ar").addClass('active');
             }
         });
     });

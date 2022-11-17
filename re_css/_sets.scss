@@ -1,12 +1,11 @@
 @use "variables" as v;
+@use "mixin" as m;
 html {
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 100vw;
-  max-width: 1920px;
-  overflow-x: hidden;
+  overflow: auto;
 }
 body {
   z-index: 1;
@@ -28,6 +27,12 @@ li {
 a {
   text-decoration: none;
 }
+.hidden{
+  display: none;
+}
+.hide{
+  z-index: -1000;
+}
 @media screen and (max-width: 959px) {
   body {
     background-position: 55%;
@@ -42,12 +47,13 @@ a {
 //大枠サイズ調整
 .wrapper {
   width: 100vw;
+  max-width: 100vw;
   margin-top: 15%;
 }
 //背景
 .bg {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.536);
+  background-color: rgba(0, 0, 0, 0.382);
   backdrop-filter: blur(8px);
   display: flex;
   flex-direction: column;
@@ -97,6 +103,33 @@ a {
   animation: abouttext_flash 1.75s infinite;
 }
 // neon-button
+.link_button{
+  transition: .5s;
+  width: 20%;
+  &:hover{
+    filter: brightness(70%);
+  }
+}
+// .neon-button{
+//   width: 23%;
+//   font-size: 5rem;
+//   color: rgb(222, 232, 255);
+//   border: 3px solid rgb(206, 221, 255);
+//   border-radius: 30px;
+//   padding: 25px 20px;
+//   box-shadow: 0 0 5px #3072dd,0 0 5px #3072dd inset,0 0 10px #3072dd,0 0 10px #3072dd inset,0 0 25px #3072dd,0 0 25px #3072dd inset,0 15px 3px #000;
+//   text-shadow: 0 0 1px #d8eeff, 0 0 3px #d8eeff, 0px 0px 6px #d8eeff, 0 0 10px #3072dd, 0 0 30px #3072dd, 0 0 50px #3072dd, 0 0 70px #3072dd, 0 0 100px #3072dd, 0 0 150px #3072dd, 0 0 200px #3072dd, 0 15px 0 #000;
+//   transition: .4s;
+//   @include m.mq(sp){
+//     font-size: 3rem;
+//     padding: 20px 15px;
+//     border-radius: 15px;
+// }
+
+//   &:hover{
+//     filter: brightness(50%);
+//   }
+// }
 
 
 
