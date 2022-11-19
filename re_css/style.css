@@ -56,13 +56,11 @@
   width: 100%;
   max-width: 100vw;
   height: 130vh;
-  left: -100vw;
 }
 
 .menuback {
   opacity: 0;
   position: relative;
-  left: 0;
   background-color: black;
 }
 .menuback .rump {
@@ -384,7 +382,7 @@
   font-weight: 700;
   font-style: normal;
   margin: 0;
-  text-shadow: 0 0 15px;
+  text-shadow: 0 0 8px;
 }
 .ab-content p::before {
   font-size: 98px;
@@ -495,6 +493,7 @@
   bottom: 10%;
   left: 40%;
   width: 20%;
+  transition: 0.5s;
 }
 .viewmore:hover {
   filter: brightness(70%);
@@ -508,6 +507,7 @@
 @media screen and (max-width: 768px) {
   .viewmore {
     width: 40%;
+    bottom: 5%;
     left: 30%;
   }
 }
@@ -521,6 +521,9 @@
 .works .titleworks {
   background-image: url(../img/works.png);
 }
+.works .worksbg {
+  padding-bottom: 30%;
+}
 
 .all_portfolio {
   margin-top: 200px;
@@ -529,10 +532,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  width: 100%;
+  width: 85%;
 }
 @media screen and (max-width: 768px) {
   .all_portfolio {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -553,6 +557,7 @@
   .all_portfolio .port_block {
     width: 90%;
     margin-bottom: 100%;
+    border: 4px solid rgb(206, 221, 255);
   }
 }
 .all_portfolio .port_block:last-of-type {
@@ -666,6 +671,14 @@
   margin-bottom: 3%;
 }
 
+.contact {
+  flex-direction: column;
+}
+.contact .titleimg {
+  margin-top: 15%;
+  background-image: url(../img/contact.png);
+}
+
 html {
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
@@ -679,6 +692,7 @@ body {
   background-image: url(../img/back.png);
   background-size: auto;
   width: 100%;
+  overflow: hidden;
 }
 
 *,

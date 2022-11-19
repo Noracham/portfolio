@@ -42,14 +42,14 @@ $(function(){
             
             $("#inbox ion-icon").css({"color":"white","filter":"drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff)"})
             $(".menuback").animate({"opacity":"0"},500);
-            $(".menuback").animate({"left":"-100%"},1);
+            $(".menuback").delay(1000).animate({"left":"-100%"},1);
 
-            // $(".allopacity").animate({"opacity":"1"},500);
+            $(".allopacity").animate({"opacity":"1"},500);
             $(".hide").removeClass("hidden");
 
             $(".in_rump").animate({"top":"-750px"},500);
             $(".in_light").animate({"opacity":"0"},1);
-            $(".in_light").css({"display":"none"},0.1)
+            $(".in_light").css({"display":"none"},0.001)
             $(".menu_list").animate({"opacity":"0"},1);
             $(".selectmenu").delay(1000).animate({"left":"-100vw"},0.0001)
             
