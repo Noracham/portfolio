@@ -31,6 +31,8 @@ $(function(){
             $(".in_rump").animate({"top":"0px"},500);
             $(".in_light").css({"display":"block"},0.1)
             $(".in_light").delay(1000).animate({"opacity":"1"},500);
+            $(".menu_list").animate({"display":"block"},0.0001);
+
             $(".menu_list").delay(1000).animate({"opacity":"1"});
             $(".selectmenu").css({"display":"block"})
 
@@ -51,6 +53,8 @@ $(function(){
             $(".in_light").animate({"opacity":"0"},1);
             $(".in_light").css({"display":"none"},0.001)
             $(".menu_list").animate({"opacity":"0"},1);
+            $(".menu_list").animate({"display":"none"},0.0001);
+
             $(".selectmenu").delay(1000).animate({"left":"-100vw"},0.0001)
             
             console.log("close");
@@ -150,16 +154,6 @@ $(function(){
 
             if (scroll > position - windowHeight + 300){
               $(".snsF").addClass('flash_box');
-            }
-        });
-        $('.contactbg').each(function(){
-
-            var position = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-
-            if (scroll > position - windowHeight + 300){
-              $(".flash_contact").addClass('flash_box');
             }
         });
 

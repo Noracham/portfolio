@@ -51,7 +51,7 @@
 }
 
 .selectmenu {
-  display: block;
+  display: none;
   position: fixed;
   width: 100%;
   max-width: 100vw;
@@ -85,6 +85,7 @@
   }
 }
 .menuback .rump img:nth-of-type(2) {
+  display: none;
   margin-top: -30px;
   margin-right: 18px;
   opacity: 0;
@@ -98,12 +99,12 @@
 .menuback .menu_list {
   position: absolute;
   color: #00a1ff;
-  font-size: 7rem;
+  font-size: 6rem;
   left: 0;
   right: 0;
   margin: auto;
   padding: 0;
-  top: 400px;
+  top: 360px;
   z-index: 10;
   opacity: 0;
 }
@@ -671,12 +672,85 @@
   margin-bottom: 3%;
 }
 
-.contact {
+#contact {
+  position: relative;
+  display: flex;
   flex-direction: column;
+  z-index: -999;
 }
-.contact .titleimg {
+#contact .titleimg {
   margin-top: 15%;
   background-image: url(../img/contact.png);
+}
+
+.contact_contents {
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10%;
+}
+
+.contact_sns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sns {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+.sns ion-icon {
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  margin-right: 2%;
+}
+.sns:hover {
+  transform: translateY(-10px);
+}
+.sns p {
+  font-family: elektrix, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  font-size: 6rem;
+}
+
+.instagram {
+  transition: 0.5s;
+  z-index: 9999;
+}
+.instagram ion-icon {
+  color: #fd69f9;
+  text-shadow: 0 0 10px #ff54f9;
+  font-size: 6rem;
+}
+
+.twitter ion-icon {
+  color: #59b4ff;
+  text-shadow: 0 0 10px #2fa1ff;
+}
+
+.OR {
+  font-family: elektrix, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.contact_button {
+  font-family: elektrix, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  color: #fff;
+  text-align: center;
 }
 
 html {
@@ -688,6 +762,7 @@ html {
 }
 
 body {
+  position: relative;
   z-index: 1;
   background-image: url(../img/back.png);
   background-size: auto;
@@ -718,6 +793,7 @@ a {
 }
 
 .hide {
+  position: relative;
   z-index: -1000;
 }
 

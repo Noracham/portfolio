@@ -8,6 +8,7 @@ html {
   overflow: auto;
 }
 body {
+  position: relative;
   z-index: 1;
   background-image: url(../img/back.png);
   background-size: auto;
@@ -32,6 +33,7 @@ a {
   display: none;
 }
 .hide{
+  position: relative;
   z-index: -1000;
 }
 @media screen and (max-width: 959px) {

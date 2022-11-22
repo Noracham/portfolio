@@ -6,12 +6,15 @@ html {
   font-weight: 400;
   font-style: normal;
   width: 100%;
+  overflow: auto;
 }
 body {
   z-index: 1;
   background-image: url(../img/back.png);
   background-size: auto;
   width: 100%;
+  overflow: hidden;
+
 }
 *,
 *::before,
