@@ -765,6 +765,119 @@
   }
 }
 
+.titleaboutme {
+  background-image: url(../img/about.png);
+}
+
+.aboutme .bg {
+  height: 1000px;
+}
+
+.info_about {
+  margin-top: 10%;
+  position: relative;
+  width: 60%;
+  font-family: "ai bayan";
+  border: 3px solid #fff;
+  border-radius: 3rem;
+  color: #fff;
+}
+.info_about h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 170px;
+  margin: auto;
+  top: -25px;
+  padding: 20px;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  background-color: rgb(0, 0, 0);
+}
+
+.me {
+  border: 3px solid #fd7dff;
+  box-shadow: 0 0 5px #c650f9, inset 0 0 5px #c650f9;
+}
+.me h1 {
+  transition: 0.5s;
+  position: relative;
+  color: #fd7dff;
+  border-left: 3px solid #fd7dff;
+  border-right: 3px solid #fd7dff;
+  text-shadow: 0 0 5px #c650f9;
+}
+.me h1::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fd7dff;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.me h1:hover::before {
+  width: 100px;
+}
+.me h1::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fd7dff;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+.me h1:hover::after {
+  width: 100px;
+}
+.me .me_info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.me .me_info .me_photo {
+  position: relative;
+  width: 150px;
+  border: 3px solid #fd7dff;
+  box-shadow: 0 0 5px #c650f9, inset 0 0 5px #c650f9;
+  border-radius: 50%;
+  padding: 5px;
+}
+.me .me_info .me_photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.me .me_info p {
+  position: relative;
+  font-size: 3rem;
+}
+.me .me_info p::after {
+  position: absolute;
+  content: "Nishio Ryoma";
+  font-size: 2rem;
+  bottom: -25px;
+  left: -13px;
+  width: 120%;
+  opacity: 0.8;
+  text-align: center;
+  color: #e8b2ff;
+}
+.me .me_txt {
+  width: 45%;
+}
+
+.me_flex {
+  display: flex;
+  margin: 10% auto;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
 html {
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
