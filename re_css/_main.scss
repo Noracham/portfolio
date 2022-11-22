@@ -649,22 +649,20 @@
   }
 }
 .info_about {
-  margin-top: 10%;
+  margin-top: 30%;
   position: relative;
   width: 60%;
   font-family: "ai bayan";
   border: 3px solid #fff;
   border-radius: 3rem;
-
   color: #fff;
-  // &::before {
-  //   content: "";
-  //   width: 25%;
-  //   height: 3px;
-  //   background-color: #fff;
-  //   position: absolute;
-  //   top: 0;
-  // }
+  @include m.mq(tab){
+    width: 80%;
+  }
+  @include m.mq(sp){
+    width: 95%;
+  }
+    
   h1 {
     position: absolute;
     left: 0;

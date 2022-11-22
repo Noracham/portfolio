@@ -774,13 +774,23 @@
 }
 
 .info_about {
-  margin-top: 10%;
+  margin-top: 30%;
   position: relative;
   width: 60%;
   font-family: "ai bayan";
   border: 3px solid #fff;
   border-radius: 3rem;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .info_about {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info_about {
+    width: 95%;
+  }
 }
 .info_about h1 {
   position: absolute;
