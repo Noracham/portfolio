@@ -643,15 +643,10 @@
 .titleaboutme {
   background-image: url(../img/about.png);
 }
-.aboutme {
-  .bg {
-    height: 1000px;
-  }
-}
 .info_about {
-  margin-top: 30%;
+  margin-top: 20%;
   position: relative;
-  width: 60%;
+  width: 65%;
   font-family: "ai bayan";
   border: 3px solid #fff;
   border-radius: 3rem;
@@ -665,9 +660,10 @@
     
   h1 {
     position: absolute;
+    text-align: center;
     left: 0;
     right: 0;
-    width: 170px;
+    width: 180px;
     margin: auto;
     top: -25px;
     padding: 20px;
@@ -724,6 +720,7 @@
     .me_photo {
       position: relative;
       width: 150px;
+      height: 150px;
       border: 3px solid #fd7dff;
       box-shadow: 0 0 5px #c650f9,inset 0 0 5px #c650f9;
       border-radius: 50%;
@@ -761,11 +758,178 @@
   }
   .me_txt{
     width: 45%;
+    @include m.mq(sp){
+      margin: 5%;
+      width: 80%;
+    }
   }
 }
 .me_flex{
   display: flex;
-  margin: 10% auto;
+  margin: 10% auto 15%;
   font-size: 1.3rem;
   line-height: 2rem;
+  @include m.mq(sp){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
+// dream
+.dream{
+  padding-bottom: 5%;
+  border: 3px solid #ff2370;
+  box-shadow: 0 0 5px #ff337a,inset 0 0 5px #ff337a;
+  h1{
+    transition: .5s;
+    position: relative;
+    color: #ff2370;
+    border-left: 3px solid #ff2370;
+    border-right: 3px solid #ff2370;
+    text-shadow: 0 0 5px #ff337a;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #ff2370;
+      top: 0;
+      left: 0;
+      transition: 1s;
+
+    }
+    &:hover::before{
+      width: 100px;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #ff2370;
+      bottom: 0;
+      right: 0;
+      transition: 1s;
+
+    }
+    &:hover::after{
+      width: 100px;
+    }
+  }
+
+}
+.dream_info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2{
+    font-size: 2rem;
+    &:not(:first-of-type){
+      margin-top: 10%;
+    }
+  }
+  p{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    span{
+      font-size: 1.8rem;
+      text-shadow: 0 0 5px #fff;
+    }
+  }
+}
+// hometown
+.hometown{
+  border: 3px solid #9effcb;
+  box-shadow: 0 0 5px #61ffab,inset 0 0 5px #61ffab;
+  h1{
+    transition: .5s;
+    position: relative;
+    color: #9effcb;
+    border-left: 3px solid #9effcb;
+    border-right: 3px solid #9effcb;
+    text-shadow: 0 0 5px #61ffab;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #9effcb;
+      top: 0;
+      left: 0;
+      transition: 1s;
+
+    }
+    &:hover::before{
+      width: 100px;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #9effcb;
+      bottom: 0;
+      right: 0;
+      transition: 1s;
+
+    }
+    &:hover::after{
+      width: 100px;
+    }
+  }
+
+}
+// skill
+.skill{
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px #fff,inset 0 0 5px #fff;
+  h1{
+    transition: .5s;
+    position: relative;
+    color: #fff;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    text-shadow: 0 0 5px #fff;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      transition: 1s;
+
+    }
+    &:hover::before{
+      width: 100px;
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      bottom: 0;
+      right: 0;
+      transition: 1s;
+
+    }
+    &:hover::after{
+      width: 100px;
+    }
+  }
+
+}
+.all_skill{
+  .one_skill{
+    border: 3px solid #fff;
+    img{
+      width: 10%;
+    }
+  }
+}
+

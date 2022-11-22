@@ -769,14 +769,10 @@
   background-image: url(../img/about.png);
 }
 
-.aboutme .bg {
-  height: 1000px;
-}
-
 .info_about {
-  margin-top: 30%;
+  margin-top: 20%;
   position: relative;
-  width: 60%;
+  width: 65%;
   font-family: "ai bayan";
   border: 3px solid #fff;
   border-radius: 3rem;
@@ -794,9 +790,10 @@
 }
 .info_about h1 {
   position: absolute;
+  text-align: center;
   left: 0;
   right: 0;
-  width: 170px;
+  width: 180px;
   margin: auto;
   top: -25px;
   padding: 20px;
@@ -852,6 +849,7 @@
 .me .me_info .me_photo {
   position: relative;
   width: 150px;
+  height: 150px;
   border: 3px solid #fd7dff;
   box-shadow: 0 0 5px #c650f9, inset 0 0 5px #c650f9;
   border-radius: 50%;
@@ -880,12 +878,173 @@
 .me .me_txt {
   width: 45%;
 }
+@media screen and (max-width: 768px) {
+  .me .me_txt {
+    margin: 5%;
+    width: 80%;
+  }
+}
 
 .me_flex {
   display: flex;
-  margin: 10% auto;
+  margin: 10% auto 15%;
   font-size: 1.3rem;
   line-height: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .me_flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.dream {
+  padding-bottom: 5%;
+  border: 3px solid #ff2370;
+  box-shadow: 0 0 5px #ff337a, inset 0 0 5px #ff337a;
+}
+.dream h1 {
+  transition: 0.5s;
+  position: relative;
+  color: #ff2370;
+  border-left: 3px solid #ff2370;
+  border-right: 3px solid #ff2370;
+  text-shadow: 0 0 5px #ff337a;
+}
+.dream h1::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #ff2370;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.dream h1:hover::before {
+  width: 100px;
+}
+.dream h1::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #ff2370;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+.dream h1:hover::after {
+  width: 100px;
+}
+
+.dream_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.dream_info h2 {
+  font-size: 2rem;
+}
+.dream_info h2:not(:first-of-type) {
+  margin-top: 10%;
+}
+.dream_info p {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.dream_info p span {
+  font-size: 1.8rem;
+  text-shadow: 0 0 5px #fff;
+}
+
+.hometown {
+  border: 3px solid #9effcb;
+  box-shadow: 0 0 5px #61ffab, inset 0 0 5px #61ffab;
+}
+.hometown h1 {
+  transition: 0.5s;
+  position: relative;
+  color: #9effcb;
+  border-left: 3px solid #9effcb;
+  border-right: 3px solid #9effcb;
+  text-shadow: 0 0 5px #61ffab;
+}
+.hometown h1::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #9effcb;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.hometown h1:hover::before {
+  width: 100px;
+}
+.hometown h1::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #9effcb;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+.hometown h1:hover::after {
+  width: 100px;
+}
+
+.skill {
+  border: 3px solid #fff;
+  box-shadow: 0 0 5px #fff, inset 0 0 5px #fff;
+}
+.skill h1 {
+  transition: 0.5s;
+  position: relative;
+  color: #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  text-shadow: 0 0 5px #fff;
+}
+.skill h1::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.skill h1:hover::before {
+  width: 100px;
+}
+.skill h1::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+.skill h1:hover::after {
+  width: 100px;
+}
+
+.all_skill .one_skill {
+  border: 3px solid #fff;
+}
+.all_skill .one_skill img {
+  width: 10%;
 }
 
 html {
