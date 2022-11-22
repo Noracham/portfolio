@@ -171,7 +171,7 @@ $(function(){
 
     $(".instagram").hover(function () {
             // over
-            $(".instagram p").text("@rr_ym04");
+            $(".instagram p").text("rr_ym04  ");
             $(".instagram p").prop("id","ip");
         }, function () {
             // out
@@ -181,7 +181,7 @@ $(function(){
     );
     $(".twitter").hover(function () {
         // over
-        $(".twitter p").text("@rr_ym04");
+        $(".twitter p").text("rr_ym04");
         $(".twitter p").prop("id","ip");
     }, function () {
         // out

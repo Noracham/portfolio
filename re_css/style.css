@@ -686,12 +686,19 @@
 .contact_contents {
   z-index: 999;
   width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
   margin: 10%;
+}
+@media screen and (max-width: 768px) {
+  .contact_contents {
+    flex-direction: column;
+    margin: 20% auto;
+  }
 }
 
 .contact_sns {
@@ -751,6 +758,11 @@
   font-size: 6rem;
   color: #fff;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .contact_button {
+    margin: 0;
+  }
 }
 
 html {
