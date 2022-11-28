@@ -403,7 +403,8 @@
   width: 20%;
   transition: 0.5s;
   &:hover {
-    filter: brightness(70%);
+    filter: brightness(200%);
+    transform: rotate(5deg);
   }
   @include m.mq(tab) {
     width: 30%;
@@ -632,8 +633,12 @@
   font-weight: 700;
   font-style: normal;
   font-size: 6rem;
+  width: 30%;
   color: #fff;
   text-align: center;
+  img{
+    width: 100%;
+  }
   @include m.mq(sp) {
     margin: 0;
   }

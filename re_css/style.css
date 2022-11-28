@@ -497,7 +497,8 @@
   transition: 0.5s;
 }
 .viewmore:hover {
-  filter: brightness(70%);
+  filter: brightness(200%);
+  transform: rotate(5deg);
 }
 @media screen and (max-width: 1024px) {
   .viewmore {
@@ -756,8 +757,12 @@
   font-weight: 700;
   font-style: normal;
   font-size: 6rem;
+  width: 30%;
   color: #fff;
   text-align: center;
+}
+.contact_button img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .contact_button {
@@ -1059,9 +1064,28 @@ body {
   position: relative;
   z-index: 1;
   background-image: url(../img/back.png);
+  background-position: 0 0;
   background-size: auto;
   width: 100%;
   overflow: hidden;
+  -webkit-animation: bgroop 50s linear infinite;
+          animation: bgroop 50s linear infinite;
+}
+@-webkit-keyframes bgroop {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1985px 0;
+  }
+}
+@keyframes bgroop {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1985px 0;
+  }
 }
 
 *,
@@ -1195,5 +1219,6 @@ a {
   width: 20%;
 }
 .link_button:hover {
-  filter: brightness(70%);
+  filter: brightness(200%);
+  transform: rotate(5deg);
 }/*# sourceMappingURL=style.css.map */

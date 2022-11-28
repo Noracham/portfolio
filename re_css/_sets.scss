@@ -11,9 +11,20 @@ body {
   position: relative;
   z-index: 1;
   background-image: url(../img/back.png);
+  background-position: 0 0;
   background-size: auto;
   width: 100%;
   overflow: hidden;
+  animation: bgroop 50s linear infinite;
+  @keyframes bgroop {
+    from{
+      background-position: 0 0;
+    }
+    to{
+      background-position: -1985px 0;
+    }
+    
+  }
 }
 *,
 *::before,
@@ -110,7 +121,8 @@ a {
   transition: .5s;
   width: 20%;
   &:hover{
-    filter: brightness(70%);
+    filter: brightness(200%);
+    transform: rotate(5deg);
   }
 }
 // .neon-button{
