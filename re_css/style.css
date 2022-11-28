@@ -495,6 +495,8 @@
   left: 40%;
   width: 20%;
   transition: 0.5s;
+  -webkit-animation: gatagata 2s ease-in infinite;
+          animation: gatagata 2s ease-in infinite;
 }
 .viewmore:hover {
   filter: tness(200%);
@@ -511,6 +513,28 @@
     width: 40%;
     bottom: 5%;
     left: 30%;
+  }
+}
+@-webkit-keyframes gatagata {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes gatagata {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 
@@ -640,6 +664,8 @@
 }
 
 .instagram .link_button {
+  -webkit-animation: gatagata 2s ease-in infinite;
+          animation: gatagata 2s ease-in infinite;
   left: 15%;
 }
 @media screen and (max-width: 768px) {
@@ -650,6 +676,8 @@
 }
 
 .portfolio .link_button {
+  -webkit-animation: gatagata 1.7s ease-in infinite;
+          animation: gatagata 1.7s ease-in infinite;
   right: 15%;
 }
 @media screen and (max-width: 768px) {
@@ -759,13 +787,15 @@
   font-size: 6rem;
   width: 30%;
   color: #fff;
-  text-align: center;
+  -webkit-animation: gatagata 2s ease-in infinite;
+          animation: gatagata 2s ease-in infinite;
 }
 .contact_button img {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .contact_button {
+    width: 60%;
     margin: 0;
   }
 }

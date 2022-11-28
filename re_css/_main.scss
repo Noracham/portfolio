@@ -402,6 +402,7 @@
   left: 40%;
   width: 20%;
   transition: 0.5s;
+  animation: gatagata 2s ease-in infinite ;
   &:hover {
     filter: tness(200%);
     transform: rotate(5deg);
@@ -414,6 +415,17 @@
     width: 40%;
     bottom: 5%;
     left: 30%;
+  }
+  @keyframes gatagata {
+    0%{
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(5deg);
+    }
+    100%{
+      transform: rotate(0);
+    }
   }
 }
 
@@ -524,6 +536,8 @@
 }
 .instagram {
   .link_button {
+    animation: gatagata 2s ease-in infinite ;
+
     left: 15%;
     @include m.mq(sp) {
       top: 35%;
@@ -533,6 +547,8 @@
 }
 .portfolio {
   .link_button {
+    animation: gatagata 1.7s ease-in infinite ;
+
     right: 15%;
     @include m.mq(sp) {
       top: 85%;
@@ -635,11 +651,12 @@
   font-size: 6rem;
   width: 30%;
   color: #fff;
-  text-align: center;
+  animation: gatagata 2s ease-in infinite ;
   img{
     width: 100%;
   }
   @include m.mq(sp) {
+    width: 60%;
     margin: 0;
   }
 }
