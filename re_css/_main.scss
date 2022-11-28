@@ -652,7 +652,9 @@
   margin-top: 20%;
   position: relative;
   width: 65%;
-  font-family: "ai bayan";
+  font-family: ff-chambers-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   border: 3px solid #fff;
   border-radius: 3rem;
   color: #fff;
@@ -930,10 +932,86 @@
 
 }
 .all_skill{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
   .one_skill{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 3px solid #fff;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px ;
+    box-shadow: 0 0 5px #fff,inset 0 0 5px #fff;
+    &::before{
+      content: "HTML";
+      padding: 0 4% 2px;
+      color: #fff;
+      position: absolute;
+      left: -45px;
+      min-width: 80px;
+      top: -20px;
+      transform: rotate(-45deg);
+      font-size: 3rem;
+      border-bottom: 3px solid #fff;
+      background-color: #000;
+      font-family: ff-chambers-sans-web, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      text-align: center;
+        }
+      &:nth-of-type(2)::before{
+        content: "CSS";
+      }
+      &:nth-of-type(3)::before{
+        content: "Sass";
+      }
+      &:nth-of-type(4)::before{
+        content: "JavaScript";
+        font-size: 2.5rem;
+        left: -65px;
+      }
+      &:nth-of-type(5)::before{
+        content: "jQuery";
+      }
+      &:nth-of-type(6)::before{
+        content: "React";
+      }
+      &:nth-of-type(7)::before{
+        content: "PHP";
+      }
+      &:nth-of-type(8)::before{
+        content: "Java";
+      }
+      &:nth-of-type(9)::before{
+        content: "Python";
+      }
+      &:nth-of-type(10)::before{
+        content: "AWS";
+      }
+      &:nth-of-type(11)::before{
+        content: "Photoshop";
+        font-size: 2.5rem;
+        left: -65px;
+      }
+      &:nth-of-type(12)::before{
+        content: "Illustlater";
+        font-size: 2.5rem;
+        left: -65px;
+      }
+      &:nth-of-type(13)::before{
+        content: "XD";
+      }
+
+
+
     img{
-      width: 10%;
+      width: 30%;
     }
   }
 }

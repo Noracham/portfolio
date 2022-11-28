@@ -229,6 +229,11 @@ $('.container').css('overflow','hidden');
 $(window).on('touchmove.noScroll', function(e) {
     e.preventDefault();
 });
+
+// about.html
+$(".one_skill:nth-of-type(1)").one("inview",function(event,isInView){
+    $(this).css({"filter":"brightness(30%)"},500);
+})
 })
 
 
