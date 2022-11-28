@@ -1083,6 +1083,11 @@
   font-style: normal;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .all_skill .one_skill::before {
+    font-size: 2.3rem;
+  }
+}
 .all_skill .one_skill:nth-of-type(2)::before {
   content: "CSS";
 }
@@ -1093,6 +1098,13 @@
   content: "JavaScript";
   font-size: 2.5rem;
   left: -65px;
+}
+@media screen and (max-width: 768px) {
+  .all_skill .one_skill:nth-of-type(4)::before {
+    font-size: 1.8rem;
+    left: -45px;
+    top: -10px;
+  }
 }
 .all_skill .one_skill:nth-of-type(5)::before {
   content: "jQuery";
@@ -1117,10 +1129,24 @@
   font-size: 2.5rem;
   left: -65px;
 }
+@media screen and (max-width: 768px) {
+  .all_skill .one_skill:nth-of-type(11)::before {
+    font-size: 1.8rem;
+    left: -45px;
+    top: -10px;
+  }
+}
 .all_skill .one_skill:nth-of-type(12)::before {
   content: "Illustlater";
   font-size: 2.5rem;
   left: -65px;
+}
+@media screen and (max-width: 768px) {
+  .all_skill .one_skill:nth-of-type(12)::before {
+    font-size: 1.8rem;
+    left: -45px;
+    top: -10px;
+  }
 }
 .all_skill .one_skill:nth-of-type(13)::before {
   content: "XD";

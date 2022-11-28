@@ -964,6 +964,9 @@
       font-weight: 700;
       font-style: normal;
       text-align: center;
+      @include m.mq(sp){
+        font-size: 2.3rem;
+      }
         }
       &:nth-of-type(2)::before{
         content: "CSS";
@@ -975,6 +978,11 @@
         content: "JavaScript";
         font-size: 2.5rem;
         left: -65px;
+      @include m.mq(sp){
+        font-size: 1.8rem;
+        left: -45px;
+        top: -10px;
+      }
       }
       &:nth-of-type(5)::before{
         content: "jQuery";
@@ -998,11 +1006,23 @@
         content: "Photoshop";
         font-size: 2.5rem;
         left: -65px;
+        @include m.mq(sp){
+          font-size: 1.8rem;
+          left: -45px;
+          top: -10px;
+        }
+  
       }
       &:nth-of-type(12)::before{
         content: "Illustlater";
         font-size: 2.5rem;
         left: -65px;
+        @include m.mq(sp){
+          font-size: 1.8rem;
+          left: -45px;
+          top: -10px;
+        }
+  
       }
       &:nth-of-type(13)::before{
         content: "XD";
