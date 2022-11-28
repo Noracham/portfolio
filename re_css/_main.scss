@@ -666,12 +666,10 @@
   background-image: url(../img/about.png);
 }
 .info_about {
+  font-family: YuGothic,'Yu Gothic',sans-serif;
   margin-top: 20%;
   position: relative;
   width: 65%;
-  font-family: ff-chambers-sans-web, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   border: 3px solid #fff;
   border-radius: 3rem;
   color: #fff;
@@ -683,6 +681,10 @@
   }
     
   h1 {
+    font-family: ff-chambers-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  
     position: absolute;
     text-align: center;
     left: 0;
@@ -696,6 +698,7 @@
     background-color: rgb(0, 0, 0);  
   }
 }
+//自己紹介
 .me {
   border: 3px solid #fd7dff;
   box-shadow: 0 0 5px #c650f9,inset 0 0 5px #c650f9;
@@ -768,6 +771,10 @@
       position: relative;
       font-size: 3rem;
       &::after{
+        font-family: ff-chambers-sans-web, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      
         position: absolute;
         content: "Nishio Ryoma";
         font-size: 2rem;
@@ -779,11 +786,30 @@
         color: #e8b2ff;
       }
     }
+    .about_sns{
+      margin-top: 5%;
+      width: 140px;
+      display: flex;
+      justify-content: space-around;
+      ion-icon{
+        width: 30px;
+        height: 30px;
+        &:first-of-type{
+          color: #00a1ff;
+        }
+        &:nth-of-type(2){
+          color: #fd69f9;
+        }
+
+
+      }
+    }
   }
   .me_txt{
     width: 45%;
+    font-family: YuGothic,'Yu Gothic',sans-serif;
     @include m.mq(sp){
-      margin: 5%;
+      margin: 15% 5% 0;
       width: 80%;
     }
   }
@@ -853,6 +879,10 @@
     margin: 20% auto;
   }
   h2{
+    font-family: ff-chambers-sans-web, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  
     font-size: 3.5rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.126);
@@ -989,7 +1019,7 @@
     align-items: center;
     justify-content: center;
     border: 3px solid #fff;
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 20px;
     padding: 10px;
@@ -1084,3 +1114,18 @@
   }
 }
 
+.return_menu{
+  margin: 10% 0;
+  animation: gatagata 2s ease-in infinite ;
+  width: 15%;
+  max-width: 300px;
+  min-width: 200px;
+  @include m.mq(sp){
+    width: 70%;
+    max-width: 200px;
+    min-width: 0;
+  }
+  img{
+    width: 100%;
+  }
+}

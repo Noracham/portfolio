@@ -805,12 +805,10 @@
 }
 
 .info_about {
+  font-family: YuGothic, "Yu Gothic", sans-serif;
   margin-top: 20%;
   position: relative;
   width: 65%;
-  font-family: ff-chambers-sans-web, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   border: 3px solid #fff;
   border-radius: 3rem;
   color: #fff;
@@ -826,6 +824,9 @@
   }
 }
 .info_about h1 {
+  font-family: ff-chambers-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   position: absolute;
   text-align: center;
   left: 0;
@@ -902,6 +903,9 @@
   font-size: 3rem;
 }
 .me .me_info p::after {
+  font-family: ff-chambers-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   position: absolute;
   content: "Nishio Ryoma";
   font-size: 2rem;
@@ -912,12 +916,29 @@
   text-align: center;
   color: #e8b2ff;
 }
+.me .me_info .about_sns {
+  margin-top: 5%;
+  width: 140px;
+  display: flex;
+  justify-content: space-around;
+}
+.me .me_info .about_sns ion-icon {
+  width: 30px;
+  height: 30px;
+}
+.me .me_info .about_sns ion-icon:first-of-type {
+  color: #00a1ff;
+}
+.me .me_info .about_sns ion-icon:nth-of-type(2) {
+  color: #fd69f9;
+}
 .me .me_txt {
   width: 45%;
+  font-family: YuGothic, "Yu Gothic", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .me .me_txt {
-    margin: 5%;
+    margin: 15% 5% 0;
     width: 80%;
   }
 }
@@ -990,6 +1011,9 @@
   }
 }
 .dream_info h2 {
+  font-family: ff-chambers-sans-web, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 3.5rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.126);
@@ -1126,7 +1150,7 @@
   align-items: center;
   justify-content: center;
   border: 3px solid #fff;
-  width: 300px;
+  width: 250px;
   height: auto;
   border-radius: 20px;
   padding: 10px;
@@ -1221,6 +1245,25 @@
 .all_skill .one_skill img {
   width: 30%;
   opacity: 0.3;
+}
+
+.return_menu {
+  margin: 10% 0;
+  -webkit-animation: gatagata 2s ease-in infinite;
+          animation: gatagata 2s ease-in infinite;
+  width: 15%;
+  max-width: 300px;
+  min-width: 200px;
+}
+@media screen and (max-width: 768px) {
+  .return_menu {
+    width: 70%;
+    max-width: 200px;
+    min-width: 0;
+  }
+}
+.return_menu img {
+  width: 100%;
 }
 
 html {
