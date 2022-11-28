@@ -191,7 +191,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  filter: tness(30%);
+  filter: brightness(30%);
   margin-bottom: 100px;
   @include m.mq(tab) {
     background-size: 150% auto;
@@ -836,10 +836,14 @@
     margin: 20% auto;
   }
   h2{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.126);
     padding: 1%;
+    @include m.mq(sp){
+      font-size: 2.5rem;
+
+    }
     @include m.mq(sp2){
       font-size: 2.1rem;
     }
@@ -850,15 +854,26 @@
   }
   p{
     text-align: center;
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 1.7rem;
+    line-height: 3rem;
     font-weight: normal;
+    margin: 3%;
+
     @include m.mq(sp2){
-      margin: 3%;
+      font-size: 1.3rem;
+    line-height: 2.5rem;
     }
     span{
-      font-size: 1.8rem;
+      font-size: 2.8rem;
       text-shadow: 0 0 5px #fff;
+      @include m.mq(sp){
+        font-size: 2.5rem;
+  
+      }  
+      @include m.mq(sp2){
+        font-size: 2rem;
+      }
+  
     }
   }
 }

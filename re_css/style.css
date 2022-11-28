@@ -224,7 +224,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  filter: tness(30%);
+  filter: brightness(30%);
   margin-bottom: 100px;
 }
 @media screen and (max-width: 1024px) {
@@ -960,10 +960,15 @@
   }
 }
 .dream_info h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.126);
   padding: 1%;
+}
+@media screen and (max-width: 768px) {
+  .dream_info h2 {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 468px) {
   .dream_info h2 {
@@ -975,18 +980,30 @@
 }
 .dream_info p {
   text-align: center;
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.7rem;
+  line-height: 3rem;
   font-weight: normal;
+  margin: 3%;
 }
 @media screen and (max-width: 468px) {
   .dream_info p {
-    margin: 3%;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
   }
 }
 .dream_info p span {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   text-shadow: 0 0 5px #fff;
+}
+@media screen and (max-width: 768px) {
+  .dream_info p span {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 468px) {
+  .dream_info p span {
+    font-size: 2rem;
+  }
 }
 
 .hometown {
@@ -1200,7 +1217,7 @@ body {
     background-position: 0 0;
   }
   to {
-    background-position: -1985px 0;
+    background-position: -1985px -1114px;
   }
 }
 @keyframes bgroop {
@@ -1208,7 +1225,7 @@ body {
     background-position: 0 0;
   }
   to {
-    background-position: -1985px 0;
+    background-position: -1985px -1114px;
   }
 }
 
