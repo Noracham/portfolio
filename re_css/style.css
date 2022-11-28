@@ -145,66 +145,66 @@
 }
 @-webkit-keyframes title_flash {
   0% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   20% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   30% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   35% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   40% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   45% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   70% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   85% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   100% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
 }
 @keyframes title_flash {
   0% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   20% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   30% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   35% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   40% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   45% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   70% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
   85% {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   100% {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
 }
 .main img {
   -webkit-animation: title_flash 2s ease 1s forwards;
           animation: title_flash 2s ease 1s forwards;
-  filter: brightness(30%);
+  filter: tness(30%);
   width: 70%;
 }
 @media screen and (max-width: 1024px) {
@@ -224,7 +224,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  filter: brightness(30%);
+  filter: tness(30%);
   margin-bottom: 100px;
 }
 @media screen and (max-width: 1024px) {
@@ -422,7 +422,7 @@
   position: relative;
   top: -390px;
   z-index: -1;
-  filter: brightness(30%);
+  filter: tness(30%);
 }
 @media screen and (max-width: 768px) {
   .ab-content .bgsmile {
@@ -461,25 +461,25 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes brightness_change {
+@-webkit-keyframes tness_change {
   from {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   to {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
 }
-@keyframes brightness_change {
+@keyframes tness_change {
   from {
-    filter: brightness(30%);
+    filter: tness(30%);
   }
   to {
-    filter: brightness(100%);
+    filter: tness(100%);
   }
 }
 .smile_rotate {
-  -webkit-animation: brightness_change 1s forwards, smile_rotate 3s infinite linear;
-          animation: brightness_change 1s forwards, smile_rotate 3s infinite linear;
+  -webkit-animation: tness_change 1s forwards, smile_rotate 3s infinite linear;
+          animation: tness_change 1s forwards, smile_rotate 3s infinite linear;
 }
 
 .dump {
@@ -497,7 +497,7 @@
   transition: 0.5s;
 }
 .viewmore:hover {
-  filter: brightness(200%);
+  filter: tness(200%);
   transform: rotate(5deg);
 }
 @media screen and (max-width: 1024px) {
@@ -800,7 +800,7 @@
   text-align: center;
   left: 0;
   right: 0;
-  width: 180px;
+  width: 280px;
   margin: auto;
   top: -25px;
   padding: 20px;
@@ -951,18 +951,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 10% auto;
+}
+@media screen and (max-width: 768px) {
+  .dream_info {
+    margin: 20% auto;
+  }
 }
 .dream_info h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.126);
+  padding: 1%;
+}
+@media screen and (max-width: 468px) {
+  .dream_info h2 {
+    font-size: 2.1rem;
+  }
 }
 .dream_info h2:not(:first-of-type) {
-  margin-top: 10%;
+  margin-top: 100px;
 }
 .dream_info p {
   text-align: center;
   font-size: 1.3rem;
   line-height: 2rem;
+  font-weight: normal;
+}
+@media screen and (max-width: 468px) {
+  .dream_info p {
+    margin: 3%;
+  }
 }
 .dream_info p span {
   font-size: 1.8rem;

@@ -231,6 +231,11 @@ $(window).on('touchmove.noScroll', function(e) {
 });
 
 // about.html
+// boxのh1アニメーション
+$(".s_title").one("inview",function(event,isInView){
+    $(this).animate({"width":"180px"},500)
+})
+
 // 信号アニメーション
 $(".one_skill:nth-of-type(1)").one("inview",function(event,isInView){
     $(".one_skill:nth-of-type(1) .tra1").animate({"opacity":"1"},500);
