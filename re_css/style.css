@@ -1127,6 +1127,7 @@
 }
 .all_skill .one_skill img {
   width: 30%;
+  opacity: 0.3;
 }
 
 html {

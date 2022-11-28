@@ -231,9 +231,106 @@ $(window).on('touchmove.noScroll', function(e) {
 });
 
 // about.html
+// 信号アニメーション
 $(".one_skill:nth-of-type(1)").one("inview",function(event,isInView){
-    $(this).css({"filter":"brightness(30%)"},500);
+    $(".one_skill:nth-of-type(1) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(1) .tra2").delay(500).animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(1) .tra3").delay(1000).animate({"opacity":"1"},500);
 })
+// css
+$(".one_skill:nth-of-type(2)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(2) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(2) .tra2").delay(500).animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(2) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// sass
+$(".one_skill:nth-of-type(3)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(3) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(3) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(3) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// javasctipt
+$(".one_skill:nth-of-type(4)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(4) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(4) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(4) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// jquery
+$(".one_skill:nth-of-type(5)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(5) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(5) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(5) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// react
+$(".one_skill:nth-of-type(6)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(6) .tra1").animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(6) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(6) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// php
+$(".one_skill:nth-of-type(7)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(7) .tra1").animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(7) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(7) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// java
+$(".one_skill:nth-of-type(8)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(8) .tra1").animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(8) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(8) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// python
+$(".one_skill:nth-of-type(9)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(9) .tra1").animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(9) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(9) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// AWS
+$(".one_skill:nth-of-type(10)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(10) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(10) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(10) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// photoshop
+$(".one_skill:nth-of-type(11)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(11) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(11) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(11) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// illustrater
+$(".one_skill:nth-of-type(12)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(12) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(12) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(12) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// xd
+$(".one_skill:nth-of-type(13)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(13) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(13) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(13) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
 
 
