@@ -40,9 +40,7 @@ li {
 a {
   text-decoration: none;
 }
-.hidden{
-  display: none;
-}
+
 .hide{
   position: relative;
   z-index: -1000;
@@ -125,26 +123,6 @@ a {
     transform: rotate(5deg);
   }
 }
-// .neon-button{
-//   width: 23%;
-//   font-size: 5rem;
-//   color: rgb(222, 232, 255);
-//   border: 3px solid rgb(206, 221, 255);
-//   border-radius: 30px;
-//   padding: 25px 20px;
-//   box-shadow: 0 0 5px #3072dd,0 0 5px #3072dd inset,0 0 10px #3072dd,0 0 10px #3072dd inset,0 0 25px #3072dd,0 0 25px #3072dd inset,0 15px 3px #000;
-//   text-shadow: 0 0 1px #d8eeff, 0 0 3px #d8eeff, 0px 0px 6px #d8eeff, 0 0 10px #3072dd, 0 0 30px #3072dd, 0 0 50px #3072dd, 0 0 70px #3072dd, 0 0 100px #3072dd, 0 0 150px #3072dd, 0 0 200px #3072dd, 0 15px 0 #000;
-//   transition: .4s;
-//   @include m.mq(sp){
-//     font-size: 3rem;
-//     padding: 20px 15px;
-//     border-radius: 15px;
-// }
-
-//   &:hover{
-//     filter: brightness(50%);
-//   }
-// }
 
 
 
