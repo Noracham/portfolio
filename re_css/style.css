@@ -1895,11 +1895,16 @@
   font-family: serif;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .port_title {
+    margin-top: 30%;
+  }
+}
 .port_title h1 {
-  margin: 8% auto 7%;
+  margin: 8% auto 0;
   position: relative;
   font-family: YuGothic, "Yu Gothic", sans-serif;
-  font-size: 50px;
+  font-size: 5rem;
 }
 .port_title h1::after {
   opacity: 0.5;
@@ -1910,9 +1915,45 @@
   font-size: 30px;
   left: 230px;
 }
+@media screen and (max-width: 1024px) {
+  .port_title h1::after {
+    font-size: 2.5rem;
+    left: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .port_title h1::after {
+    font-size: 1.6rem;
+    left: 110px;
+    bottom: -25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .port_title h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .port_title h1 {
+    font-size: 2.5em;
+  }
+}
 .port_title div {
+  margin-top: 7%;
   width: 70vw;
   box-shadow: 0 0 10px #3a3a3a;
+}
+@media screen and (max-width: 1024px) {
+  .port_title div {
+    margin-top: 10%;
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .port_title div {
+    width: 95vw;
+    margin-top: 13%;
+  }
 }
 .port_title div img {
   width: 100%;

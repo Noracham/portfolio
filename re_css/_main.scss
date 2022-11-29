@@ -1676,11 +1676,14 @@
   align-items: center;
   font-family: serif;
   color: #fff;
+  @include m.mq(sp){
+    margin-top: 30%;
+  }
   h1{
-    margin: 8% auto 7%;
+    margin: 8% auto 0;
     position: relative;
     font-family: YuGothic,'Yu Gothic',sans-serif;
-    font-size: 50px;
+    font-size: 5rem;
     &::after{
       opacity: .5;
       content: "WEBSITE";
@@ -1689,11 +1692,36 @@
       bottom: -50px;
       font-size: 30px;
       left: 230px;
+      @include m.mq(tab){
+        font-size: 2.5rem;
+        left: 180px;
+      }
+      @include m.mq(sp){
+        font-size: 1.6rem;
+        left: 110px;
+        bottom: -25px;
+      }
+    }
+    @include m.mq(tab){
+      font-size: 4rem;
+    }
+    @include m.mq(sp){
+      font-size: 2.5em;
     }
   }
   div{
+    margin-top: 7%;
     width: 70vw;
     box-shadow: 0 0 10px #3a3a3a;
+    @include m.mq(tab){
+      margin-top: 10%;
+      width: 80vw;
+    }
+    @include m.mq(sp){
+
+      width: 95vw;
+margin-top: 13%;
+    }
     img{
       width: 100%;
     }
