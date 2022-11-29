@@ -1888,6 +1888,36 @@
     border-bottom: 0 solid rgb(255, 170, 73);
   }
 }
+.port_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: serif;
+  color: #fff;
+}
+.port_title h1 {
+  margin: 8% auto 7%;
+  position: relative;
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+  font-size: 50px;
+}
+.port_title h1::after {
+  opacity: 0.5;
+  content: "WEBSITE";
+  color: #fff;
+  position: absolute;
+  bottom: -50px;
+  font-size: 30px;
+  left: 230px;
+}
+.port_title div {
+  width: 70vw;
+  box-shadow: 0 0 10px #3a3a3a;
+}
+.port_title div img {
+  width: 100%;
+}
+
 html {
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
