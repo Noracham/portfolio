@@ -1,6 +1,7 @@
 @use "variables" as v;
 @use "mixin" as m;
 html {
+  max-width: 100vw;
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
   font-weight: 400;
