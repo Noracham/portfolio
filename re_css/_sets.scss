@@ -128,13 +128,14 @@ a {
 #stalker{
     width: 50px;
     height: 50px;
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     pointer-events: none;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99999999;
   background-image: url(../img/smile1.png);
   animation: stalker_anime 2s linear infinite;
   @keyframes stalker_anime {
@@ -145,8 +146,18 @@ a {
       transform: rotate(360deg);
     } 
   }
-  .stalker_hov{
-    animation: stalker_anime .5s linear infinite;
+  @keyframes stalker_hov {
+    0%{
+      transform: rotate(0) scale(1.5);
+    }
+    50%{
+      filter: hue-rotate(360deg);
+    }
+    100%{
+      transform: rotate(360deg) scale(1.5);
+      filter: hue-rotate(0deg);
+    }
+    
   }
 }
 

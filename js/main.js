@@ -325,20 +325,19 @@ $(".one_skill:nth-of-type(13)").one("inview",function(event,isInView){
 // マウスストーカー
 let $stalker = $("#stalker");
 $(document).on("mousemove",function(e){
-    console.log("fff");
     let x = e.clientX;
     let y = e.clientY;
     setTimeout(() => {
         $($stalker).css({
             "top":y+"px",
             "left":x+"px",
-            'transform': 'translate(20px, -16px)',
+            'transform': 'translate(20px, -15px)',
         });        
     }, 100);
 });
 });
 $("a").hover(function(){
-    $("#stalker").css({"animation" : "stalker_anime .5s linear infinite","transform" : "scale(1.2)"})
+    $("#stalker").css({"animation" : "stalker_hov .5s linear infinite",})
 });
 $("a").mouseout(function(){
     $("#stalker").css("animation" , "stalker_anime 2s linear infinite")

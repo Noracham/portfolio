@@ -2020,6 +2020,9 @@
 .maindata .sc_sh img {
   width: 100%;
 }
+.maindata .return_menu {
+  margin: 0 auto 10%;
+}
 
 .language ul {
   display: flex;
@@ -2209,13 +2212,14 @@ a {
 #stalker {
   width: 50px;
   height: 50px;
-  background-size: contain;
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99999999;
   background-image: url(../img/smile1.png);
   -webkit-animation: stalker_anime 2s linear infinite;
           animation: stalker_anime 2s linear infinite;
@@ -2236,7 +2240,27 @@ a {
     transform: rotate(360deg);
   }
 }
-#stalker .stalker_hov {
-  -webkit-animation: stalker_anime 0.5s linear infinite;
-          animation: stalker_anime 0.5s linear infinite;
+@-webkit-keyframes stalker_hov {
+  0% {
+    transform: rotate(0) scale(1.5);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    filter: hue-rotate(0deg);
+  }
+}
+@keyframes stalker_hov {
+  0% {
+    transform: rotate(0) scale(1.5);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    filter: hue-rotate(0deg);
+  }
 }/*# sourceMappingURL=style.css.map */
