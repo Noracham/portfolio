@@ -1756,6 +1756,9 @@
     position: relative;
     font-size: 3.5rem;
     padding-bottom: 5px;
+    @include m.mq(sp){
+      font-size: 3rem;
+    }
     &::after{
       position: absolute;
       bottom: 0;

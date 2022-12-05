@@ -1994,6 +1994,11 @@
   font-size: 3.5rem;
   padding-bottom: 5px;
 }
+@media screen and (max-width: 768px) {
+  .maindata .subtitle_p {
+    font-size: 3rem;
+  }
+}
 .maindata .subtitle_p::after {
   position: absolute;
   bottom: 0;
