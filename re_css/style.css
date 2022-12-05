@@ -1299,7 +1299,7 @@
   font-family: garamond-premier-pro, serif;
   margin-bottom: 220px;
   margin-top: 15%;
-  box-shadow: -7px -7px 10px 0 rgb(121, 0, 107);
+  box-shadow: -7px -7px 10px 0 rgb(186, 0, 164);
 }
 
 .worksmob:nth-of-type(2) {
@@ -1424,9 +1424,9 @@
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 600px solid rgb(121, 0, 107);
+  border-right: 600px solid rgb(186, 0, 164);
   border-top: 500px solid transparent;
-  border-bottom: 0 solid rgb(121, 0, 107);
+  border-bottom: 0 solid rgb(186, 0, 164);
   overflow: hidden;
 }
 
@@ -1650,7 +1650,7 @@
     bottom: -200px;
   }
   .traiangle {
-    border-right: 530px solid rgb(121, 0, 107);
+    border-right: 530px solid rgb(186, 0, 164);
     border-top: 441px solid transparent;
   }
   .worksmob:nth-of-type(2) .traiangle {
@@ -1736,7 +1736,7 @@
     bottom: -170px;
   }
   .traiangle {
-    border-right: 430px solid rgb(121, 0, 107);
+    border-right: 430px solid rgb(186, 0, 164);
     border-top: 358px solid transparent;
   }
   .worksmob:nth-of-type(2) .traiangle {
@@ -1824,7 +1824,7 @@
     bottom: -130px;
   }
   .traiangle {
-    border-right: 330px solid rgb(121, 0, 107);
+    border-right: 330px solid rgb(186, 0, 164);
     border-top: 275px solid transparent;
   }
   .worksmob:nth-of-type(2) .traiangle {
@@ -2215,6 +2215,7 @@ a {
 }
 
 #stalker {
+  visibility: hidden;
   width: 50px;
   height: 50px;
   background-size: cover;

@@ -318,13 +318,13 @@ $(".one_skill:nth-of-type(13)").one("inview",function(event,isInView){
 
 
 
-
-
-
-
 // マウスストーカー
 let $stalker = $("#stalker");
+if(navigator.userAgent.match(/(iPhone|iPad|Android)/)){
+    $($stalker).css("display","none");
+}
 $(document).on("mousemove",function(e){
+    $($stalker).css("visibility","visible")
     let x = e.clientX;
     let y = e.clientY;
     setTimeout(() => {
