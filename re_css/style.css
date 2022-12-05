@@ -111,7 +111,7 @@
 @media screen and (max-width: 768px) {
   .menuback .menu_list {
     top: 320px;
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
 }
 .menuback .menu_list li {
@@ -1970,12 +1970,31 @@
   margin: 0 15%;
   font-family: YuGothic, "Yu Gothic", sans-serif;
 }
-.maindata h1 {
+.maindata .margin {
+  margin: 15% 0;
+}
+@media screen and (max-width: 768px) {
+  .maindata .margin {
+    margin: 30% 0;
+  }
+}
+.maindata p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .maindata p {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+  }
+}
+.maindata .subtitle_p {
   color: #fff;
   position: relative;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  padding-bottom: 5px;
 }
-.maindata h1::after {
+.maindata .subtitle_p::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1984,6 +2003,39 @@
   height: 3px;
   background-color: rgb(179, 0, 255);
   box-shadow: 0 0 10px #a500ae;
+}
+@media screen and (max-width: 1024px) {
+  .maindata {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .maindata {
+    width: 95%;
+  }
+}
+.maindata .sc_sh {
+  width: 100%;
+}
+.maindata .sc_sh img {
+  width: 100%;
+}
+
+.language ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  padding-left: 55px;
+}
+.language ul li {
+  color: #fff;
+  list-style-type: georgian;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .language ul li {
+    width: 100%;
+  }
 }
 
 html {
@@ -2152,4 +2204,39 @@ a {
 .link_button:hover {
   filter: brightness(200%);
   transform: rotate(5deg);
+}
+
+#stalker {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(../img/smile1.png);
+  -webkit-animation: stalker_anime 2s linear infinite;
+          animation: stalker_anime 2s linear infinite;
+}
+@-webkit-keyframes stalker_anime {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes stalker_anime {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#stalker .stalker_hov {
+  -webkit-animation: stalker_anime 0.5s linear infinite;
+          animation: stalker_anime 0.5s linear infinite;
 }/*# sourceMappingURL=style.css.map */

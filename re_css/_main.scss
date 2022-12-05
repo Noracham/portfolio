@@ -109,7 +109,7 @@
     opacity: 0;
     @include m.mq(sp) {
       top: 320px;
-      font-size: 5.5rem;
+      font-size: 5rem;
     }
     li {
       font-family: "multi-display", sans-serif;
@@ -1737,13 +1737,25 @@
   }
 }
 .maindata{
-  width: 70%;
-  margin: 0 15%;
-  font-family: YuGothic,'Yu Gothic',sans-serif;
-  h1{
+  .margin{
+    margin: 15% 0;
+    @include m.mq(sp){
+      margin: 30% 0;
+    }
+  }
+  p{
+    font-size: 2rem;
+    line-height: 3rem;
+    @include m.mq(sp){
+      font-size: 1.7rem;
+      line-height: 2.7rem;
+    }
+  }
+  .subtitle_p{
     color: #fff;
     position: relative;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    padding-bottom: 5px;
     &::after{
       position: absolute;
       bottom: 0;
@@ -1753,6 +1765,37 @@
       height: 3px;
       background-color: rgb(179, 0, 255);
       box-shadow: 0 0 10px #a500ae;
+    }
+  }
+  width: 70%;
+  margin: 0 15%;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  @include m.mq(tab){
+    width: 85%;
+  }
+  @include m.mq(sp){
+    width: 95%;
+  }
+  .sc_sh{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+}
+.language{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    padding-left: 55px;
+    li{
+      color: #fff;
+      list-style-type: georgian;
+      width: 50%;
+      @include m.mq(sp){
+        width: 100%;
+      }
     }
   }
 }
