@@ -318,7 +318,7 @@ $(".one_skill:nth-of-type(13)").one("inview",function(event,isInView){
 
 
 
-// マウスストーカー
+// マウスストーカ
 let $stalker = $("#stalker");
 if(navigator.userAgent.match(/(iPhone|iPad|Android)/)){
     $($stalker).css("display","none");
