@@ -1771,6 +1771,12 @@
       box-shadow: 0 0 10px #a500ae;
     }
   }
+  .st_o{
+    &::after{
+      background-color: rgb(149, 149, 149);
+      box-shadow: 0 0 10px rgb(192, 192, 192);
+    }
+  }
   width: 70%;
   margin: 0 15%;
   font-family: YuGothic,'Yu Gothic',sans-serif;

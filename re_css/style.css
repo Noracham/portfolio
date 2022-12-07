@@ -2010,6 +2010,10 @@
   background-color: rgb(179, 0, 255);
   box-shadow: 0 0 10px #a500ae;
 }
+.maindata .st_o::after {
+  background-color: rgb(149, 149, 149);
+  box-shadow: 0 0 10px rgb(192, 192, 192);
+}
 @media screen and (max-width: 1024px) {
   .maindata {
     width: 85%;
