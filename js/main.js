@@ -4,13 +4,13 @@ $(function(){
     // inviewテンプレ
     $(".v_inblur").on("inview",function(event,isInView){
         if(isInView){
-            $(this).addClass("visible_blur")
+            $(this).addClass("visible_blur");
         }else{
 
         }
     });
     $(".v_inup").one("inview",function(event,isInView){
-        $(this).addClass("visible_inup")
+        $(this).addClass("visible_inup");
     })
 
     //メニュー切り替え
