@@ -36,7 +36,7 @@ $(function(){
             $(".menu_list").delay(1000).animate({"opacity":"1"});
             $(".selectmenu").css({"display":"block"})
 
-            console.log("menu");
+            $("#stalker").css({"display":"none"})
             
         }else if(check == true){
             $(this).css("left","0px");
@@ -57,7 +57,8 @@ $(function(){
 
             $(".selectmenu").delay(1000).animate({"left":"-100vw"},0.0001)
             
-            console.log("close");
+            $("#stalker").css({"display":"block"})
+
         }
     })
 
@@ -337,7 +338,7 @@ $(document).on("mousemove",function(e){
 });
 });
 $("a").hover(function(){
-    $("#stalker").css({"animation" : "stalker_hov .5s linear infinite",})
+    $("#stalker").css({"animation" : "stalker_hov .5s linear infinite"})
 });
 $("a").mouseout(function(){
     $("#stalker").css("animation" , "stalker_anime 2s linear infinite")
