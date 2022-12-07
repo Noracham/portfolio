@@ -1694,15 +1694,16 @@
       position: absolute;
       bottom: -50px;
       font-size: 30px;
-      left: 230px;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: auto;
       @include m.mq(tab){
         font-size: 2.5rem;
         bottom: -40px;
-        left: 180px;
       }
       @include m.mq(sp){
         font-size: 1.6rem;
-        left: 110px;
         bottom: -25px;
       }
     }
