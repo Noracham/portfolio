@@ -365,5 +365,10 @@ $("a").mouseout(function(){
     $("#stalker").css("animation" , "stalker_anime 2s linear infinite")
 })
 
+//loading
+$(window).on("load",function(){
+    setTimeout(() => {   
+    }, 1000);
+})
 
 
