@@ -46,7 +46,6 @@ $(function(){
             $(".menuback").animate({"opacity":"0"},500);
             $(".menuback").delay(1000).animate({"left":"-100%"},1);
 
-            $(".allopacity").animate({"opacity":"1"},500);
             $(".hide").removeClass("hidden");
 
             $(".in_rump").animate({"top":"-750px"},500);
@@ -60,6 +59,28 @@ $(function(){
             $("#stalker").css({"display":"block"})
 
         }
+    })
+    // liをクリックした場合も非表示に
+    $(".menu_list li").on("click",function(){
+        $("#inbox").css("left","0px");
+        check = false;
+        
+        $("#inbox ion-icon").css({"color":"white","filter":"drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff)"})
+        $(".menuback").animate({"opacity":"0"},500);
+        $(".menuback").delay(1000).animate({"left":"-100%"},1);
+
+        $(".hide").removeClass("hidden");
+
+        $(".in_rump").animate({"top":"-750px"},500);
+        $(".in_light").animate({"opacity":"0"},1);
+        $(".in_light").css({"display":"none"},0.001)
+        $(".menu_list").animate({"opacity":"0"},1);
+        $(".menu_list").animate({"display":"none"},0.0001);
+
+        $(".selectmenu").delay(1000).animate({"left":"-100vw"},0.0001)
+        
+        $("#stalker").css({"display":"block"})
+
     })
 
     /*about*/
