@@ -782,6 +782,7 @@
 }
 
 .contact_button {
+  position: relative;
   font-family: elektrix, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -790,6 +791,14 @@
   color: #fff;
   -webkit-animation: gatagata 2s ease-in infinite;
           animation: gatagata 2s ease-in infinite;
+}
+.contact_button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .contact_button img {
   width: 100%;
@@ -2060,6 +2069,17 @@
   .language ul li {
     width: 100%;
   }
+}
+
+.contactimg {
+  background-image: url(../img/contact.png);
+}
+
+.contact_bg {
+  padding: 10% 0;
+}
+.contact_bg iframe {
+  color: #fff;
 }
 
 html {
