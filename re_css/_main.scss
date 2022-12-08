@@ -564,11 +564,31 @@
     margin-right: 5%;
   }
   img {
+    opacity: 0;
     width: 100%;
     &:not(:last-of-type) {
       margin-bottom: 3%;
     }
   }
+}
+@keyframes in_img_anime{
+  from{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.in_img_anime1{
+  animation: in_img_anime 1s forwards;
+}
+.in_img_anime2{
+  animation: in_img_anime 1s .2s forwards;
+}
+.in_img_anime3{
+  animation: in_img_anime 1s .4s forwards;
 }
 // contact
 #contact {
@@ -767,15 +787,6 @@
         height: 100%;
         border-radius: 50%;
       }
-
-      // &::before {
-      //   position: absolute;
-      //   content: "";
-      //   width: 155px;
-      //   height: 155px;
-      //   border: 3px solid #fff;
-      //   border-radius: 50%;
-      // }
     }
     p{
       position: relative;
@@ -1114,9 +1125,6 @@
       &:nth-of-type(13)::before{
         content: "XD";
       }
-
-
-
     img{
       width: 30%;
       opacity: 0.3;

@@ -106,6 +106,12 @@ $(function(){
         $(this).addClass("down_anime1");
     })
 
+    $(".port_block").one("inview",function(event,isInView){
+        $(".in_img img:nth-of-type(1)").addClass("in_img_anime1");
+        $(".in_img img:nth-of-type(2)").addClass("in_img_anime2");
+        $(".in_img img:nth-of-type(3)").addClass("in_img_anime3");
+    })
+
     $(window).on("scroll",function(){
         $('.titleabout').each(function(){
 
@@ -193,7 +199,7 @@ $(function(){
 
     $(".instagram").hover(function () {
             // over
-            $(".instagram p").text("rr_ym04  ");
+            $(".instagram p").text("rr_ym04");
             $(".instagram p").prop("id","ip");
         }, function () {
             // out
@@ -210,42 +216,19 @@ $(function(){
         $(".twitter p").text("Twitter");
         $(".twitter p").prop("id","");
     }
+    
 );
-/*SKILL*/
-$(window).on("scroll",function(){
-    $('.skillLv').each(function(){
+$(".mail").hover(function () {
+    // over
+    $(".mail p").html("nsorym04<br>@gmail.com");
+    $(".mail p").prop("id","ip");
+}, function () {
+    // out
+    $(".mail p").text("MAIL");
+    $(".mail p").prop("id","");
+}
 
-        var position = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        if (scroll > position - windowHeight + 300){
-          $(".skillsmile img:nth-of-type(1)").addClass('smile1');
-          $(".traffic div:nth-of-type(-n+5) .skillsmile img:nth-of-type(2),.traffic div:nth-of-type(9) .skillsmile img:nth-of-type(2),.traffic div:nth-of-type(10) .skillsmile img:nth-of-type(2),.traffic div:nth-of-type(11) .skillsmile img:nth-of-type(2)").addClass('smile2');
-          $(".traffic div:nth-of-type(-n+2) .skillsmile img:nth-of-type(3)").addClass('smile3');
-        }
-    });
-});
-var n=0;
-$(window).on("scroll",function(){
-    $('.workone').eq(n).each(function(){
-
-        var position = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        console.log(position);
-
-        if (scroll > position - windowHeight + 300){
-          $(".workone").eq(n).addClass('up');
-          n++;
-          console.log(n);
-        }
-    });
-});
-
-
-
+);
 
 $('.container').css('overflow','hidden');
 $(window).on('touchmove.noScroll', function(e) {
