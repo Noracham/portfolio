@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORKS|ポートフォリオ</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="re_css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/sub.css">
-    <link rel="stylesheet" href="css/sub_second.css">
+    <!-- <link rel="stylesheet" href="css/sub.css"> -->
+    <!-- <link rel="stylesheet" href="css/sub_second.css"> -->
     <script>
         (function(d) {
           var config = {
@@ -33,30 +33,30 @@
         }
         </style>
 
-    <div class="menu">
-        <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
-        <input type="checkbox">
-        <span id="inbox"><ion-icon name="bulb-outline"></ion-icon></span>
-    </div>
-    <header class="selectmenu">
-        <div class="menuback">
-            <ul class="menu_list">
-                <li><a href="index.html">MAIN</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="works.html">WORKS</a></li>
-                <li><a href="index.html#contact">CONTACT</a></li>
-            </ul>
-            <div class="rump">
-                <img class="in_rump" src="img/rump.png" alt="">
-                <img class="in_light" src="img/light.png" alt="">
-            </div>
+
+<div class="menu">
+    <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
+    <input type="checkbox">
+    <span id="inbox" class="flex"><ion-icon name="bulb-outline"></ion-icon></span>
+</div>
+<header class="selectmenu">
+    <div class="menuback flex">
+        <ul class="menu_list">
+            <li><a href="index.html">MAIN</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="rump flex">
+            <img class="in_rump" src="img/rump.png" alt="">
+            <img class="in_light" src="img/light.png" alt="">
         </div>
-    </header>
-    <div class="hidden">
+    </div>
+</header>
+<div class="hide">
 <div class="port_title">
-    <p>「ポートフォリオサイト」</p>
-    <p>WEBSITE</p>
-    <img src="img/new_portfolio.jpg" alt="">
+    <h1>「ポートフォリオサイト」</h1>
+    <div><img src="img/new_portfolio.jpg" alt=""></div>
 </div>
 <div class="bg">
     <section class="maindata">
@@ -70,21 +70,21 @@
         <div class="parts margin">
             <h1 class="subtitle_p">素材作成</h1>
             <p>主にPhotoshopを使用し、作成しました。</p>
-            <img src="img/photoshop1.png" alt="">
-            <img src="img/NishioRyoma.png" alt="">
+            <div class="sc_sh"><img src="img/photoshop1.png" alt=""></div>
+            <div class="sc_sh"><img src="img/NishioRyoma.png" alt=""></div>
             <p>特にメインイメージとなる名前のロゴには力を入れました。<br><br>
             ネオンライトをイメージし、ただ光彩を重ねて光を表現するだけでなく、文字奥の質感や光の重なり具合まで意識しました。</p>
         </div>
         <div class="xd margin">
             <h1 class="subtitle_p">ワイヤーフレーム</h1>
-            <img src="img/xd.png" alt="">
+            <div class="sc_sh"><img src="img/xd.png" alt=""></div>
             <p>思い浮かぶイメージを崩さないうちに構成を考え、XDに落とし込みました。<br><br>
                 セクションをABOUT,WORKS,CONTACTの3つに絞り、情報量がむやみやたらに多くなってしまわないようにシンプルに仕上げるように心がけました。
             </p>
         </div>
         <div class="No1 margin">
             <h1 class="subtitle_p">イチオシポイント</h1>
-            <img src="img/menu.png" alt="">
+            <div class="sc_sh"><img src="img/menu.png" alt=""></div>
             <p>左上の電球をクリックすることで現れるメニュー画面です。<br><br>
                 イメージはライトのオンオフスイッチです。クリックすることでライトが上から現れ、光を灯します。<br>
                 灯った光の先にメニュー一覧が現れます。再度クリックすることでライトが消え、元の画面に戻ります。<br><br>
@@ -104,14 +104,19 @@
                 <li>CSS</li>
                 <li>Javascript</li>
                 <li>jQuery</li>
+                <li>AWS</li>
                 <li>Photoshop</li>
                 <li>Illustlater</li>
                 <li>XD</li>
                 <li>Canva</li>
                 <li>ibis Paint</li>
+                <li>Visual Studio Code</li>
             </ul>
         </div>
 
+        <div class="return_menu">
+            <a href="works.html"><img src="img/return_button.png" alt="戻る"></a>
+        </div>
     </section>
 </div>
 </div>
@@ -119,15 +124,12 @@
     src="https://code.jquery.com/jquery-3.6.1.js"
     integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
-    <script src="js/sub.js"></script>
+    <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <style>
-    @media screen and (max-width:1200px){
-    .bg{
-        margin-right: 0;
-        margin-left: 0;
-    }
+.bg{
+    margin: 0 auto;
 }
 
 </style>

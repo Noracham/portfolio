@@ -1,0 +1,169 @@
+@use "variables" as v;
+@use "mixin" as m;
+html {
+  max-width: 100vw;
+  font-size: 62.5%; /*10px*/
+  font-family: "oshidashi-m-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow: auto;
+}
+body {
+  position: relative;
+  z-index: 1;
+  background-image: url(../img/back.png);
+  background-position: 0 0;
+  background-size: auto;
+  width: 100%;
+  overflow: hidden;
+  animation: bgroop 50s linear infinite;
+  @keyframes bgroop {
+    from{
+      background-position: 0 0;
+    }
+    to{
+      background-position: -1985px -1114px;
+    }
+    
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p {
+  color: white;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.hide{
+  position: relative;
+  z-index: -1000;
+}
+@media screen and (max-width: 959px) {
+  body {
+    background-position: 55%;
+  }
+}
+//基本flex
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//大枠サイズ調整
+.wrapper {
+  width: 100vw;
+  max-width: 100vw;
+  margin-top: 15%;
+}
+//背景
+.bg {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.382);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.test_hid {
+  display: none;
+}
+// タイトルアニメーション
+.subtitle_flash {
+  animation: subtitle_flash 1.5s forwards;
+}
+@keyframes subtitle_flash {
+  0% {
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+.abouttext_flash{
+  animation: abouttext_flash 2s infinite;
+  @keyframes abouttext_flash {
+    0%{
+      filter: brightness(100%);
+    }
+    5%{
+      filter: brightness(30%);
+    }
+    10%{
+      filter: brightness(100%);
+    }
+    15%{
+      filter: brightness(30%);
+    }
+    20%{
+      filter: brightness(100%);
+    }
+    100%{
+      filter: brightness(100%);
+    }
+  }
+}
+.abouttext_flash_du2{
+  animation: abouttext_flash 1.75s infinite;
+}
+// neon-button
+.link_button{
+  transition: .5s;
+  width: 20%;
+  &:hover{
+    filter: brightness(200%);
+    transform: rotate(5deg);
+  }
+}
+//マウスストーカー
+#stalker{
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+  background-image: url(../img/smile1.png);
+  animation: stalker_anime 2s linear infinite;
+  @keyframes stalker_anime {
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(360deg);
+    } 
+  }
+  @keyframes stalker_hov {
+    0%{
+      transform: rotate(0) scale(1.5);
+    }
+    50%{
+      filter: hue-rotate(360deg);
+    }
+    100%{
+      transform: rotate(360deg) scale(1.5);
+      filter: hue-rotate(0deg);
+    }
+    
+  }
+}
+//loading
+
+
+
+
+
