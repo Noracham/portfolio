@@ -1714,6 +1714,11 @@
       font-size: 2.5em;
     }
   }
+  .amazon{
+    &::after{
+      content: "POWERPOINT";
+    }
+  }
   div{
     height: 70vh;
     width: auto;
@@ -1777,6 +1782,19 @@
       box-shadow: 0 0 10px rgb(192, 192, 192);
     }
   }
+  .st_g{
+    &::after{
+      background-color: rgb(39, 255, 97);
+      box-shadow: 0 0 10px rgb(0, 196, 10);
+    }
+  }
+  .st_y{
+    &::after{
+      background-color: rgb(255, 162, 0);
+      box-shadow: 0 0 10px rgb(255, 190, 60);
+    }
+  }
+
   width: 70%;
   margin: 0 15%;
   font-family: YuGothic,'Yu Gothic',sans-serif;
