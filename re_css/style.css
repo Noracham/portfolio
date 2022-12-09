@@ -1349,60 +1349,66 @@
 }
 
 .worksmob:nth-of-type(2) {
+  border-left: 5px solid rgb(182, 82, 0);
+  border-top: 5px solid rgb(182, 82, 0);
+  box-shadow: -7px -7px 10px 0 rgba(182, 82, 0, 0.659);
+}
+
+.worksmob:nth-of-type(3) {
   border-left: 5px solid rgb(173, 173, 173);
   border-top: 5px solid rgb(173, 173, 173);
   box-shadow: -7px -7px 10px 0 rgba(255, 255, 255, 0.659);
 }
 
-.worksmob:nth-of-type(3) {
+.worksmob:nth-of-type(4) {
   border-left: 5px solid rgb(121, 255, 98);
   border-top: 5px solid rgb(121, 255, 98);
   box-shadow: -7px -7px 10px 0 rgba(133, 255, 129, 0.659);
 }
 
-.worksmob:nth-of-type(4) {
+.worksmob:nth-of-type(5) {
   border-left: 5px solid rgb(255, 142, 212);
   border-top: 5px solid rgb(255, 142, 212);
   box-shadow: -7px -7px 10px 0 rgba(255, 142, 212, 0.659);
 }
 
-.worksmob:nth-of-type(5) {
+.worksmob:nth-of-type(6) {
   border-left: 5px solid rgb(98, 255, 239);
   border-top: 5px solid rgb(98, 255, 239);
   box-shadow: -7px -7px 10px 0 rgba(98, 255, 239, 0.659);
 }
 
-.worksmob:nth-of-type(6) {
+.worksmob:nth-of-type(7) {
   border-left: 5px solid rgb(255, 182, 98);
   border-top: 5px solid rgb(255, 182, 98);
   box-shadow: -7px -7px 10px 0 rgba(255, 182, 98, 0.659);
 }
 
-.worksmob:nth-of-type(7) {
+.worksmob:nth-of-type(8) {
   border-left: 5px solid rgb(255, 98, 98);
   border-top: 5px solid rgb(255, 98, 98);
   box-shadow: -7px -7px 10px 0 rgba(255, 98, 98, 0.659);
 }
 
-.worksmob:nth-of-type(8) {
+.worksmob:nth-of-type(9) {
   border-left: 5px solid rgb(173, 173, 173);
   border-top: 5px solid rgb(173, 173, 173);
   box-shadow: -7px -7px 10px 0 rgba(255, 255, 255, 0.659);
 }
 
-.worksmob:nth-of-type(9) {
+.worksmob:nth-of-type(10) {
   border-left: 5px solid rgb(121, 255, 98);
   border-top: 5px solid rgb(121, 255, 98);
   box-shadow: -7px -7px 10px 0 rgba(133, 255, 129, 0.659);
 }
 
-.worksmob:nth-of-type(10) {
+.worksmob:nth-of-type(11) {
   border-left: 5px solid rgb(184, 0, 235);
   border-top: 5px solid rgb(184, 0, 235);
   box-shadow: -7px -7px 10px 0 rgba(184, 0, 235, 0.659);
 }
 
-.worksmob:nth-of-type(11) {
+.worksmob:nth-of-type(12) {
   border-left: 5px solid rgb(255, 170, 73);
   border-top: 5px solid rgb(255, 170, 73);
   box-shadow: -7px -7px 10px 0 rgba(255, 170, 73, 0.659);
@@ -1478,68 +1484,75 @@
 
 .worksmob:nth-of-type(2) .traiangle {
   border-left: 0 solid transparent;
+  border-right: 600px solid rgb(182, 82, 0);
+  border-top: 500px solid transparent;
+  border-bottom: 0 solid rgb(182, 82, 0);
+}
+
+.worksmob:nth-of-type(3) .traiangle {
+  border-left: 0 solid transparent;
   border-right: 600px solid rgb(209, 209, 209);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(209, 209, 209);
 }
 
-.worksmob:nth-of-type(3) .traiangle {
+.worksmob:nth-of-type(4) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(0, 96, 14);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(0, 96, 14);
 }
 
-.worksmob:nth-of-type(4) .traiangle {
+.worksmob:nth-of-type(5) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(255, 142, 212);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(255, 142, 212);
 }
 
-.worksmob:nth-of-type(5) .traiangle {
+.worksmob:nth-of-type(6) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(98, 255, 239);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(98, 255, 239);
 }
 
-.worksmob:nth-of-type(6) .traiangle {
+.worksmob:nth-of-type(7) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(255, 182, 98);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(255, 182, 98);
 }
 
-.worksmob:nth-of-type(7) .traiangle {
+.worksmob:nth-of-type(8) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(255, 98, 98);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(255, 98, 98);
 }
 
-.worksmob:nth-of-type(8) .traiangle {
+.worksmob:nth-of-type(9) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(173, 173, 173);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(173, 173, 173);
 }
 
-.worksmob:nth-of-type(9) .traiangle {
+.worksmob:nth-of-type(10) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(121, 255, 98);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(121, 255, 98);
 }
 
-.worksmob:nth-of-type(10) .traiangle {
+.worksmob:nth-of-type(11) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(184, 0, 235);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(184, 0, 235);
 }
 
-.worksmob:nth-of-type(11) .traiangle {
+.worksmob:nth-of-type(12) .traiangle {
   border-left: 0 solid transparent;
   border-right: 600px solid rgb(255, 170, 73);
   border-top: 500px solid transparent;
@@ -1701,59 +1714,65 @@
   }
   .worksmob:nth-of-type(2) .traiangle {
     border-left: 0 solid transparent;
+    border-right: 530px solid rgb(182, 82, 0);
+    border-top: 441px solid transparent;
+    border-bottom: 0 solid rgb(182, 82, 0);
+  }
+  .worksmob:nth-of-type(3) .traiangle {
+    border-left: 0 solid transparent;
     border-right: 530px solid rgb(209, 209, 209);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(209, 209, 209);
   }
-  .worksmob:nth-of-type(3) .traiangle {
+  .worksmob:nth-of-type(4) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(0, 96, 14);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(0, 96, 14);
   }
-  .worksmob:nth-of-type(4) .traiangle {
+  .worksmob:nth-of-type(5) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(255, 142, 212);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(255, 142, 212);
   }
-  .worksmob:nth-of-type(5) .traiangle {
+  .worksmob:nth-of-type(6) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(98, 255, 239);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(98, 255, 239);
   }
-  .worksmob:nth-of-type(6) .traiangle {
+  .worksmob:nth-of-type(7) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(255, 182, 98);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(255, 182, 98);
   }
-  .worksmob:nth-of-type(7) .traiangle {
+  .worksmob:nth-of-type(8) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(255, 98, 98);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(255, 98, 98);
   }
-  .worksmob:nth-of-type(8) .traiangle {
+  .worksmob:nth-of-type(9) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(173, 173, 173);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(173, 173, 173);
   }
-  .worksmob:nth-of-type(9) .traiangle {
+  .worksmob:nth-of-type(10) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(121, 255, 98);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(121, 255, 98);
   }
-  .worksmob:nth-of-type(10) .traiangle {
+  .worksmob:nth-of-type(11) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(184, 0, 235);
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(184, 0, 235);
   }
-  .worksmob:nth-of-type(11) .traiangle {
+  .worksmob:nth-of-type(12) .traiangle {
     border-left: 0 solid transparent;
     border-right: 530px solid rgb(255, 170, 73);
     border-top: 441px solid transparent;
@@ -1787,59 +1806,65 @@
   }
   .worksmob:nth-of-type(2) .traiangle {
     border-left: 0 solid transparent;
+    border-right: 430px solid rgb(182, 82, 0);
+    border-top: 358px solid transparent;
+    border-bottom: 0 solid rgb(182, 82, 0);
+  }
+  .worksmob:nth-of-type(3) .traiangle {
+    border-left: 0 solid transparent;
     border-right: 430px solid rgb(209, 209, 209);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(209, 209, 209);
   }
-  .worksmob:nth-of-type(3) .traiangle {
+  .worksmob:nth-of-type(4) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(0, 96, 14);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(0, 96, 14);
   }
-  .worksmob:nth-of-type(4) .traiangle {
+  .worksmob:nth-of-type(5) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(255, 142, 212);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(255, 142, 212);
   }
-  .worksmob:nth-of-type(5) .traiangle {
+  .worksmob:nth-of-type(6) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(98, 255, 239);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(98, 255, 239);
   }
-  .worksmob:nth-of-type(6) .traiangle {
+  .worksmob:nth-of-type(7) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(255, 182, 98);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(255, 182, 98);
   }
-  .worksmob:nth-of-type(7) .traiangle {
+  .worksmob:nth-of-type(8) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(255, 98, 98);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(255, 98, 98);
   }
-  .worksmob:nth-of-type(8) .traiangle {
+  .worksmob:nth-of-type(9) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(173, 173, 173);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(173, 173, 173);
   }
-  .worksmob:nth-of-type(9) .traiangle {
+  .worksmob:nth-of-type(10) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(121, 255, 98);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(121, 255, 98);
   }
-  .worksmob:nth-of-type(10) .traiangle {
+  .worksmob:nth-of-type(11) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(184, 0, 235);
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(184, 0, 235);
   }
-  .worksmob:nth-of-type(11) .traiangle {
+  .worksmob:nth-of-type(12) .traiangle {
     border-left: 0 solid transparent;
     border-right: 430px solid rgb(255, 170, 73);
     border-top: 358px solid transparent;
@@ -1875,59 +1900,65 @@
   }
   .worksmob:nth-of-type(2) .traiangle {
     border-left: 0 solid transparent;
+    border-right: 330px solid rgb(182, 82, 0);
+    border-top: 275px solid transparent;
+    border-bottom: 0 solid rgb(182, 82, 0);
+  }
+  .worksmob:nth-of-type(3) .traiangle {
+    border-left: 0 solid transparent;
     border-right: 330px solid rgb(209, 209, 209);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(209, 209, 209);
   }
-  .worksmob:nth-of-type(3) .traiangle {
+  .worksmob:nth-of-type(4) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(0, 96, 14);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(0, 96, 14);
   }
-  .worksmob:nth-of-type(4) .traiangle {
+  .worksmob:nth-of-type(5) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(255, 142, 212);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(255, 142, 212);
   }
-  .worksmob:nth-of-type(5) .traiangle {
+  .worksmob:nth-of-type(6) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(98, 255, 239);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(98, 255, 239);
   }
-  .worksmob:nth-of-type(6) .traiangle {
+  .worksmob:nth-of-type(7) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(255, 182, 98);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(255, 182, 98);
   }
-  .worksmob:nth-of-type(7) .traiangle {
+  .worksmob:nth-of-type(8) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(255, 98, 98);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(255, 98, 98);
   }
-  .worksmob:nth-of-type(8) .traiangle {
+  .worksmob:nth-of-type(9) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(173, 173, 173);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(173, 173, 173);
   }
-  .worksmob:nth-of-type(9) .traiangle {
+  .worksmob:nth-of-type(10) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(121, 255, 98);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(121, 255, 98);
   }
-  .worksmob:nth-of-type(10) .traiangle {
+  .worksmob:nth-of-type(11) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(184, 0, 235);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(184, 0, 235);
   }
-  .worksmob:nth-of-type(11) .traiangle {
+  .worksmob:nth-of-type(12) .traiangle {
     border-left: 0 solid transparent;
     border-right: 330px solid rgb(255, 170, 73);
     border-top: 275px solid transparent;
@@ -2069,6 +2100,10 @@
 }
 .maindata .st_y::after {
   background-color: rgb(255, 162, 0);
+  box-shadow: 0 0 10px rgb(255, 190, 60);
+}
+.maindata .st_b::after {
+  background-color: rgb(152, 96, 0);
   box-shadow: 0 0 10px rgb(255, 190, 60);
 }
 @media screen and (max-width: 1024px) {
