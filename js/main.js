@@ -192,7 +192,10 @@ $(function(){
             var windowHeight = $(window).height();
 
             if (scroll > position - windowHeight + 300){
-              $(".ar").addClass('active');
+                setTimeout(() => {
+                    
+                    $(".ar").addClass('active');
+                }, 1000);
             }
         });
     });

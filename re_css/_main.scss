@@ -481,10 +481,6 @@
         0 15px 3px #000;
     }
     .arrow {
-      opacity: 0;
-      position: absolute;
-      transform: translate(0, -100px);
-
       width: 11.5%;
       left: 19.1%;
       @include m.mq(sp) {
@@ -493,11 +489,7 @@
       }
     }
     .arrow2 {
-      opacity: 0;
-      position: absolute;
       width: 11.5%;
-      transform: translate(0, -100px);
-
       right: 19.4%;
       @include m.mq(sp) {
         width: 26%;
@@ -506,12 +498,15 @@
     }
     .ar {
       opacity: 0;
+      position: absolute;
+      transform: translate(0, -100px);
+
     }
     .active {
       opacity: 1;
       transform: translate(0, 0);
       animation-name: arrowtime;
-      animation-delay: 2s;
+      animation-delay: 1.5s;
       animation-duration: 2s;
       animation-iteration-count: infinite;
       transition: 0.5s;
@@ -1756,6 +1751,7 @@
   @include m.mq(sp){
   }
   h1{
+    text-align: center;
     margin: 0;
     position: relative;
     font-family: YuGothic,'Yu Gothic',sans-serif;
