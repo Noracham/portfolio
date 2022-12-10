@@ -1,12 +1,13 @@
 @use "variables" as v;
 @use "mixin" as m;
 html {
-  max-width: 100vw;
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
   overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 body {
   position: relative;
@@ -65,7 +66,9 @@ a {
 }
 //背景
 .bg {
+  margin: 0 auto;
   width: 100%;
+  max-width: 1920px;
   background-color: rgba(0, 0, 0, 0.382);
   backdrop-filter: blur(8px);
   display: flex;

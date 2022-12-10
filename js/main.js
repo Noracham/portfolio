@@ -192,7 +192,10 @@ $(function(){
             var windowHeight = $(window).height();
 
             if (scroll > position - windowHeight + 300){
-              $(".ar").addClass('active');
+                setTimeout(() => {
+                    
+                    $(".ar").addClass('active');
+                }, 1000);
             }
         });
     });
@@ -318,6 +321,41 @@ $(".one_skill:nth-of-type(13)").one("inview",function(event,isInView){
     $(".one_skill:nth-of-type(13) .tra1").animate({"opacity":"1"},500);
     $(".one_skill:nth-of-type(13) .tra2").delay(500).animate({"opacity":"1"},500);
     // $(".one_skill:nth-of-type(13) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+
+// アニメ
+$(".me_photo").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .7s linear forwards"
+    });
+})
+$(".about_sns ion-icon:nth-of-type(1)").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .5s 1s linear forwards"
+    });
+})
+$(".about_sns ion-icon:nth-of-type(2)").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .5s 1.3s linear forwards"
+    });
+})
+$(".about_sns ion-icon:nth-of-type(3)").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .5s 1.6s linear forwards"
+    });
+})
+
+$(".me_name").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .7s .5s linear forwards"
+    });
+})
+$(".me_txt").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .7s linear forwards"
+    });
+})
+
+$(".dream_info h2").one("inview",function(events,isInView){
+    $(this).animate({"left":"0","opacity":"1"},1000)
+})
+$(".dream_info p").one("inview",function(events,isInView){
+    $(this).css({"animation": "p_blur .7s .5s linear forwards"
+    });
 })
 
 
