@@ -559,6 +559,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   width: 85%;
+  max-width: 1632px;
 }
 @media screen and (max-width: 768px) {
   .all_portfolio {
@@ -578,6 +579,7 @@
   box-shadow: 0 0 5px #ff4ed9, 0 0 5px #ff4ed9 inset, 0 0 10px #ff4ed9, 0 0 10px #ff4ed9 inset, 0 15px 3px #000;
   transition: 0.4s;
   width: 40%;
+  max-width: 650px;
 }
 @media screen and (max-width: 768px) {
   .all_portfolio .port_block {
@@ -2185,12 +2187,13 @@
 }
 
 html {
-  max-width: 100vw;
   font-size: 62.5%; /*10px*/
   font-family: "oshidashi-m-gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
   overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -2200,7 +2203,6 @@ body {
   background-position: 0 0;
   background-size: auto;
   width: 100%;
-  max-width: 1920px;
   overflow: hidden;
   -webkit-animation: bgroop 50s linear infinite;
           animation: bgroop 50s linear infinite;
@@ -2263,7 +2265,9 @@ a {
 }
 
 .bg {
+  margin: 0 auto;
   width: 100%;
+  max-width: 1920px;
   background-color: rgba(0, 0, 0, 0.382);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
