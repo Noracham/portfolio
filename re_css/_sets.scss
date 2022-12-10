@@ -15,6 +15,7 @@ body {
   background-position: 0 0;
   background-size: auto;
   width: 100%;
+  max-width: 1920px;
   overflow: hidden;
   animation: bgroop 50s linear infinite;
   @keyframes bgroop {
