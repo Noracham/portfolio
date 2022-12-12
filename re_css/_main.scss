@@ -1143,6 +1143,12 @@
       &:nth-of-type(13)::before{
         content: "XD";
       }
+      &:nth-of-type(14)::before{
+        content: "Github";
+      }
+      &:nth-of-type(15)::before{
+        content: "pug";
+      }
     img{
       width: 30%;
       opacity: 0.3;

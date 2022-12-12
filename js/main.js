@@ -313,7 +313,7 @@ $(".one_skill:nth-of-type(11)").one("inview",function(event,isInView){
 // illustrater
 $(".one_skill:nth-of-type(12)").one("inview",function(event,isInView){
     $(".one_skill:nth-of-type(12) .tra1").animate({"opacity":"1"},500);
-    $(".one_skill:nth-of-type(12) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(12) .tra2").delay(500).animate({"opacity":"1"},500);
     // $(".one_skill:nth-of-type(12) .tra3").delay(1000).animate({"opacity":"1"},500);
 })
 // xd
@@ -322,6 +322,21 @@ $(".one_skill:nth-of-type(13)").one("inview",function(event,isInView){
     $(".one_skill:nth-of-type(13) .tra2").delay(500).animate({"opacity":"1"},500);
     // $(".one_skill:nth-of-type(13) .tra3").delay(1000).animate({"opacity":"1"},500);
 })
+// Github
+$(".one_skill:nth-of-type(14)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(14) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(14) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(14) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+// pug
+// xd
+$(".one_skill:nth-of-type(15)").one("inview",function(event,isInView){
+    $(".one_skill:nth-of-type(15) .tra1").animate({"opacity":"1"},500);
+    $(".one_skill:nth-of-type(15) .tra2").delay(500).animate({"opacity":"1"},500);
+    // $(".one_skill:nth-of-type(15) .tra3").delay(1000).animate({"opacity":"1"},500);
+})
+
+
 
 // アニメ
 $(".me_photo").one("inview",function(events,isInView){
