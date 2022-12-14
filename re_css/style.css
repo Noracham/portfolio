@@ -1317,6 +1317,12 @@
 .all_skill .one_skill:nth-of-type(13)::before {
   content: "XD";
 }
+.all_skill .one_skill:nth-of-type(14)::before {
+  content: "Github";
+}
+.all_skill .one_skill:nth-of-type(15)::before {
+  content: "pug";
+}
 .all_skill .one_skill img {
   width: 30%;
   opacity: 0.3;

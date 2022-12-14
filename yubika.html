@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WORKS|YUBIKA</title>
-    <link rel="stylesheet" href="re_css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="img/icon_32x32.ico" />
+
+    <link rel="stylesheet" href="re_css/style.css" />
+    <link rel="stylesheet" href="re_css/normalize.css">
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'uca3rxv',
+      (function (d) {
+        var config = {
+            kitId: "uca3rxv",
             scriptTimeout: 3000,
-            async: true
+            async: true,
           },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-      </script>
-
-
-</head>
-<body>
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
     <style>
-        .titleimg{
-            filter: brightness(100%);
-    
-        }
-        .bg{
-            filter: brightness(100%);
-        }
-        </style>
+      .titleimg {
+        filter: brightness(100%);
+      }
+      .bg {
+        filter: brightness(100%);
+      }
+    </style>
 
-
-<div class="menu">
-    <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
-    <input type="checkbox">
-    <span id="inbox" class="flex"><ion-icon name="bulb-outline"></ion-icon></span>
-</div>
-<header class="selectmenu">
-    <div class="menuback flex">
+    <div class="menu">
+      <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
+      <input type="checkbox" />
+      <span id="inbox" class="flex"
+        ><ion-icon name="bulb-outline"></ion-icon
+      ></span>
+    </div>
+    <header class="selectmenu">
+      <div class="menuback flex">
         <ul class="menu_list">
-            <li><a href="index.html">MAIN</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="works.html">WORKS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+          <li><a href="index.html">MAIN</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="works.html">WORKS</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
         </ul>
         <div class="rump flex">
-            <img class="in_rump" src="img/rump.png" alt="">
-            <img class="in_light" src="img/light.png" alt="">
+          <img class="in_rump" src="img/rump.png" alt="rump" />
+          <img class="in_light" src="img/light.png" alt="light" />
         </div>
-    </div>
-</header>
-<div class="hide">
-<div class="port_title">
-    <h1>「YUBIKA」</h1>
-    <div><img src="img/yubika_sc.jpg" alt="YUBIKA"></div>
-</div>
-<div class="bg">
-    <section class="maindata">
-        <div class="concept margin">
+      </div>
+    </header>
+    <div class="hide">
+      <div class="port_title">
+        <h1>「YUBIKA」</h1>
+        <div><img src="img/yubika_sc.jpg" alt="YUBIKA" /></div>
+      </div>
+      <div class="bg">
+        <section class="maindata">
+          <div class="concept margin">
             <h1 class="subtitle_p st_b">コンセプトイメージ</h1>
-            <p>運送会社にてターゲット層として若い人材を採用したいといったコンセプト設定がありました。<br>
-            そのため、デザインする上でまず意識したことは堅苦しくならないイメージを作ることです。<br>
-        メインビジュアルに動画を採用したり、採用ページへの遷移部分をチラシのようにデザインしたりなど、ウケが良さそうな工夫を行いました。</p>
-        </div>
-        <!-- <div class="parts margin">
+            <p>
+              運送会社にてターゲット層として若い人材を採用したいといったコンセプト設定がありました。<br />
+              そのため、デザインする上でまず意識したことは堅苦しくならないイメージを作ることです。<br />
+              メインビジュアルに動画を採用したり、採用ページへの遷移部分をチラシのようにデザインしたりなど、ウケが良さそうな工夫を行いました。
+            </p>
+          </div>
+          <!-- <div class="parts margin">
             <h1 class="subtitle_p st_b">素材作成</h1>
             <p>主にPhotoshopを使用し、作成しました。</p>
             <div class="sc_sh"><img src="img/photoshop1.png" alt=""></div>
@@ -72,62 +95,75 @@
             <p>特にメインイメージとなる名前のロゴには力を入れました。<br><br>
             ネオンライトをイメージし、ただ光彩を重ねて光を表現するだけでなく、文字奥の質感や光の重なり具合まで意識しました。</p>
         </div> -->
-        <div class="xd margin">
+          <div class="xd margin">
             <h1 class="subtitle_p st_b">ワイヤーフレーム</h1>
-            <div class="sc_sh"><img src="img/yubika_wf.jpg" alt="yubika_wf"></div>
+            <div class="sc_sh">
+              <img src="img/yubika_wf.jpg" alt="yubika_wf" />
+            </div>
             <p>
-                多少変更点はあるものの、統一感を消しすぎず、つまらないサイトにならないように意識しました。<br>
-                コンセプトイメージでも挙げましたが、堅苦しいサイトは若者ウケしないと考え、文字数や密集感を程よく、視覚的に訴えかけるような配置やデザインを心がけました。
+              多少変更点はあるものの、統一感を消しすぎず、つまらないサイトにならないように意識しました。<br />
+              コンセプトイメージでも挙げましたが、堅苦しいサイトは若者ウケしないと考え、文字数や密集感を程よく、視覚的に訴えかけるような配置やデザインを心がけました。
             </p>
-        </div>
-        <div class="No1 margin">
+          </div>
+          <div class="No1 margin">
             <h1 class="subtitle_p st_b">イチオシポイント</h1>
-            <div class="sc_sh"><img src="img/yubika_point.jpg" alt="yubika_point"></div>
-            <p>イチオシポイントはメインページから採用ページへ遷移を促すためのセクションです。<br>
-                白黒でシックにカッコよく。「＃」でポイントを伝えることで若い層に親しみのあるSNSぽさを実現しました。<br>
-                また、全体的にチラシ風にすることで「あれ？ここは少し違うぞ」といった目を惹きつける効果を期待しました。
-
+            <div class="sc_sh">
+              <img src="img/yubika_point.jpg" alt="yubika_point" />
+            </div>
+            <p>
+              イチオシポイントはメインページから採用ページへ遷移を促すためのセクションです。<br />
+              白黒でシックにカッコよく。「＃」でポイントを伝えることで若い層に親しみのあるSNSぽさを実現しました。<br />
+              また、全体的にチラシ風にすることで「あれ？ここは少し違うぞ」といった目を惹きつける効果を期待しました。
             </p>
-        </div>
-        <div class="nope margin">
+          </div>
+          <div class="nope margin">
             <h1 class="subtitle_p st_b">まとめ</h1>
-            <p>学校での課題ではありましたが、ほぼ一人でデザインからコーディングまでを賄って作成をしていたこともあり、作業量的にも大変でした。<br>
-            作成期日に追われながらの作成でしたが、学べることも多く、ワンステップ成長できた時間となりました。<br>
-        </p>
-        </div>
-        <div class="language margin">
+            <p>
+              学校での課題ではありましたが、ほぼ一人でデザインからコーディングまでを賄って作成をしていたこともあり、作業量的にも大変でした。<br />
+              作成期日に追われながらの作成でしたが、学べることも多く、ワンステップ成長できた時間となりました。<br />
+            </p>
+          </div>
+          <div class="language margin">
             <h1 class="subtitle_p st_b">使用言語・ソフト</h1>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>AWS</li>
-                <li>Photoshop</li>
-                <li>XD</li>
-                <li>Canva</li>
-                <li>Visual Studio Code</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>AWS</li>
+              <li>Photoshop</li>
+              <li>XD</li>
+              <li>Canva</li>
+              <li>Visual Studio Code</li>
             </ul>
-        </div>
+          </div>
 
-        <div class="return_menu">
-            <a href="works.html"><img src="img/return_button.png" alt="戻る"></a>
-        </div>
-    </section>
-</div>
-</div>
+          <div class="return_menu">
+            <a href="works.html"
+              ><img src="img/return_button.png" alt="戻る"
+            /></a>
+          </div>
+        </section>
+      </div>
+    </div>
     <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<style>
-.bg{
-    margin: 0 auto;
-}
-
-</style>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      .bg {
+        margin: 0 auto;
+      }
+    </style>
+  </body>
 </html>
