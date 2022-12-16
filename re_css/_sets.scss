@@ -45,6 +45,7 @@ a {
 
 .hide{
   position: relative;
+  display: none;
   z-index: -1000;
 }
 @media screen and (max-width: 959px) {
@@ -165,6 +166,74 @@ a {
   }
 }
 //loading
+.loading{
+  z-index: 99999999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  .load_container{
+    img{
+      transform: scale(0.5);
+      padding: 0 10px;
+      &:nth-of-type(1){
+      animation: load_item1 2s infinite;
+      }
+      &:nth-of-type(2){
+        animation: load_item2 2s infinite;
+        }
+        &:nth-of-type(3){
+          animation: load_item3 2s infinite;
+          }      
+      @keyframes load_item1 {
+        0%{
+          transform: rotate(0) scale(0.5);
+        }
+        50%{
+          transform: rotate(360deg) scale(1);
+        }
+        80%{
+          transform: scale(1);
+        }
+        100%{
+          transform: scale(0.5);
+
+        }
+        }
+        @keyframes load_item2 {
+          20%{
+            transform: rotate(0) scale(0.5);
+          }
+          60%{
+            transform: rotate(360deg) scale(1);
+          }
+          80%{
+          transform: scale(1);
+          }
+          100%{
+            transform: scale(0.5);
+          }
+          }      @keyframes load_item3 {
+            30%{
+              transform: rotate(0) scale(0.5);
+            }
+            70%{
+              transform: rotate(360deg) scale(1);
+            }
+            80%{
+              transform: scale(1);
+              }    
+            100%{
+              transform: scale(0.5);
+            }
+            }
+
+      }
+    }
+  }
 
 
 
