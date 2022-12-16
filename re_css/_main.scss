@@ -773,6 +773,7 @@
     flex-direction: column;
     align-items: center;
     .me_name{
+      font-size: 2.5rem;
       opacity: 0;
     }
     .me_photo {
@@ -830,6 +831,8 @@
     }
   }
   .me_txt{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     opacity: 0;
     width: 45%;
     font-family: YuGothic,'Yu Gothic',sans-serif;
@@ -923,7 +926,7 @@
       font-size: 2.1rem;
     }
     &:not(:first-of-type){
-      margin-top: 100px;
+      margin-top: 250px;
     }
 
   }

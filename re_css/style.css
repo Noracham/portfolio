@@ -931,6 +931,7 @@
   align-items: center;
 }
 .me .me_info .me_name {
+  font-size: 2.5rem;
   opacity: 0;
 }
 .me .me_info .me_photo {
@@ -984,6 +985,8 @@
   color: #fd69f9;
 }
 .me .me_txt {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
   opacity: 0;
   width: 45%;
   font-family: YuGothic, "Yu Gothic", sans-serif;
@@ -1085,7 +1088,7 @@
   }
 }
 .dream_info h2:not(:first-of-type) {
-  margin-top: 100px;
+  margin-top: 250px;
 }
 .dream_info p {
   text-align: center;
