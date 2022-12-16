@@ -439,6 +439,7 @@
     background-image: url(../img/works.png);
   }
   .worksbg {
+    max-height: 1800px;
     padding-bottom: 30%;
   }
 }
@@ -1901,14 +1902,18 @@
   ul{
     display: flex;
     flex-wrap: wrap;
-    font-size: 3rem;
     padding-left: 55px;
+    @include m.mq(sp){
+      padding-left: 35px;
+    }
     li{
+      font-size: 3rem;
       color: #fff;
       list-style-type: georgian;
       width: 50%;
       @include m.mq(sp){
         width: 100%;
+        font-size: 2.3rem;
       }
     }
   }
