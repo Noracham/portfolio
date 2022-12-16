@@ -176,6 +176,8 @@ a {
   height: 100vh;
   background-color: #000;
   .load_container{
+    display: flex;
+    flex-wrap: nowrap;
     img{
       transform: scale(0.5);
       padding: 0 10px;
@@ -193,13 +195,13 @@ a {
           }      
       @keyframes load_item1 {
         0%{
-          transform: rotate(0) scale(0.5);
+          transform: scale(0.5) rotate(0);
         }
         50%{
-          transform: rotate(360deg) scale(1);
+          transform: scale(1) rotate(360deg);
         }
         80%{
-          transform: scale(1);
+          transform: scale(1) rotate(360deg);
         }
         100%{
           transform: scale(0.5);
@@ -208,27 +210,27 @@ a {
         }
         @keyframes load_item2 {
           20%{
-            transform: rotate(0) scale(0.5);
+            transform: scale(0.5) rotate(0);
           }
           60%{
-            transform: rotate(360deg) scale(1);
+            transform:  scale(1) rotate(360deg);
           }
           80%{
-          transform: scale(1);
+          transform: scale(1) rotate(360deg);
           }
           100%{
             transform: scale(0.5);
           }
           }      @keyframes load_item3 {
             30%{
-              transform: rotate(0) scale(0.5);
+              transform: scale(0.5) rotate(0);
             }
             70%{
-              transform: rotate(360deg) scale(1);
+              transform: scale(1) rotate(360deg);
             }
             80%{
-              transform: scale(1);
-              }    
+              transform: scale(1) rotate(360deg);
+            }    
             100%{
               transform: scale(0.5);
             }
