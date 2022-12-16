@@ -271,7 +271,7 @@
   }
   &:nth-of-type(2) p:nth-of-type(2)::before {
     font-size: 101px;
-    content: "BUNNER DESIGN";
+    content: "FRONTEND";
     color: #a5ffba;
     @include m.mq(tab) {
       font-size: 91px;
@@ -439,6 +439,7 @@
     background-image: url(../img/works.png);
   }
   .worksbg {
+    max-height: 1800px;
     padding-bottom: 30%;
   }
 }
@@ -772,6 +773,7 @@
     flex-direction: column;
     align-items: center;
     .me_name{
+      font-size: 2.5rem;
       opacity: 0;
     }
     .me_photo {
@@ -829,6 +831,8 @@
     }
   }
   .me_txt{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     opacity: 0;
     width: 45%;
     font-family: YuGothic,'Yu Gothic',sans-serif;
@@ -922,7 +926,7 @@
       font-size: 2.1rem;
     }
     &:not(:first-of-type){
-      margin-top: 100px;
+      margin-top: 250px;
     }
 
   }
@@ -1157,18 +1161,22 @@
 }
 
 .return_menu{
-  margin: 10% 0;
-  animation: gatagata 2s ease-in infinite ;
-  width: 15%;
-  max-width: 300px;
-  min-width: 200px;
-  @include m.mq(sp){
-    width: 70%;
-    max-width: 200px;
-    min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20%;
+  a{
+    animation: gatagata 2s ease-in infinite ;
+    width: 200px;
+    margin: 5%;
+    &:nth-of-type(2){
+    animation: gatagata 1.7s ease-in infinite ;
+    }
   }
   img{
-    width: 100%;
+    width: 200px;
   }
 }
 // works.html_cssより引用
@@ -1893,22 +1901,23 @@
       width: 100%;
     }
   }
-  .return_menu{
-    margin: 0 auto 10%;
-  }
 }
 .language{
   ul{
     display: flex;
     flex-wrap: wrap;
-    font-size: 3rem;
     padding-left: 55px;
+    @include m.mq(sp){
+      padding-left: 35px;
+    }
     li{
+      font-size: 3rem;
       color: #fff;
       list-style-type: georgian;
       width: 50%;
       @include m.mq(sp){
         width: 100%;
+        font-size: 2.3rem;
       }
     }
   }

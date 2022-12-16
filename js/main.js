@@ -421,5 +421,8 @@ $("a").mouseout(function () {
 
 //loading
 $(window).on("load", function () {
-  setTimeout(() => {}, 1000);
+  setTimeout(() => {
+    $(".loading").fadeOut(1000);
+    $(".hide").css("display","block");
+  }, 1000);
 });
