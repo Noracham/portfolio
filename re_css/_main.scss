@@ -271,7 +271,7 @@
   }
   &:nth-of-type(2) p:nth-of-type(2)::before {
     font-size: 101px;
-    content: "BUNNER DESIGN";
+    content: "FRONTEND";
     color: #a5ffba;
     @include m.mq(tab) {
       font-size: 91px;

@@ -179,6 +179,9 @@ a {
     img{
       transform: scale(0.5);
       padding: 0 10px;
+      @include m.mq(sp){
+        width: 90px;
+      }
       &:nth-of-type(1){
       animation: load_item1 2s infinite;
       }
