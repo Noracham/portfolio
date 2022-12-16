@@ -1161,18 +1161,22 @@
 }
 
 .return_menu{
-  margin: 10% 0;
-  animation: gatagata 2s ease-in infinite ;
-  width: 15%;
-  max-width: 300px;
-  min-width: 200px;
-  @include m.mq(sp){
-    width: 70%;
-    max-width: 200px;
-    min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20%;
+  a{
+    animation: gatagata 2s ease-in infinite ;
+    width: 200px;
+    margin: 5%;
+    &:nth-of-type(2){
+    animation: gatagata 1.7s ease-in infinite ;
+    }
   }
   img{
-    width: 100%;
+    width: 200px;
   }
 }
 // works.html_cssより引用
@@ -1896,9 +1900,6 @@
     img{
       width: 100%;
     }
-  }
-  .return_menu{
-    margin: 0 auto 10%;
   }
 }
 .language{

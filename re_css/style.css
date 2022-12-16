@@ -1333,22 +1333,25 @@
 }
 
 .return_menu {
-  margin: 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20%;
+}
+.return_menu a {
   -webkit-animation: gatagata 2s ease-in infinite;
           animation: gatagata 2s ease-in infinite;
-  width: 15%;
-  max-width: 300px;
-  min-width: 200px;
+  width: 200px;
+  margin: 5%;
 }
-@media screen and (max-width: 768px) {
-  .return_menu {
-    width: 70%;
-    max-width: 200px;
-    min-width: 0;
-  }
+.return_menu a:nth-of-type(2) {
+  -webkit-animation: gatagata 1.7s ease-in infinite;
+          animation: gatagata 1.7s ease-in infinite;
 }
 .return_menu img {
-  width: 100%;
+  width: 200px;
 }
 
 /* works.html*/
@@ -2160,9 +2163,6 @@
 }
 .maindata .sc_sh img {
   width: 100%;
-}
-.maindata .return_menu {
-  margin: 0 auto 10%;
 }
 
 .language ul {
