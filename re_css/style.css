@@ -997,6 +997,7 @@
 }
 @media screen and (max-width: 768px) {
   .me .me_txt {
+    font-size: 1.3rem;
     margin: 15% 5% 0;
     width: 80%;
   }
@@ -1382,6 +1383,7 @@
   box-sizing: border-box;
   position: relative;
   width: 630px;
+  height: 100%;
   border-left: 5px solid rgb(184, 0, 235);
   border-right: 5px solid transparent;
   border-top: 5px solid rgb(184, 0, 235);
@@ -1458,6 +1460,12 @@
   box-shadow: -7px -7px 10px 0 rgba(255, 170, 73, 0.659);
 }
 
+.worksmob:nth-of-type(13) {
+  border-left: 5px solid rgb(255, 223, 186);
+  border-top: 5px solid rgb(255, 223, 186);
+  box-shadow: -7px -7px 10px 0 rgba(255, 223, 186, 0.659);
+}
+
 .worksfadeIn {
   -webkit-animation-name: worksfadeIn;
           animation-name: worksfadeIn;
@@ -1514,6 +1522,7 @@
 
 .mobimg img {
   width: 100%;
+  height: 100%;
 }
 
 .traiangle {
@@ -1605,6 +1614,13 @@
   border-right: 600px solid rgb(255, 170, 73);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(255, 170, 73);
+}
+
+.worksmob:nth-of-type(13) .traiangle {
+  border-left: 0 solid transparent;
+  border-right: 600px solid rgb(255, 223, 186);
+  border-top: 500px solid transparent;
+  border-bottom: 0 solid rgb(255, 223, 186);
 }
 
 .worksrotate {
@@ -1740,7 +1756,7 @@
   .worksmob {
     width: 530px;
   }
-  .worksmob img {
+  .mobimg {
     width: 520px;
     height: 393px;
   }
@@ -1826,12 +1842,18 @@
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(255, 170, 73);
   }
+  .worksmob:nth-of-type(13) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 530px solid rgb(255, 223, 186);
+    border-top: 441px solid transparent;
+    border-bottom: 0 solid rgb(255, 223, 186);
+  }
 }
 @media screen and (max-width: 600px) {
   .worksmob {
     width: 430px;
   }
-  .worksmob img {
+  .mobimg {
     width: 420px;
     height: 315px;
   }
@@ -1918,14 +1940,24 @@
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(255, 170, 73);
   }
+  .worksmob:nth-of-type(13) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 430px solid rgb(255, 223, 186);
+    border-top: 358px solid transparent;
+    border-bottom: 0 solid rgb(255, 223, 186);
+  }
 }
 @media screen and (max-width: 460px) {
   .worksmob {
     width: 330px;
   }
-  .worksmob img {
+  .mobimg {
     width: 320px;
     height: 240px;
+  }
+  .mobimg img {
+    width: 100%;
+    height: 100%;
   }
   .worksmob h1 {
     font-size: 5rem;
@@ -2011,6 +2043,12 @@
     border-right: 330px solid rgb(255, 170, 73);
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(255, 170, 73);
+  }
+  .worksmob:nth-of-type(13) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 330px solid rgb(255, 223, 186);
+    border-top: 275px solid transparent;
+    border-bottom: 0 solid rgb(255, 223, 186);
   }
 }
 .port_title {
