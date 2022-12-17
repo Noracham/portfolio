@@ -1382,7 +1382,6 @@
   box-sizing: border-box;
   position: relative;
   width: 630px;
-  height: 100%;
   border-left: 5px solid rgb(184, 0, 235);
   border-right: 5px solid transparent;
   border-top: 5px solid rgb(184, 0, 235);
@@ -1508,9 +1507,13 @@
           animation-fill-mode: forwards;
 }
 
-.worksmob img {
+.mobimg {
   width: 620px;
   height: 465px;
+}
+
+.mobimg img {
+  width: 100%;
 }
 
 .traiangle {
