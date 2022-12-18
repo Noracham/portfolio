@@ -51,6 +51,8 @@
 }
 
 .selectmenu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   display: none;
   position: fixed;
   width: 100%;
@@ -1018,6 +1020,8 @@
 }
 
 .dream {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   padding-bottom: 5%;
   border: 3px solid #ff2370;
   box-shadow: 0 0 5px #ff337a, inset 0 0 5px #ff337a;
@@ -1378,6 +1382,8 @@
 }
 
 .worksmob {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   z-index: 5;
   opacity: 0;
   box-sizing: border-box;

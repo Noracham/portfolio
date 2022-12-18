@@ -54,6 +54,7 @@
   }
 }
 .selectmenu {
+  backface-visibility: hidden;
   display: none;
   position: fixed;
   width: 100%;
@@ -851,6 +852,7 @@
 }
 // dream
 .dream {
+  backface-visibility: hidden;
   padding-bottom: 5%;
   border: 3px solid #ff2370;
   box-shadow: 0 0 5px #ff337a, inset 0 0 5px #ff337a;
@@ -1177,6 +1179,7 @@
   /* max-width: 1000px; */
 }
 .worksmob {
+  backface-visibility: hidden;
   z-index: 5;
   opacity: 0;
   box-sizing: border-box;

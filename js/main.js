@@ -398,7 +398,7 @@ $(function () {
   let $stalker = $("#stalker");
   if (navigator.userAgent.match(/(iPhone|iPad|Android)/)) {
     $($stalker).css("display", "none");
-    $($stalker).css("visibility", "hidden");
+    $($stalker).css("visibility", "hi、dden");
     $($stalker).css("opacity", "0");
   }
   $(document).on("mousemove", function (e) {
@@ -426,4 +426,11 @@ $(window).on("load", function () {
     $(".loading").fadeOut(1000);
     $(".hide").css("display","block");
   }, 1000);
+
+
+
+
+
+
+  
 });
