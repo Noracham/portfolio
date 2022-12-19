@@ -1779,7 +1779,9 @@
 }
 //portfolio.html
 .port_title {
-  height: 100vh;
+  margin-bottom: 5%;
+  height: auto;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1826,9 +1828,8 @@
   }
   div {
     height: auto;
-    width: 80vw;
+    width: 70vw;
     max-width: 1350px;
-    max-height: 70vh;
     margin-top: 60px;
     box-shadow: 0 0 10px #3a3a3a;
     @include m.mq(tab) {
@@ -1841,7 +1842,7 @@
     }
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       @include m.mq(tab) {
         width: 100%;
         height: auto;
