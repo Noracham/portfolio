@@ -909,7 +909,7 @@
     font-weight: 700;
     font-style: normal;
 
-    font-size: 3.5rem;
+    font-size: 4.6rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.126);
     padding: 1%;
@@ -922,6 +922,20 @@
     &:not(:first-of-type) {
       margin-top: 250px;
     }
+
+    @keyframes dream_h2{
+      from{
+        opacity: 0;
+        left: -100px;
+      }
+      to{
+        opacity: 1;
+        left: 0;
+      }
+    }
+  }
+  .dream_h2{
+    animation:dream_h2 1s forwards;
   }
   p {
     text-align: center;
@@ -1400,6 +1414,7 @@
   opacity: 0;
   right: 0;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 .worksInsubtext {
   animation-name: worksInsubtext;

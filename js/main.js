@@ -388,7 +388,7 @@ $(function () {
   });
 
   $(".dream_info h2").one("inview", function (events, isInView) {
-    $(this).animate({ left: "0", opacity: "1" }, 1000);
+    $(this).addClass("dream_h2");
   });
   $(".dream_info p").one("inview", function (events, isInView) {
     $(this).css({ animation: "p_blur .7s .5s linear forwards" });
