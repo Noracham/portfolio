@@ -51,6 +51,8 @@
 }
 
 .selectmenu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   display: none;
   position: fixed;
   width: 100%;
@@ -62,9 +64,11 @@
   opacity: 0;
   position: relative;
   background-color: black;
+  height: 100vh;
 }
 .menuback .rump {
   position: relative;
+  align-self: flex-start;
   top: -270px;
   width: 100%;
   flex-direction: column;
@@ -75,6 +79,7 @@
   }
 }
 .menuback .rump img:nth-of-type(1) {
+  width: 300px;
   position: relative;
   top: -750px;
   z-index: 2;
@@ -85,6 +90,7 @@
   }
 }
 .menuback .rump img:nth-of-type(2) {
+  width: 990px;
   display: none;
   margin-top: -30px;
   margin-right: 18px;
@@ -993,6 +999,7 @@
 }
 @media screen and (max-width: 768px) {
   .me .me_txt {
+    font-size: 1.3rem;
     margin: 15% 5% 0;
     width: 80%;
   }
@@ -1013,6 +1020,8 @@
 }
 
 .dream {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   padding-bottom: 5%;
   border: 3px solid #ff2370;
   box-shadow: 0 0 5px #ff337a, inset 0 0 5px #ff337a;
@@ -1373,6 +1382,8 @@
 }
 
 .worksmob {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   z-index: 5;
   opacity: 0;
   box-sizing: border-box;
@@ -1455,6 +1466,12 @@
   box-shadow: -7px -7px 10px 0 rgba(255, 170, 73, 0.659);
 }
 
+.worksmob:nth-of-type(13) {
+  border-left: 5px solid rgb(255, 223, 186);
+  border-top: 5px solid rgb(255, 223, 186);
+  box-shadow: -7px -7px 10px 0 rgba(255, 223, 186, 0.659);
+}
+
 .worksfadeIn {
   -webkit-animation-name: worksfadeIn;
           animation-name: worksfadeIn;
@@ -1504,9 +1521,14 @@
           animation-fill-mode: forwards;
 }
 
-.worksmob img {
+.mobimg {
   width: 620px;
   height: 465px;
+}
+
+.mobimg img {
+  width: 100%;
+  height: 100%;
 }
 
 .traiangle {
@@ -1598,6 +1620,13 @@
   border-right: 600px solid rgb(255, 170, 73);
   border-top: 500px solid transparent;
   border-bottom: 0 solid rgb(255, 170, 73);
+}
+
+.worksmob:nth-of-type(13) .traiangle {
+  border-left: 0 solid transparent;
+  border-right: 600px solid rgb(255, 223, 186);
+  border-top: 500px solid transparent;
+  border-bottom: 0 solid rgb(255, 223, 186);
 }
 
 .worksrotate {
@@ -1733,7 +1762,7 @@
   .worksmob {
     width: 530px;
   }
-  .worksmob img {
+  .mobimg {
     width: 520px;
     height: 393px;
   }
@@ -1819,12 +1848,18 @@
     border-top: 441px solid transparent;
     border-bottom: 0 solid rgb(255, 170, 73);
   }
+  .worksmob:nth-of-type(13) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 530px solid rgb(255, 223, 186);
+    border-top: 441px solid transparent;
+    border-bottom: 0 solid rgb(255, 223, 186);
+  }
 }
 @media screen and (max-width: 600px) {
   .worksmob {
     width: 430px;
   }
-  .worksmob img {
+  .mobimg {
     width: 420px;
     height: 315px;
   }
@@ -1911,14 +1946,24 @@
     border-top: 358px solid transparent;
     border-bottom: 0 solid rgb(255, 170, 73);
   }
+  .worksmob:nth-of-type(13) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 430px solid rgb(255, 223, 186);
+    border-top: 358px solid transparent;
+    border-bottom: 0 solid rgb(255, 223, 186);
+  }
 }
 @media screen and (max-width: 460px) {
   .worksmob {
     width: 330px;
   }
-  .worksmob img {
+  .mobimg {
     width: 320px;
     height: 240px;
+  }
+  .mobimg img {
+    width: 100%;
+    height: 100%;
   }
   .worksmob h1 {
     font-size: 5rem;
@@ -2005,6 +2050,12 @@
     border-top: 275px solid transparent;
     border-bottom: 0 solid rgb(255, 170, 73);
   }
+  .worksmob:nth-of-type(13) .traiangle {
+    border-left: 0 solid transparent;
+    border-right: 330px solid rgb(255, 223, 186);
+    border-top: 275px solid transparent;
+    border-bottom: 0 solid rgb(255, 223, 186);
+  }
 }
 .port_title {
   height: 100vh;
@@ -2060,16 +2111,17 @@
   content: "POWERPOINT";
 }
 .port_title div {
-  height: 70vh;
-  width: auto;
+  height: auto;
+  width: 80vw;
+  max-width: 1350px;
+  max-height: 70vh;
   margin-top: 60px;
   box-shadow: 0 0 10px #3a3a3a;
 }
 @media screen and (max-width: 1024px) {
   .port_title div {
     margin-top: 55px;
-    width: 70vw;
-    height: auto;
+    width: 85vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2079,7 +2131,8 @@
   }
 }
 .port_title div img {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .port_title div img {

@@ -398,6 +398,8 @@ $(function () {
   let $stalker = $("#stalker");
   if (navigator.userAgent.match(/(iPhone|iPad|Android)/)) {
     $($stalker).css("display", "none");
+    $($stalker).css("visibility", "hi、dden");
+    $($stalker).css("opacity", "0");
   }
   $(document).on("mousemove", function (e) {
     $($stalker).css("visibility", "visible");
@@ -418,11 +420,17 @@ $("a").hover(function () {
 $("a").mouseout(function () {
   $("#stalker").css("animation", "stalker_anime 2s linear infinite");
 });
-
 //loading
 $(window).on("load", function () {
   setTimeout(() => {
     $(".loading").fadeOut(1000);
     $(".hide").css("display","block");
   }, 1000);
+
+
+
+
+
+
+  
 });
