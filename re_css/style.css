@@ -553,10 +553,6 @@
 .works .titleworks {
   background-image: url(../img/works.png);
 }
-.works .worksbg {
-  max-height: 1800px;
-  padding-bottom: 30%;
-}
 
 .all_portfolio {
   margin-top: 200px;
