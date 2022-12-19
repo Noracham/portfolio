@@ -1081,7 +1081,7 @@
   font-family: ff-chambers-sans-web, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 4.6rem;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.126);
   padding: 1%;
@@ -1098,6 +1098,30 @@
 }
 .dream_info h2:not(:first-of-type) {
   margin-top: 250px;
+}
+@-webkit-keyframes dream_h2 {
+  from {
+    opacity: 0;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes dream_h2 {
+  from {
+    opacity: 0;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+.dream_info .dream_h2 {
+  -webkit-animation: dream_h2 1s forwards;
+          animation: dream_h2 1s forwards;
 }
 .dream_info p {
   text-align: center;
