@@ -2367,6 +2367,10 @@ a {
   z-index: -1;
 }
 
+.worksbg {
+  padding-bottom: 30%;
+}
+
 .test_hid {
   display: none;
 }
